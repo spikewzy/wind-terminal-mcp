@@ -1,0 +1,3171 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-03T17:12:19.626492+00:00",
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "source": null,
+  "native_probe_server_version": "0.21.0",
+  "harness": "Codex current conversation native MCP",
+  "field": "oi_nvoi",
+  "options": "order=40",
+  "dates": [
+    "2026-09-28",
+    "2026-09-29"
+  ],
+  "parameter_evidence": "references/futures-member-position-evidence.json",
+  "selection_plan": "verification/futures-member-history-plan-20261003.json",
+  "selection_plan_sha256": "1137674ee7e0972b6294ed1878a5fcfe66fe4bc58c67b6bbf83cf1c4310a9ee7",
+  "budget_plan": "verification/futures-member-bounded-plan-20261004.json",
+  "cases": [
+    {
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "method": "wsd",
+      "arguments": {
+        "beginTime": "2026-09-28",
+        "codes": "AL00.SHF,ZN00.SHF,PB00.SHF,AU00.SHF,RU00.SHF,FU00.SHF,RB00.SHF,WR00.SHF,AG00.SHF,BU00.SHF,HC00.SHF,NI00.SHF,SN00.SHF,SP00.SHF,SS00.SHF,AO00.SHF,BR00.SHF,AD00.SHF,OP00.SHF,SC00.INE,NR00.INE,LU00.INE,BC00.INE,EC00.INE,CF00.CZC,SR00.CZC,OI00.CZC,MA00.CZC,FG00.CZC,RS00.CZC,RM00.CZC,SF00.CZC,SM00.CZC,CY00.CZC,AP00.CZC,CJ00.CZC,UR00.CZC,SA00.CZC,PF00.CZC,PK00.CZC,PX00.CZC,SH00.CZC,PR00.CZC,PL00.CZC,WH00.CZC,RI00.CZC,PM00.CZC,ZC00.CZC,JR00.CZC,A00.DCE",
+        "endTime": "2026-09-29",
+        "fields": "oi_nvoi",
+        "options": "order=40"
+      },
+      "from_cache": false,
+      "fetched_at": "2026-10-03T17:08:38.624734+00:00",
+      "estimated_cells": 100,
+      "returned_cells": 100,
+      "non_null_cells": 83,
+      "null_cells": 17,
+      "complete_products": 41,
+      "partial_products": 1,
+      "all_null_products": 8
+    },
+    {
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "method": "wsd",
+      "arguments": {
+        "beginTime": "2026-09-28",
+        "codes": "B00.DCE,M00.DCE,C00.DCE,Y00.DCE,L00.DCE,P00.DCE,V00.DCE,J00.DCE,JM00.DCE,JD00.DCE,BB00.DCE,FB00.DCE,PP00.DCE,CS00.DCE,EG00.DCE,RR00.DCE,EB00.DCE,PG00.DCE,LH00.DCE,LG00.DCE,BZ00.DCE,PP_F00.DCE,L_F00.DCE,V_F00.DCE,SI00.GFE,PS00.GFE,PT00.GFE,PD00.GFE",
+        "endTime": "2026-09-29",
+        "fields": "oi_nvoi",
+        "options": "order=40"
+      },
+      "from_cache": false,
+      "fetched_at": "2026-10-03T17:09:01.308266+00:00",
+      "estimated_cells": 56,
+      "returned_cells": 56,
+      "non_null_cells": 40,
+      "null_cells": 16,
+      "complete_products": 20,
+      "partial_products": 0,
+      "all_null_products": 8
+    }
+  ],
+  "summary": {
+    "products": 90,
+    "newly_queried_products": 78,
+    "reused_long_history_products": 12,
+    "new_native_requests": 2,
+    "estimated_new_cells": 156,
+    "returned_new_cells": 156,
+    "new_non_null_cells": 123,
+    "new_null_cells": 33,
+    "complete_products": 73,
+    "partial_products": 1,
+    "all_null_products": 16,
+    "combined_two_day_cells": 180,
+    "combined_non_null_cells": 147,
+    "combined_null_cells": 33,
+    "numeric_endpoint_matches": 73,
+    "null_endpoint_matches": 17,
+    "completed_long_history_samples_unchanged": 12,
+    "full_history_verified": false,
+    "current_product_census_verified": false,
+    "units_certified": false,
+    "point_in_time_safe": false
+  },
+  "products": [
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "铜",
+      "prefix": "CU",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "CU2611.SHF",
+      "continuous_code": "CU00.SHF",
+      "continuous_label": "沪铜近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "cbe5d11973764e47bb87ce477ebcb7f5",
+      "source_receipt_sha256": "2d7c44cf94099c4c29a246cee77279b0335adbc7529d6dc85de1ca44f3302a87",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": true,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "铝",
+      "prefix": "AL",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "AL2611.SHF",
+      "continuous_code": "AL00.SHF",
+      "continuous_label": "沪铝近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "锌",
+      "prefix": "ZN",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "ZN2611.SHF",
+      "continuous_code": "ZN00.SHF",
+      "continuous_label": "沪锌近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "铅",
+      "prefix": "PB",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "PB2611.SHF",
+      "continuous_code": "PB00.SHF",
+      "continuous_label": "沪铅近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "黄金",
+      "prefix": "AU",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "AU2612.SHF",
+      "continuous_code": "AU00.SHF",
+      "continuous_label": "沪金近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "天然橡胶",
+      "prefix": "RU",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "RU2701.SHF",
+      "continuous_code": "RU00.SHF",
+      "continuous_label": "橡胶近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "燃料油",
+      "prefix": "FU",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "FU2611.SHF",
+      "continuous_code": "FU00.SHF",
+      "continuous_label": "燃油近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "螺纹钢",
+      "prefix": "RB",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "RB2701.SHF",
+      "continuous_code": "RB00.SHF",
+      "continuous_label": "螺纹钢近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "线材",
+      "prefix": "WR",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "WR2701.SHF",
+      "continuous_code": "WR00.SHF",
+      "continuous_label": "线材近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "白银",
+      "prefix": "AG",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "AG2612.SHF",
+      "continuous_code": "AG00.SHF",
+      "continuous_label": "沪银近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "石油沥青",
+      "prefix": "BU",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "BU2611.SHF",
+      "continuous_code": "BU00.SHF",
+      "continuous_label": "沥青近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "热轧卷板",
+      "prefix": "HC",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "HC2701.SHF",
+      "continuous_code": "HC00.SHF",
+      "continuous_label": "热轧卷板近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "镍",
+      "prefix": "NI",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "NI2611.SHF",
+      "continuous_code": "NI00.SHF",
+      "continuous_label": "沪镍近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "锡",
+      "prefix": "SN",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "SN2611.SHF",
+      "continuous_code": "SN00.SHF",
+      "continuous_label": "沪锡近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "纸浆",
+      "prefix": "SP",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "SP2611.SHF",
+      "continuous_code": "SP00.SHF",
+      "continuous_label": "纸浆近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "不锈钢",
+      "prefix": "SS",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "SS2611.SHF",
+      "continuous_code": "SS00.SHF",
+      "continuous_label": "不锈钢近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "氧化铝",
+      "prefix": "AO",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "AO2701.SHF",
+      "continuous_code": "AO00.SHF",
+      "continuous_label": "氧化铝近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "丁二烯橡胶",
+      "prefix": "BR",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "BR2611.SHF",
+      "continuous_code": "BR00.SHF",
+      "continuous_label": "丁二烯橡胶近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "铸造铝合金",
+      "prefix": "AD",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "AD2611.SHF",
+      "continuous_code": "AD00.SHF",
+      "continuous_label": "铸造铝合金近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海期货交易所",
+      "official_name": "胶版印刷纸",
+      "prefix": "OP",
+      "qualifier": "",
+      "suffix": "SHF",
+      "snapshot_code": "OP2611.SHF",
+      "continuous_code": "OP00.SHF",
+      "continuous_label": "双胶纸近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海国际能源交易中心",
+      "official_name": "原油",
+      "prefix": "SC",
+      "qualifier": "",
+      "suffix": "INE",
+      "snapshot_code": "SC2611.INE",
+      "continuous_code": "SC00.INE",
+      "continuous_label": "原油近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海国际能源交易中心",
+      "official_name": "20号胶",
+      "prefix": "NR",
+      "qualifier": "",
+      "suffix": "INE",
+      "snapshot_code": "NR2611.INE",
+      "continuous_code": "NR00.INE",
+      "continuous_label": "20号胶近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海国际能源交易中心",
+      "official_name": "低硫燃料油",
+      "prefix": "LU",
+      "qualifier": "",
+      "suffix": "INE",
+      "snapshot_code": "LU2611.INE",
+      "continuous_code": "LU00.INE",
+      "continuous_label": "低硫燃料油近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海国际能源交易中心",
+      "official_name": "铜(BC)",
+      "prefix": "BC",
+      "qualifier": "",
+      "suffix": "INE",
+      "snapshot_code": "BC2610.INE",
+      "continuous_code": "BC00.INE",
+      "continuous_label": "国际铜近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": false,
+      "status": "partial",
+      "non_null_observations": 1,
+      "null_observations": 1,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "上海国际能源交易中心",
+      "official_name": "SCFIS欧线",
+      "prefix": "EC",
+      "qualifier": "",
+      "suffix": "INE",
+      "snapshot_code": "EC2611.INE",
+      "continuous_code": "EC00.INE",
+      "continuous_label": "集运指数(欧线)近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "一号棉CF",
+      "prefix": "CF",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "CF701.CZC",
+      "continuous_code": "CF00.CZC",
+      "continuous_label": "郑棉近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "白糖SR",
+      "prefix": "SR",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "SR701.CZC",
+      "continuous_code": "SR00.CZC",
+      "continuous_label": "白糖近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "PTA",
+      "prefix": "TA",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "TA701.CZC",
+      "continuous_code": "TA00.CZC",
+      "continuous_label": "PTA近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "cbe5d11973764e47bb87ce477ebcb7f5",
+      "source_receipt_sha256": "2d7c44cf94099c4c29a246cee77279b0335adbc7529d6dc85de1ca44f3302a87",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": true,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "菜籽油",
+      "prefix": "OI",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "OI701.CZC",
+      "continuous_code": "OI00.CZC",
+      "continuous_label": "菜油近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "甲醇MA",
+      "prefix": "MA",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "MA611.CZC",
+      "continuous_code": "MA00.CZC",
+      "continuous_label": "甲醇近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "玻璃FG",
+      "prefix": "FG",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "FG701.CZC",
+      "continuous_code": "FG00.CZC",
+      "continuous_label": "玻璃近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "油菜籽RS",
+      "prefix": "RS",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "RS701.CZC",
+      "continuous_code": "RS00.CZC",
+      "continuous_label": "菜籽近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "菜籽粕RM",
+      "prefix": "RM",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "RM611.CZC",
+      "continuous_code": "RM00.CZC",
+      "continuous_label": "菜粕近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "硅铁SF",
+      "prefix": "SF",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "SF611.CZC",
+      "continuous_code": "SF00.CZC",
+      "continuous_label": "硅铁近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "锰硅SM",
+      "prefix": "SM",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "SM611.CZC",
+      "continuous_code": "SM00.CZC",
+      "continuous_label": "锰硅近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "棉纱",
+      "prefix": "CY",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "CY611.CZC",
+      "continuous_code": "CY00.CZC",
+      "continuous_label": "棉纱近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "苹果AP",
+      "prefix": "AP",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "AP701.CZC",
+      "continuous_code": "AP00.CZC",
+      "continuous_label": "苹果近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "红枣CJ",
+      "prefix": "CJ",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "CJ701.CZC",
+      "continuous_code": "CJ00.CZC",
+      "continuous_label": "红枣近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "尿素",
+      "prefix": "UR",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "UR701.CZC",
+      "continuous_code": "UR00.CZC",
+      "continuous_label": "尿素近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "纯碱",
+      "prefix": "SA",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "SA701.CZC",
+      "continuous_code": "SA00.CZC",
+      "continuous_label": "纯碱近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "短纤PF",
+      "prefix": "PF",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "PF611.CZC",
+      "continuous_code": "PF00.CZC",
+      "continuous_label": "短纤近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "花生PK",
+      "prefix": "PK",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "PK611.CZC",
+      "continuous_code": "PK00.CZC",
+      "continuous_label": "花生近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "对二甲苯PX",
+      "prefix": "PX",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "PX611.CZC",
+      "continuous_code": "PX00.CZC",
+      "continuous_label": "对二甲苯近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "烧碱SH",
+      "prefix": "SH",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "SH611.CZC",
+      "continuous_code": "SH00.CZC",
+      "continuous_label": "烧碱近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "瓶片PR",
+      "prefix": "PR",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "PR611.CZC",
+      "continuous_code": "PR00.CZC",
+      "continuous_label": "瓶片近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "丙烯",
+      "prefix": "PL",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "PL611.CZC",
+      "continuous_code": "PL00.CZC",
+      "continuous_label": "丙烯近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "优质强筋小麦",
+      "prefix": "WH",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "WH611.CZC",
+      "continuous_code": "WH00.CZC",
+      "continuous_label": "强麦近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "早籼稻",
+      "prefix": "RI",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "RI611.CZC",
+      "continuous_code": "RI00.CZC",
+      "continuous_label": "早籼稻近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "普麦PM",
+      "prefix": "PM",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "PM611.CZC",
+      "continuous_code": "PM00.CZC",
+      "continuous_label": "普麦近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "动力煤ZC",
+      "prefix": "ZC",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "ZC610.CZC",
+      "continuous_code": "ZC00.CZC",
+      "continuous_label": "动力煤近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "013152280e85442d854c84c768a23327",
+          "sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be"
+        }
+      }
+    },
+    {
+      "exchange": "郑州商品交易所",
+      "official_name": "粳稻JR",
+      "prefix": "JR",
+      "qualifier": "",
+      "suffix": "CZC",
+      "snapshot_code": "JR611.CZC",
+      "continuous_code": "JR00.CZC",
+      "continuous_label": "粳稻近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "豆一",
+      "prefix": "A",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "A2611.DCE",
+      "continuous_code": "A00.DCE",
+      "continuous_label": "豆一近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "9f1c97a60dc74df1aa2ba067c4626610",
+      "source_receipt_sha256": "c6d3d31b422f1bb069cb9b56d3e9c62a9d8269c8ed7ba487765394ddc0e0a4e8",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "豆二",
+      "prefix": "B",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "B2611.DCE",
+      "continuous_code": "B00.DCE",
+      "continuous_label": "豆二近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "豆粕",
+      "prefix": "M",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "M2701.DCE",
+      "continuous_code": "M00.DCE",
+      "continuous_label": "豆粕近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "玉米",
+      "prefix": "C",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "C2611.DCE",
+      "continuous_code": "C00.DCE",
+      "continuous_label": "玉米近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "豆油",
+      "prefix": "Y",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "Y2701.DCE",
+      "continuous_code": "Y00.DCE",
+      "continuous_label": "豆油近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "聚乙烯",
+      "prefix": "L",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "L2701.DCE",
+      "continuous_code": "L00.DCE",
+      "continuous_label": "塑料近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "棕榈油",
+      "prefix": "P",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "P2701.DCE",
+      "continuous_code": "P00.DCE",
+      "continuous_label": "棕榈油近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "聚氯乙烯",
+      "prefix": "V",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "V2701.DCE",
+      "continuous_code": "V00.DCE",
+      "continuous_label": "PVC近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "焦炭",
+      "prefix": "J",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "J2701.DCE",
+      "continuous_code": "J00.DCE",
+      "continuous_label": "焦炭近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "焦煤",
+      "prefix": "JM",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "JM2701.DCE",
+      "continuous_code": "JM00.DCE",
+      "continuous_label": "焦煤近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "铁矿石",
+      "prefix": "I",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "I2701.DCE",
+      "continuous_code": "I00.DCE",
+      "continuous_label": "铁矿石近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "cbe5d11973764e47bb87ce477ebcb7f5",
+      "source_receipt_sha256": "2d7c44cf94099c4c29a246cee77279b0335adbc7529d6dc85de1ca44f3302a87",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": true,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "鸡蛋",
+      "prefix": "JD",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "JD2611.DCE",
+      "continuous_code": "JD00.DCE",
+      "continuous_label": "鸡蛋近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "胶合板",
+      "prefix": "BB",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "BB2611.DCE",
+      "continuous_code": "BB00.DCE",
+      "continuous_label": "胶合板近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "纤维板",
+      "prefix": "FB",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "FB2611.DCE",
+      "continuous_code": "FB00.DCE",
+      "continuous_label": "纤维板近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "聚丙烯",
+      "prefix": "PP",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "PP2701.DCE",
+      "continuous_code": "PP00.DCE",
+      "continuous_label": "聚丙烯近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "玉米淀粉",
+      "prefix": "CS",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "CS2611.DCE",
+      "continuous_code": "CS00.DCE",
+      "continuous_label": "玉米淀粉近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "乙二醇",
+      "prefix": "EG",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "EG2611.DCE",
+      "continuous_code": "EG00.DCE",
+      "continuous_label": "乙二醇近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "粳米",
+      "prefix": "RR",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "RR2611.DCE",
+      "continuous_code": "RR00.DCE",
+      "continuous_label": "粳米近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "苯乙烯",
+      "prefix": "EB",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "EB2611.DCE",
+      "continuous_code": "EB00.DCE",
+      "continuous_label": "苯乙烯近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "液化石油气",
+      "prefix": "PG",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "PG2611.DCE",
+      "continuous_code": "PG00.DCE",
+      "continuous_label": "LPG近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "生猪",
+      "prefix": "LH",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "LH2611.DCE",
+      "continuous_code": "LH00.DCE",
+      "continuous_label": "生猪近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "原木",
+      "prefix": "LG",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "LG2611.DCE",
+      "continuous_code": "LG00.DCE",
+      "continuous_label": "原木近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "纯苯",
+      "prefix": "BZ",
+      "qualifier": "",
+      "suffix": "DCE",
+      "snapshot_code": "BZ2611.DCE",
+      "continuous_code": "BZ00.DCE",
+      "continuous_label": "纯苯近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "聚丙烯月均价",
+      "prefix": "PP",
+      "qualifier": "F",
+      "suffix": "DCE",
+      "snapshot_code": "PP2611F.DCE",
+      "continuous_code": "PP_F00.DCE",
+      "continuous_label": "聚丙烯月均价近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "聚乙烯月均价",
+      "prefix": "L",
+      "qualifier": "F",
+      "suffix": "DCE",
+      "snapshot_code": "L2611F.DCE",
+      "continuous_code": "L_F00.DCE",
+      "continuous_label": "塑料月均价近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "大连商品交易所",
+      "official_name": "聚氯乙烯月均价",
+      "prefix": "V",
+      "qualifier": "F",
+      "suffix": "DCE",
+      "snapshot_code": "V2611F.DCE",
+      "continuous_code": "V_F00.DCE",
+      "continuous_label": "PVC月均价近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "中国金融期货交易所",
+      "official_name": "沪深300股指期货",
+      "prefix": "IF",
+      "qualifier": "",
+      "suffix": "CFE",
+      "snapshot_code": "IF2612.CFE",
+      "continuous_code": "IF00.CFE",
+      "continuous_label": "沪深300期货当月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "49dc7b4c295c4d10b2027914d9da07e0",
+      "source_receipt_sha256": "6ddcdbeaa9cfbbceca20a2f605b2e04cfcc4317f218d28006e7794c1e24913ab",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": true,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "中国金融期货交易所",
+      "official_name": "5年期国债期货",
+      "prefix": "TF",
+      "qualifier": "",
+      "suffix": "CFE",
+      "snapshot_code": "TF2612.CFE",
+      "continuous_code": "TF00.CFE",
+      "continuous_label": "5年期国债期货当季连续",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "49dc7b4c295c4d10b2027914d9da07e0",
+      "source_receipt_sha256": "6ddcdbeaa9cfbbceca20a2f605b2e04cfcc4317f218d28006e7794c1e24913ab",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": true,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "中国金融期货交易所",
+      "official_name": "10年期国债期货",
+      "prefix": "T",
+      "qualifier": "",
+      "suffix": "CFE",
+      "snapshot_code": "T2612.CFE",
+      "continuous_code": "T00.CFE",
+      "continuous_label": "10年期国债期货当季连续",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "49dc7b4c295c4d10b2027914d9da07e0",
+      "source_receipt_sha256": "6ddcdbeaa9cfbbceca20a2f605b2e04cfcc4317f218d28006e7794c1e24913ab",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": true,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "中国金融期货交易所",
+      "official_name": "上证50股指期货",
+      "prefix": "IH",
+      "qualifier": "",
+      "suffix": "CFE",
+      "snapshot_code": "IH2612.CFE",
+      "continuous_code": "IH00.CFE",
+      "continuous_label": "上证50期货当月连续",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "49dc7b4c295c4d10b2027914d9da07e0",
+      "source_receipt_sha256": "6ddcdbeaa9cfbbceca20a2f605b2e04cfcc4317f218d28006e7794c1e24913ab",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": true,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "中国金融期货交易所",
+      "official_name": "中证500股指期货",
+      "prefix": "IC",
+      "qualifier": "",
+      "suffix": "CFE",
+      "snapshot_code": "IC2612.CFE",
+      "continuous_code": "IC00.CFE",
+      "continuous_label": "中证500期货当月连续",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "49dc7b4c295c4d10b2027914d9da07e0",
+      "source_receipt_sha256": "6ddcdbeaa9cfbbceca20a2f605b2e04cfcc4317f218d28006e7794c1e24913ab",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": true,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "中国金融期货交易所",
+      "official_name": "2年期国债期货",
+      "prefix": "TS",
+      "qualifier": "",
+      "suffix": "CFE",
+      "snapshot_code": "TS2612.CFE",
+      "continuous_code": "TS00.CFE",
+      "continuous_label": "2年期国债期货当季连续",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "49dc7b4c295c4d10b2027914d9da07e0",
+      "source_receipt_sha256": "6ddcdbeaa9cfbbceca20a2f605b2e04cfcc4317f218d28006e7794c1e24913ab",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": true,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "中国金融期货交易所",
+      "official_name": "中证1000股指期货",
+      "prefix": "IM",
+      "qualifier": "",
+      "suffix": "CFE",
+      "snapshot_code": "IM2612.CFE",
+      "continuous_code": "IM00.CFE",
+      "continuous_label": "中证1000期货当月连续",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "49dc7b4c295c4d10b2027914d9da07e0",
+      "source_receipt_sha256": "6ddcdbeaa9cfbbceca20a2f605b2e04cfcc4317f218d28006e7794c1e24913ab",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": true,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "中国金融期货交易所",
+      "official_name": "30年期国债期货",
+      "prefix": "TL",
+      "qualifier": "",
+      "suffix": "CFE",
+      "snapshot_code": "TL2612.CFE",
+      "continuous_code": "TL00.CFE",
+      "continuous_label": "30年期国债期货当季连续",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "49dc7b4c295c4d10b2027914d9da07e0",
+      "source_receipt_sha256": "6ddcdbeaa9cfbbceca20a2f605b2e04cfcc4317f218d28006e7794c1e24913ab",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": true,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "广州期货交易所",
+      "official_name": "工业硅期货",
+      "prefix": "SI",
+      "qualifier": "",
+      "suffix": "GFE",
+      "snapshot_code": "SI2611.GFE",
+      "continuous_code": "SI00.GFE",
+      "continuous_label": "工业硅近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "广州期货交易所",
+      "official_name": "碳酸锂期货",
+      "prefix": "LC",
+      "qualifier": "",
+      "suffix": "GFE",
+      "snapshot_code": "LC2701.GFE",
+      "continuous_code": "LC00.GFE",
+      "continuous_label": "碳酸锂近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "cbe5d11973764e47bb87ce477ebcb7f5",
+      "source_receipt_sha256": "2d7c44cf94099c4c29a246cee77279b0335adbc7529d6dc85de1ca44f3302a87",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": true,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "广州期货交易所",
+      "official_name": "多晶硅期货",
+      "prefix": "PS",
+      "qualifier": "",
+      "suffix": "GFE",
+      "snapshot_code": "PS2611.GFE",
+      "continuous_code": "PS00.GFE",
+      "continuous_label": "多晶硅近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": true,
+      "status": "complete",
+      "non_null_observations": 2,
+      "null_observations": 0,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "numeric_equality",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "广州期货交易所",
+      "official_name": "铂期货",
+      "prefix": "PT",
+      "qualifier": "",
+      "suffix": "GFE",
+      "snapshot_code": "PT2612.GFE",
+      "continuous_code": "PT00.GFE",
+      "continuous_label": "铂近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    },
+    {
+      "exchange": "广州期货交易所",
+      "official_name": "钯期货",
+      "prefix": "PD",
+      "qualifier": "",
+      "suffix": "GFE",
+      "snapshot_code": "PD2612.GFE",
+      "continuous_code": "PD00.GFE",
+      "continuous_label": "钯近月",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "source": null,
+      "unit": null,
+      "receipt_id": "27e1e50e96ab4630baf4ab78faa1d126",
+      "source_receipt_sha256": "541803078867c895ef107d55ef2d0f21440b7e5da3a6be522d1282b2b8c5850c",
+      "complete_two_day_values": false,
+      "status": "all_null",
+      "non_null_observations": 0,
+      "null_observations": 2,
+      "native_zero_observations": 0,
+      "has_prior_long_history_sample": false,
+      "long_history_completed_by_this_query": false,
+      "endpoint_crosscheck": {
+        "date": "2026-09-29",
+        "matched": true,
+        "comparison_kind": "both_null",
+        "snapshot": {
+          "receipt_id": "af3394bd560949a3a29278969c30c780",
+          "sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df"
+        }
+      }
+    }
+  ],
+  "checks": {
+    "exact_request_match": true,
+    "source_receipt_hashes_preserved": true,
+    "raw_validation_passed": true,
+    "all_90_products_present_once": true,
+    "all_90_endpoints_match_saved_snapshot": true,
+    "new_calls_within_two_request_cap": true,
+    "new_cells_within_156_cap": true,
+    "native_nulls_preserved": true,
+    "long_history_count_not_incremented": true
+  },
+  "limitations": [
+    "Two-day field-route validation is not full history.",
+    "All-null values do not prove the product lacks this indicator at all past dates or lacks other fundamentals.",
+    "The product cohort is from the saved August CFA and September Wind directory reconciliation, not an October census.",
+    "Nearby/current-month/current-quarter codes are directory codes, not certified main-contract roll rules.",
+    "Unit, publisher methodology, publication timing and point-in-time vintages remain unverified.",
+    "Account remaining quota remains unknown."
+  ],
+  "previous_goal_turn_classification": "progress",
+  "current_goal_turn_classification": "progress",
+  "goal_complete": false,
+  "raw_historical_values_bundled": false
+}

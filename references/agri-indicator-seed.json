@@ -1,0 +1,2621 @@
+{
+  "catalog_scope": "126 agricultural candidates from archived Alice metadata; not a full Wind catalog",
+  "indicators": [
+    {
+      "meta": {
+        "code": "A2551806",
+        "name": "全球:产量:农产品:大豆",
+        "unit": "万吨",
+        "source": "国家统计局",
+        "magnitude": "万",
+        "updateDate": "20260309",
+        "beginDate": "20001231",
+        "endDate": "20231231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "B8205252",
+        "name": "美国:价格:大豆",
+        "unit": "美元/蒲式耳",
+        "source": "美国替代燃料数据中心",
+        "currency": "美元",
+        "updateDate": "20260630",
+        "beginDate": "20021231",
+        "endDate": "20251231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "D4031358",
+        "name": "中国:产量:农产品:粮食:豆类",
+        "unit": "万吨",
+        "source": "国家统计局",
+        "magnitude": "万",
+        "updateDate": "20251105",
+        "beginDate": "19981231",
+        "endDate": "20241231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "D8497954",
+        "name": "中国:库存量:豆油",
+        "unit": "万吨",
+        "source": "根据新闻整理",
+        "magnitude": "万",
+        "updateDate": "20260922",
+        "beginDate": "20200508",
+        "endDate": "20260918",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "G1060845",
+        "name": "全球:名义商品价格:豆油",
+        "unit": "美元/公吨",
+        "source": "世界银行",
+        "currency": "美元",
+        "updateDate": "20260903",
+        "beginDate": "19600131",
+        "endDate": "20260831",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "G2264286",
+        "name": "全球:产量:大豆油",
+        "unit": "吨",
+        "source": "联合国粮农组织",
+        "updateDate": "20260101",
+        "beginDate": "19611231",
+        "endDate": "20231231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "G2264331",
+        "name": "中国:产量:大豆油",
+        "unit": "吨",
+        "source": "联合国粮农组织",
+        "updateDate": "20260101",
+        "beginDate": "19611231",
+        "endDate": "20231231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "G6267872",
+        "name": "美国:单产:大豆",
+        "unit": "千克/公顷",
+        "source": "联合国粮农组织",
+        "updateDate": "20260101",
+        "beginDate": "19611231",
+        "endDate": "20241231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "G8403804",
+        "name": "全球:实际市场价格:豆油",
+        "unit": "美元/公吨",
+        "source": "国际货币基金组织",
+        "currency": "美元",
+        "updateDate": "20260909",
+        "beginDate": "19800131",
+        "endDate": "20260831",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "M0038136",
+        "name": "中国:进口金额:大豆",
+        "unit": "万美元",
+        "source": "国家统计局",
+        "magnitude": "万",
+        "currency": "美元",
+        "updateDate": "20260117",
+        "beginDate": "19941231",
+        "endDate": "20241231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "M0041529",
+        "name": "中国:进口数量:大豆:当月值",
+        "unit": "万吨",
+        "source": "海关总署",
+        "magnitude": "万",
+        "updateDate": "20260918",
+        "beginDate": "19950131",
+        "endDate": "20260831",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "R4264784",
+        "name": "中国大陆:进口数量:油籽",
+        "unit": "吨",
+        "source": "联合国粮农组织",
+        "updateDate": "20251224",
+        "beginDate": "19611231",
+        "endDate": "20241231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0109421",
+        "name": "美国:本周出口量:大豆",
+        "unit": "吨",
+        "source": "美国农业部",
+        "updateDate": "20260924",
+        "beginDate": "19900104",
+        "endDate": "20260917",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0109578",
+        "name": "美国:压榨量:大豆",
+        "unit": "千蒲式耳",
+        "source": "美国油籽加工商协会",
+        "magnitude": "千",
+        "updateDate": "20260916",
+        "beginDate": "20010131",
+        "endDate": "20260831",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0109585",
+        "name": "美国:播种面积:大豆",
+        "unit": "千英亩",
+        "source": "美国农业部",
+        "magnitude": "千",
+        "updateDate": "20260912",
+        "beginDate": "19241231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0109587",
+        "name": "美国:单位面积产量:大豆",
+        "unit": "蒲式耳/英亩",
+        "source": "美国农业部",
+        "updateDate": "20260912",
+        "beginDate": "19241231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0109589",
+        "name": "美国:单价:大豆",
+        "unit": "美元/蒲式耳",
+        "source": "美国农业部",
+        "currency": "美元",
+        "updateDate": "20260813",
+        "beginDate": "19131231",
+        "endDate": "20251231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112305",
+        "name": "全球:产量(估计年度):大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112307",
+        "name": "全球:压榨量(估计年度):大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112310",
+        "name": "全球:期末库存量(估计年度):大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112318",
+        "name": "全球:产量(估计年度):豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112319",
+        "name": "全球:进口数量(估计年度):豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112320",
+        "name": "全球:国内消费量(估计年度):豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112322",
+        "name": "全球:期末库存量(估计年度):豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112617",
+        "name": "中国:国内消费量(市场年度):豆粕",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112645",
+        "name": "中国:产量(市场年度):豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112647",
+        "name": "中国:国内消费量(市场年度):豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112897",
+        "name": "美国:产量(估计年度):大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112901",
+        "name": "美国:出口数量(估计年度):大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112909",
+        "name": "中国:期末库存量(估计年度):大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112932",
+        "name": "欧盟:产量(估计年度):大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20070531",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112945",
+        "name": "中国:产量(估计年度):豆粕",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0112947",
+        "name": "中国:国内消费量(估计年度):豆粕",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113232",
+        "name": "美国:期末库存量(预测年度):大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113239",
+        "name": "中国:期末库存量(预测年度):大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113401",
+        "name": "全球:产量:大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19921231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113403",
+        "name": "全球:压榨量:大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19921231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113406",
+        "name": "全球:期末库存量:大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19921231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113414",
+        "name": "全球:产量:豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19921231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113415",
+        "name": "全球:进口数量:豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19921231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113416",
+        "name": "全球:国内消费量:豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19921231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113418",
+        "name": "全球:期末库存量:豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19921231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113610",
+        "name": "美国:产量:大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19641231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113612",
+        "name": "美国:压榨量:大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260813",
+        "beginDate": "19641231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113614",
+        "name": "美国:出口数量:大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19641231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113617",
+        "name": "中国:产量:大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260513",
+        "beginDate": "19641231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113619",
+        "name": "中国:压榨量:大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260711",
+        "beginDate": "19641231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113622",
+        "name": "中国:期末库存量:大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260813",
+        "beginDate": "19641231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113645",
+        "name": "欧盟:产量:大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19991231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113650",
+        "name": "欧盟:期末库存量:大豆",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19991231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113658",
+        "name": "中国:产量:豆粕",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19641231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113659",
+        "name": "中国:进口数量:豆粕",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260513",
+        "beginDate": "19641231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113660",
+        "name": "中国:国内消费量:豆粕",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19641231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113688",
+        "name": "中国:产量:豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19641231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113692",
+        "name": "中国:期末库存量:豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19641231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0113754",
+        "name": "美国:农场平均价:豆粕",
+        "unit": "美元/短吨",
+        "source": "美国农业部",
+        "currency": "美元",
+        "updateDate": "20260912",
+        "beginDate": "19921231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0117164",
+        "name": "中国:港口库存量:进口大豆",
+        "unit": "吨",
+        "source": "汇易网",
+        "updateDate": "20260928",
+        "beginDate": "20080102",
+        "endDate": "20260928",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0117984",
+        "name": "美国:播种面积(市场年度):大豆",
+        "unit": "百万公顷",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19980531",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0118089",
+        "name": "美国:单产(市场年度):大豆",
+        "unit": "吨/公顷",
+        "source": "美国农业部",
+        "updateDate": "20260912",
+        "beginDate": "19980531",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0118093",
+        "name": "中国:单产(市场年度):大豆",
+        "unit": "吨/公顷",
+        "source": "美国农业部",
+        "updateDate": "20260912",
+        "beginDate": "19980531",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0118259",
+        "name": "中国:播种面积(估计年度):大豆",
+        "unit": "百万公顷",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19980531",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0142908",
+        "name": "中国:现货价:大豆",
+        "unit": "元/吨",
+        "source": "汇易网",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20080214",
+        "endDate": "20260928",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S0142909",
+        "name": "中国:现货价:豆粕",
+        "unit": "元/吨",
+        "source": "汇易网",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20080214",
+        "endDate": "20260928",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5005861",
+        "name": "中国:大连:现货价:大豆(国产三等)",
+        "unit": "元/吨",
+        "source": "汇易网",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20090104",
+        "endDate": "20260928",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5006169",
+        "name": "中国:进口量:大豆",
+        "unit": "千吨",
+        "source": "汇易网",
+        "magnitude": "千",
+        "updateDate": "20260409",
+        "beginDate": "19921231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5008296",
+        "name": "中国:每亩主产品产量:大豆",
+        "unit": "公斤",
+        "source": "全国农产品成本收益资料汇编",
+        "updateDate": "20260603",
+        "beginDate": "20041231",
+        "endDate": "20241231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5009798",
+        "name": "全球:贸易量(估计年度):豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5009802",
+        "name": "全球:贸易量:豆油",
+        "unit": "百万吨",
+        "source": "美国农业部",
+        "magnitude": "百万",
+        "updateDate": "20260912",
+        "beginDate": "19921231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5010355",
+        "name": "欧盟:期末库存量:糖",
+        "unit": "千吨",
+        "source": "美国农业部",
+        "magnitude": "千",
+        "updateDate": "20260529",
+        "beginDate": "20011231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5012473",
+        "name": "中国:国内消费量:豆油",
+        "unit": "千吨",
+        "source": "美国农业部",
+        "magnitude": "千",
+        "updateDate": "20260912",
+        "beginDate": "19641231",
+        "endDate": "20261231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5029048",
+        "name": "中国:压榨利润(CNF成本折合):进口大豆",
+        "unit": "元/吨",
+        "source": "国家粮食和物资储备数据中心",
+        "currency": "人民币",
+        "updateDate": "20260918",
+        "beginDate": "20100107",
+        "endDate": "20260917",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5041144",
+        "name": "中国:库存量:豆粕",
+        "unit": "万吨",
+        "source": "根据新闻整理",
+        "magnitude": "万",
+        "updateDate": "20260922",
+        "beginDate": "20121230",
+        "endDate": "20260920",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5042080",
+        "name": "美国:单产(估计年度):大豆",
+        "unit": "蒲式耳/英亩",
+        "source": "美国农业部",
+        "updateDate": "20260912",
+        "beginDate": "20000131",
+        "endDate": "20260930",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5043075",
+        "name": "美国:库存量:大豆",
+        "unit": "千蒲式耳",
+        "source": "美国农业部",
+        "magnitude": "千",
+        "updateDate": "20260701",
+        "beginDate": "19900331",
+        "endDate": "20260630",
+        "freq": "季"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049724",
+        "name": "中国:价格:豆油:北京盛华宏林粮油批发市场有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260927",
+        "beginDate": "20140101",
+        "endDate": "20260925",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049725",
+        "name": "中国:价格:豆油:北京大洋路农副产品市场有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260927",
+        "beginDate": "20140101",
+        "endDate": "20260925",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049728",
+        "name": "中国:价格:豆油:天津韩家墅海吉星农产品物流有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260927",
+        "beginDate": "20140101",
+        "endDate": "20260925",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049732",
+        "name": "中国:价格:豆油:山西省运城蔬菜果品批发市场",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20140101",
+        "endDate": "20260926",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049736",
+        "name": "中国:价格:豆油:上海江杨农产品物流有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20140101",
+        "endDate": "20260926",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049738",
+        "name": "中国:价格:豆油:南京市下关粮油批发交易市场服务中心",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20140101",
+        "endDate": "20260926",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049743",
+        "name": "中国:价格:豆油:宁波市庄桥粮油批发市场有限责任公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260927",
+        "beginDate": "20140102",
+        "endDate": "20260925",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049746",
+        "name": "中国:价格:豆油:丽水市浙西南农贸城有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20140101",
+        "endDate": "20260926",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049747",
+        "name": "中国:价格:豆油:合肥周谷堆农产品批发市场股份有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20140101",
+        "endDate": "20260926",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049748",
+        "name": "中国:价格:豆油:巢湖市亚父农副产品批发交易有限责任公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20140101",
+        "endDate": "20260926",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049751",
+        "name": "中国:价格:豆油:新余市优质农产品批发市场",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20140101",
+        "endDate": "20260926",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049752",
+        "name": "中国:价格:豆油:山东盖世农贸有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260927",
+        "beginDate": "20140101",
+        "endDate": "20260925",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049753",
+        "name": "中国:价格:豆油:青岛市粮油综合批发交易市场服务有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20140101",
+        "endDate": "20260926",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049754",
+        "name": "中国:价格:豆油:青岛华中蔬菜批发市场有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20140101",
+        "endDate": "20260926",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049760",
+        "name": "中国:价格:豆油:信阳裕农农产品销售有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260927",
+        "beginDate": "20140101",
+        "endDate": "20260925",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049761",
+        "name": "中国:价格:豆油:周口市黄淮物流港农产品批发市场有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260927",
+        "beginDate": "20140101",
+        "endDate": "20260925",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049765",
+        "name": "中国:价格:豆油:柳州市柳邕农副产品批发市场有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20140101",
+        "endDate": "20260926",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049768",
+        "name": "中国:价格:豆油:贵阳谷丰粮油食品批发市场有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260927",
+        "beginDate": "20140101",
+        "endDate": "20260925",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049771",
+        "name": "中国:价格:豆油:西安粮油批发交易市场",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20140101",
+        "endDate": "20260926",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5049773",
+        "name": "中国:价格:豆油:西安朱雀农产品市场有限公司",
+        "unit": "元/公斤",
+        "source": "商务预报",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20140101",
+        "endDate": "20260926",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5062641",
+        "name": "中国:进口到港数量:大豆:汕头海关:当期值",
+        "unit": "吨",
+        "source": "商务部",
+        "updateDate": "20260918",
+        "beginDate": "20150615",
+        "endDate": "20260831",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5063139",
+        "name": "中国:港口库存量:豆油",
+        "unit": "万吨",
+        "source": "汇易网",
+        "magnitude": "万",
+        "updateDate": "20260922",
+        "beginDate": "20130318",
+        "endDate": "20260922",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5071610",
+        "name": "中国:播种面积:豆类:大豆",
+        "unit": "千公顷",
+        "source": "国家统计局",
+        "magnitude": "千",
+        "updateDate": "20260527",
+        "beginDate": "19491231",
+        "endDate": "20251231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5072789",
+        "name": "中国:农垦:产量:农作物:粮食作物:大豆",
+        "unit": "吨",
+        "source": "国家统计局",
+        "updateDate": "20250324",
+        "beginDate": "19981231",
+        "endDate": "20231231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S5914496",
+        "name": "中国:市场价:大豆(黄豆)",
+        "unit": "元/吨",
+        "source": "国家统计局",
+        "currency": "人民币",
+        "updateDate": "20260924",
+        "beginDate": "20131231",
+        "endDate": "20260920",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S6946186",
+        "name": "中国:进口到港数量:大豆:九龙海关:下月预报值",
+        "unit": "吨",
+        "source": "商务部",
+        "updateDate": "20260701",
+        "beginDate": "20150430",
+        "endDate": "20260531",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S6946187",
+        "name": "中国:进口到港数量:大豆:江门海关:下月预报值",
+        "unit": "吨",
+        "source": "商务部",
+        "updateDate": "20260918",
+        "beginDate": "20150430",
+        "endDate": "20260831",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S6946190",
+        "name": "中国:进口到港数量:大豆:山东海关:下月预报值",
+        "unit": "吨",
+        "source": "商务部",
+        "updateDate": "20260701",
+        "beginDate": "20150430",
+        "endDate": "20260531",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S6946191",
+        "name": "中国:进口到港数量:大豆:青岛海关:下月预报值",
+        "unit": "吨",
+        "source": "商务部",
+        "updateDate": "20260918",
+        "beginDate": "20150430",
+        "endDate": "20260831",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S6946192",
+        "name": "中国:进口到港数量:大豆:长沙海关:下月预报值",
+        "unit": "吨",
+        "source": "商务部",
+        "updateDate": "20260910",
+        "beginDate": "20150430",
+        "endDate": "20260815",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S6946193",
+        "name": "中国:进口到港数量:大豆:广州海关:下月预报值",
+        "unit": "吨",
+        "source": "商务部",
+        "updateDate": "20260918",
+        "beginDate": "20150430",
+        "endDate": "20260831",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S6946200",
+        "name": "中国:进口到港数量:大豆:大连海关:下月预报值",
+        "unit": "吨",
+        "source": "商务部",
+        "updateDate": "20260918",
+        "beginDate": "20150430",
+        "endDate": "20260831",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S6946201",
+        "name": "中国:进口到港数量:大豆:哈尔滨海关:下月预报值",
+        "unit": "吨",
+        "source": "商务部",
+        "updateDate": "20260918",
+        "beginDate": "20150430",
+        "endDate": "20260831",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S6946202",
+        "name": "中国:进口到港数量:大豆:上海海关:下月预报值",
+        "unit": "吨",
+        "source": "商务部",
+        "updateDate": "20260918",
+        "beginDate": "20150430",
+        "endDate": "20260831",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S6946207",
+        "name": "中国:进口到港数量:大豆:黄埔海关:下月预报值",
+        "unit": "吨",
+        "source": "商务部",
+        "updateDate": "20260918",
+        "beginDate": "20150430",
+        "endDate": "20260831",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S6946208",
+        "name": "中国:进口到港数量:大豆:下月预报值",
+        "unit": "吨",
+        "source": "商务部",
+        "updateDate": "20260918",
+        "beginDate": "20150430",
+        "endDate": "20260831",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S6949471",
+        "name": "中国:单产(市场年度值):大豆",
+        "unit": "公斤/公顷",
+        "source": "中国农业信息网",
+        "updateDate": "20260514",
+        "beginDate": "20141231",
+        "endDate": "20241231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S6949495",
+        "name": "中国:产量(市场年度值):食用植物油:豆油",
+        "unit": "万吨",
+        "source": "中国农业信息网",
+        "magnitude": "万",
+        "updateDate": "20260514",
+        "beginDate": "20141231",
+        "endDate": "20241231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S9906390",
+        "name": "中国:期货价(9月合约):豆粕",
+        "unit": "元/吨",
+        "source": "上海邦成",
+        "currency": "人民币",
+        "updateDate": "20260906",
+        "beginDate": "20090206",
+        "endDate": "20260904",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S9906405",
+        "name": "中国:库存量:大豆",
+        "unit": "万吨",
+        "source": "上海邦成",
+        "magnitude": "万",
+        "updateDate": "20260921",
+        "beginDate": "20170101",
+        "endDate": "20260911",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S9906432",
+        "name": "中国:期末库存量:豆油",
+        "unit": "万吨",
+        "source": "上海邦成",
+        "magnitude": "万",
+        "updateDate": "20230626",
+        "beginDate": "20131031",
+        "endDate": "20230531",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S9906444",
+        "name": "中国:期货价(近月合约):豆粕",
+        "unit": "元/吨",
+        "source": "上海邦成",
+        "currency": "人民币",
+        "updateDate": "20260921",
+        "beginDate": "20160104",
+        "endDate": "20260918",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S9906448",
+        "name": "中国:毛收益:近月合约:大豆压榨",
+        "unit": "元",
+        "source": "上海邦成",
+        "currency": "人民币",
+        "updateDate": "20260921",
+        "beginDate": "20160104",
+        "endDate": "20260918",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S9980695",
+        "name": "中国:参考价:大豆",
+        "unit": "元/吨",
+        "source": "百川盈孚",
+        "currency": "人民币",
+        "updateDate": "20260928",
+        "beginDate": "20170103",
+        "endDate": "20260928",
+        "freq": "日"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S9985445",
+        "name": "中国:毛利:豆粕",
+        "unit": "元/吨",
+        "source": "百川盈孚",
+        "currency": "人民币",
+        "updateDate": "20260925",
+        "beginDate": "20170106",
+        "endDate": "20260925",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S9985809",
+        "name": "中国:工厂库存量:豆油",
+        "unit": "吨",
+        "source": "百川盈孚",
+        "updateDate": "20260924",
+        "beginDate": "20170106",
+        "endDate": "20260925",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "S9985849",
+        "name": "中国:工厂库存量:大豆",
+        "unit": "吨",
+        "source": "百川盈孚",
+        "updateDate": "20260130",
+        "beginDate": "20170106",
+        "endDate": "20220902",
+        "freq": "周"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "T0732780",
+        "name": "中国:开机率:大豆",
+        "unit": "%",
+        "source": "根据新闻整理",
+        "updateDate": "20260907",
+        "beginDate": "20200531",
+        "endDate": "20260831",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "U8089361",
+        "name": "法国:农业生产资料购买价格指数:豆粕",
+        "unit": "2020年=100",
+        "source": "法国统计局",
+        "updateDate": "20260828",
+        "beginDate": "20050131",
+        "endDate": "20260731",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "V6214639",
+        "name": "中国:压榨量:大豆",
+        "unit": "万吨",
+        "source": "根据新闻整理",
+        "magnitude": "万",
+        "updateDate": "20260907",
+        "beginDate": "20200531",
+        "endDate": "20260831",
+        "freq": "月"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "W6338605",
+        "name": "中国大陆:进口数量:大豆",
+        "unit": "吨",
+        "source": "联合国粮农组织",
+        "updateDate": "20251224",
+        "beginDate": "19611231",
+        "endDate": "20241231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    },
+    {
+      "meta": {
+        "code": "X5683468",
+        "name": "中国:进口数量:油籽",
+        "unit": "吨",
+        "source": "联合国粮农组织",
+        "updateDate": "20251224",
+        "beginDate": "19611231",
+        "endDate": "20241231",
+        "freq": "年"
+      },
+      "provenance": {
+        "metadata_source_id": "alice_mcp",
+        "metadata_source_name": "Alice MCP",
+        "evidence": "runs/wind-agri-export-2018-20260928/indicator_catalog.jsonl",
+        "evidence_sha256": "8f7052d7497591fa43e946b568b8fd9adc8de41458d312f702a6de2ae70f52e5",
+        "catalog_observed_at": "2026-09-28",
+        "windpy_entitlement_verified": false
+      }
+    }
+  ]
+}

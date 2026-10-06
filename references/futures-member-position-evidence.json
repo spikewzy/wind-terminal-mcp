@@ -1,0 +1,1642 @@
+{
+  "schema_version": 1,
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "source": null,
+  "observed_date": "2026-10-03",
+  "native_probe_server_version": "0.21.0",
+  "harness": "Codex current conversation native MCP",
+  "probe_file": "verification/futures-member-parameters-20261003.json",
+  "probe_sha256": "335dbc5fbb70c4ca7c0b5f3334ef052586e49251b6ff50818baed8083054b455",
+  "parameter_metadata": {
+    "original_files": [
+      {
+        "path": "/Applications/Wind.app/Contents/Resources/@wind~Wind.Commodity.WingsPackage/jsmodule/Futures/F5Tab/F5SHF/F5SHF.js",
+        "sha256": "c64df2ff7e5d42d30f1be729e97dd44c554dd66748c0b457eff8fad203560f4b",
+        "bytes": 3134246,
+        "static_objects_read": 14
+      },
+      {
+        "path": "/Applications/Wind.app/Contents/Resources/@wind~Wind.Commodity.WingsPackage/jsmodule/Futures/F5Tab/F5CFE/F5CFE.js",
+        "sha256": "3ca939eb5b685be76ff01a85f9df3b9b6f60eb81e718c169dce1daa7978f7098",
+        "bytes": 2668953,
+        "static_objects_read": 14
+      },
+      {
+        "path": "/Applications/Wind.app/Contents/Resources/@wind~Wind.Bond.WingsPackage/jsmodule/Futures/F5Tab/F5TBF/F5TBF.js",
+        "sha256": "c4dbe9474b1ac137f39f65c54efb51dd9f2316180e48501873aee9470d70860d",
+        "bytes": 2859524,
+        "static_objects_read": 14
+      },
+      {
+        "path": "/Applications/Wind.app/Contents/Resources/@wind~Wind.Bond.WingsPackage/jsmodule/Bond/F5Tab/F5Bond.js",
+        "sha256": "6d9fcfc4d95ff63289c9218993fdc1be1b46b41256080d90754dfe238a970d6e",
+        "bytes": 4577153,
+        "static_objects_read": 14
+      },
+      {
+        "path": "/Applications/Wind API.app/Contents/Resources/etc/EquityQuery/lookuptables.xml",
+        "sha256": "9f0833c08840f9af77841146e5b80bb2610feb3e0c67bb286754a6f5a12f4ddd",
+        "size": 222456
+      }
+    ],
+    "fingerprints_checked": true,
+    "lookup_table": {
+      "code": "92035",
+      "name": "次序",
+      "datatype": "Integer",
+      "displayMode": "FuncItem",
+      "tbName": "",
+      "defaultItem": "",
+      "displayName": "",
+      "options": [
+        {
+          "kind": "item",
+          "ID": "510476",
+          "name": "第1名",
+          "value": "1",
+          "LID": "4871"
+        },
+        {
+          "kind": "item",
+          "ID": "510477",
+          "name": "第2名",
+          "value": "2",
+          "LID": "4875"
+        },
+        {
+          "kind": "item",
+          "ID": "510478",
+          "name": "第3名",
+          "value": "3",
+          "LID": "4878"
+        },
+        {
+          "kind": "item",
+          "ID": "510479",
+          "name": "第4名",
+          "value": "4",
+          "LID": "4881"
+        },
+        {
+          "kind": "item",
+          "ID": "510480",
+          "name": "第5名",
+          "value": "5",
+          "LID": "4884"
+        },
+        {
+          "kind": "item",
+          "ID": "510481",
+          "name": "第6名",
+          "value": "6",
+          "LID": "4887"
+        },
+        {
+          "kind": "item",
+          "ID": "510482",
+          "name": "第7名",
+          "value": "7",
+          "LID": "4890"
+        },
+        {
+          "kind": "item",
+          "ID": "510483",
+          "name": "第8名",
+          "value": "8",
+          "LID": "4892"
+        },
+        {
+          "kind": "item",
+          "ID": "510484",
+          "name": "第9名",
+          "value": "9",
+          "LID": "4894"
+        },
+        {
+          "kind": "item",
+          "ID": "510485",
+          "name": "第10名",
+          "value": "10",
+          "LID": "4860"
+        },
+        {
+          "kind": "item",
+          "ID": "510486",
+          "name": "第11名",
+          "value": "11",
+          "LID": "4861"
+        },
+        {
+          "kind": "item",
+          "ID": "510487",
+          "name": "第12名",
+          "value": "12",
+          "LID": "4862"
+        },
+        {
+          "kind": "item",
+          "ID": "510488",
+          "name": "第13名",
+          "value": "13",
+          "LID": "4863"
+        },
+        {
+          "kind": "item",
+          "ID": "510489",
+          "name": "第14名",
+          "value": "14",
+          "LID": "4864"
+        },
+        {
+          "kind": "item",
+          "ID": "510490",
+          "name": "第15名",
+          "value": "15",
+          "LID": "4865"
+        },
+        {
+          "kind": "item",
+          "ID": "510491",
+          "name": "第16名",
+          "value": "16",
+          "LID": "4866"
+        },
+        {
+          "kind": "item",
+          "ID": "510492",
+          "name": "第17名",
+          "value": "17",
+          "LID": "4867"
+        },
+        {
+          "kind": "item",
+          "ID": "510493",
+          "name": "第18名",
+          "value": "18",
+          "LID": "4868"
+        },
+        {
+          "kind": "item",
+          "ID": "510494",
+          "name": "第19名",
+          "value": "19",
+          "LID": "4869"
+        },
+        {
+          "kind": "item",
+          "ID": "510495",
+          "name": "第20名",
+          "value": "20",
+          "LID": "4873"
+        },
+        {
+          "kind": "item",
+          "ID": "510496",
+          "name": "前5名合计",
+          "value": "25",
+          "LID": "124284"
+        },
+        {
+          "kind": "item",
+          "ID": "510497",
+          "name": "前10名合计",
+          "value": "30",
+          "LID": "124285"
+        },
+        {
+          "kind": "item",
+          "ID": "510498",
+          "name": "前20名合计",
+          "value": "40",
+          "LID": "124286"
+        }
+      ]
+    },
+    "bindings": [
+      {
+        "native_field": "oi_lvoi",
+        "candidate_evidence": {
+          "field": "oi_lvoi",
+          "labels": [
+            "持买单量(品种)"
+          ],
+          "references": [
+            {
+              "file": "windget/wss.py",
+              "line": 12341,
+              "function": "getOiLvOi",
+              "method": "wss",
+              "literal_field": "oi_lvoi",
+              "original_comment": "获取持买单量(品种)"
+            },
+            {
+              "file": "windget/wsd.py",
+              "line": 12341,
+              "function": "getOiLvOiSeries",
+              "method": "wsd",
+              "literal_field": "oi_lvoi",
+              "original_comment": "获取持买单量(品种)时间序列"
+            }
+          ]
+        },
+        "frontend_definition": {
+          "o_key": "s_oi_lvoi",
+          "template": "ede",
+          "o_name_cn": "前20机构多头持仓",
+          "o_name_en": "Top 20 Long Position",
+          "o_unit_cn": "",
+          "o_unit_en": "",
+          "o_period_cn": "日",
+          "o_period_en": "D"
+        },
+        "frontend_options_literal": "\"\\\\'days=Trading\\\\',\\\\'Period=D\\\\',\\\\'order=40\\\\'\"",
+        "native_field_accepted_in_saved_queries": true,
+        "exact_frontend_native_value_equivalence_verified": false
+      },
+      {
+        "native_field": "oi_svoi",
+        "candidate_evidence": {
+          "field": "oi_svoi",
+          "labels": [
+            "持卖单量(品种)"
+          ],
+          "references": [
+            {
+              "file": "windget/wss.py",
+              "line": 12357,
+              "function": "getOiSvOi",
+              "method": "wss",
+              "literal_field": "oi_svoi",
+              "original_comment": "获取持卖单量(品种)"
+            },
+            {
+              "file": "windget/wsd.py",
+              "line": 12357,
+              "function": "getOiSvOiSeries",
+              "method": "wsd",
+              "literal_field": "oi_svoi",
+              "original_comment": "获取持卖单量(品种)时间序列"
+            }
+          ]
+        },
+        "frontend_definition": {
+          "o_key": "s_oi_svoi",
+          "template": "ede",
+          "o_name_cn": "前20机构空头持仓",
+          "o_name_en": "Top 20 Short Position",
+          "o_unit_cn": "",
+          "o_unit_en": "",
+          "o_period_cn": "日",
+          "o_period_en": "D"
+        },
+        "frontend_options_literal": "\"\\\\'days=Trading\\\\',\\\\'Period=D\\\\',\\\\'order=40\\\\'\"",
+        "native_field_accepted_in_saved_queries": true,
+        "exact_frontend_native_value_equivalence_verified": false
+      },
+      {
+        "native_field": "oi_nvoi",
+        "candidate_evidence": {
+          "field": "oi_nvoi",
+          "labels": [
+            "净持仓(品种)"
+          ],
+          "references": [
+            {
+              "file": "windget/wss.py",
+              "line": 12369,
+              "function": "getOiNvOi",
+              "method": "wss",
+              "literal_field": "oi_nvoi",
+              "original_comment": "获取净持仓(品种)"
+            },
+            {
+              "file": "windget/wsd.py",
+              "line": 12369,
+              "function": "getOiNvOiSeries",
+              "method": "wsd",
+              "literal_field": "oi_nvoi",
+              "original_comment": "获取净持仓(品种)时间序列"
+            }
+          ]
+        },
+        "frontend_definition": {
+          "o_key": "s_oi_nvoi",
+          "template": "ede",
+          "o_name_cn": "前20机构净持仓",
+          "o_name_en": "Top 20 Net Position",
+          "o_unit_cn": "",
+          "o_unit_en": "",
+          "o_period_cn": "日",
+          "o_period_en": "D"
+        },
+        "frontend_options_literal": "\"\\\\'days=Trading\\\\',\\\\'Period=D\\\\',\\\\'order=40\\\\'\"",
+        "native_field_accepted_in_saved_queries": true,
+        "exact_frontend_native_value_equivalence_verified": false
+      }
+    ],
+    "inferred_default_options": false
+  },
+  "cases": [
+    {
+      "name": "member_product_top20_20261003",
+      "request": {
+        "method": "wss",
+        "arguments": {
+          "codes": "CU2611.SHF,SC2611.INE,I2701.DCE,TA701.CZC,LC2701.GFE",
+          "fields": "oi_lvoi,oi_svoi,oi_nvoi",
+          "options": "tradeDate=20260929;order=40"
+        },
+        "max_age_seconds": 0
+      },
+      "receipt_id": "d951a8015a29477ab8ba44560900eca5",
+      "source_receipt_sha256": "d3908c8055547dc4cb225e5af93615d7a11c81d35761e06960731598915d3bf3",
+      "fetched_at": "2026-10-03T13:52:25.215841+00:00",
+      "source": null,
+      "upstream_ok": true,
+      "field_units_certified": false
+    },
+    {
+      "name": "member_product_rank1_20261003",
+      "request": {
+        "method": "wss",
+        "arguments": {
+          "codes": "CU2611.SHF,SC2611.INE,I2701.DCE,TA701.CZC,LC2701.GFE",
+          "fields": "oi_lvoi,oi_svoi,oi_nvoi",
+          "options": "tradeDate=20260929;order=1"
+        },
+        "max_age_seconds": 0
+      },
+      "receipt_id": "a15acdbc9da24d21b75f7881619808dd",
+      "source_receipt_sha256": "18b20e9668155da5ae24a22b6892138810dd4d48b64e79e7ddbafee2e1dc7763",
+      "fetched_at": "2026-10-03T13:53:02.033480+00:00",
+      "source": null,
+      "upstream_ok": true,
+      "field_units_certified": false
+    },
+    {
+      "name": "member_top20_nearby_short_20261003",
+      "request": {
+        "method": "wsd",
+        "arguments": {
+          "codes": "CU00.SHF,I00.DCE,TA00.CZC,LC00.GFE",
+          "fields": "oi_nvoi",
+          "beginTime": "2026-09-21",
+          "endTime": "2026-09-29",
+          "options": "order=40"
+        },
+        "max_age_seconds": 0
+      },
+      "receipt_id": "ff4820e5058a4c32ace3bd468e934741",
+      "source_receipt_sha256": "ae7d9fdeca3f1ec377d7fd1778b274ff135c23825bb2b6568f338d31ec1d1420",
+      "fetched_at": "2026-10-03T13:53:59.543597+00:00",
+      "source": null,
+      "upstream_ok": true,
+      "field_units_certified": false,
+      "column_statistics": {
+        "CU00.SHF": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "I00.DCE": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "TA00.CZC": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "LC00.GFE": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        }
+      }
+    },
+    {
+      "name": "member_top20_nearby_history_20261003",
+      "request": {
+        "method": "wsd",
+        "arguments": {
+          "codes": "CU00.SHF,I00.DCE,TA00.CZC,LC00.GFE",
+          "fields": "oi_nvoi",
+          "beginTime": "2000-01-01",
+          "endTime": "2026-09-29",
+          "options": "order=40"
+        },
+        "max_age_seconds": 0
+      },
+      "receipt_id": "cbe5d11973764e47bb87ce477ebcb7f5",
+      "source_receipt_sha256": "2d7c44cf94099c4c29a246cee77279b0335adbc7529d6dc85de1ca44f3302a87",
+      "fetched_at": "2026-10-03T13:54:23.639574+00:00",
+      "source": null,
+      "upstream_ok": true,
+      "field_units_certified": false,
+      "column_statistics": {
+        "CU00.SHF": {
+          "rows": 6481,
+          "non_null_rows": 6001,
+          "null_or_blank_rows": 480,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2002-01-07",
+          "last_non_null_date": "2026-09-29"
+        },
+        "I00.DCE": {
+          "rows": 6481,
+          "non_null_rows": 3152,
+          "null_or_blank_rows": 3329,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2013-10-18",
+          "last_non_null_date": "2026-09-29"
+        },
+        "TA00.CZC": {
+          "rows": 6481,
+          "non_null_rows": 4726,
+          "null_or_blank_rows": 1755,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2007-02-16",
+          "last_non_null_date": "2026-09-29"
+        },
+        "LC00.GFE": {
+          "rows": 6481,
+          "non_null_rows": 701,
+          "null_or_blank_rows": 5780,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2023-11-10",
+          "last_non_null_date": "2026-09-29"
+        }
+      }
+    },
+    {
+      "name": "member_product_90_top20_batch_1",
+      "request": {
+        "method": "wss",
+        "arguments": {
+          "codes": "CU2611.SHF,AL2611.SHF,ZN2611.SHF,PB2611.SHF,AU2612.SHF,RU2701.SHF,FU2611.SHF,RB2701.SHF,WR2701.SHF,AG2612.SHF,BU2611.SHF,HC2701.SHF,NI2611.SHF,SN2611.SHF,SP2611.SHF,SS2611.SHF,AO2701.SHF,BR2611.SHF,AD2611.SHF,OP2611.SHF,SC2611.INE,NR2611.INE,LU2611.INE,BC2610.INE,EC2611.INE,CF701.CZC,SR701.CZC,TA701.CZC,OI701.CZC,MA611.CZC,FG701.CZC,RS701.CZC,RM611.CZC,SF611.CZC,SM611.CZC,CY611.CZC,AP701.CZC,CJ701.CZC,UR701.CZC,SA701.CZC,PF611.CZC,PK611.CZC,PX611.CZC,SH611.CZC,PR611.CZC,PL611.CZC,WH611.CZC,RI611.CZC,PM611.CZC,ZC610.CZC",
+          "fields": "oi_lvoi,oi_svoi,oi_nvoi",
+          "options": "tradeDate=20260929;order=40"
+        },
+        "max_age_seconds": 0
+      },
+      "receipt_id": "013152280e85442d854c84c768a23327",
+      "source_receipt_sha256": "dbb03b1cbdf1239303661e72aae54c3906c35913135fa6581060c891a75184be",
+      "fetched_at": "2026-10-03T13:55:02.284081+00:00",
+      "source": null,
+      "upstream_ok": true,
+      "field_units_certified": false
+    },
+    {
+      "name": "member_product_90_top20_batch_2",
+      "request": {
+        "method": "wss",
+        "arguments": {
+          "codes": "JR611.CZC,A2611.DCE,B2611.DCE,M2701.DCE,C2611.DCE,Y2701.DCE,L2701.DCE,P2701.DCE,V2701.DCE,J2701.DCE,JM2701.DCE,I2701.DCE,JD2611.DCE,BB2611.DCE,FB2611.DCE,PP2701.DCE,CS2611.DCE,EG2611.DCE,RR2611.DCE,EB2611.DCE,PG2611.DCE,LH2611.DCE,LG2611.DCE,BZ2611.DCE,PP2611F.DCE,L2611F.DCE,V2611F.DCE,IF2612.CFE,TF2612.CFE,T2612.CFE,IH2612.CFE,IC2612.CFE,TS2612.CFE,IM2612.CFE,TL2612.CFE,SI2611.GFE,LC2701.GFE,PS2611.GFE,PT2612.GFE,PD2612.GFE",
+          "fields": "oi_lvoi,oi_svoi,oi_nvoi",
+          "options": "tradeDate=20260929;order=40"
+        },
+        "max_age_seconds": 0
+      },
+      "receipt_id": "af3394bd560949a3a29278969c30c780",
+      "source_receipt_sha256": "553fb94a559f49d12a95a59bfbd30c35d2b82d6bfed56656ba97a4361091e1df",
+      "fetched_at": "2026-10-03T13:55:13.552465+00:00",
+      "source": null,
+      "upstream_ok": true,
+      "field_units_certified": false
+    }
+  ],
+  "product_snapshot": {
+    "date": "2026-09-29",
+    "order": 40,
+    "fields": [
+      "oi_lvoi",
+      "oi_svoi",
+      "oi_nvoi"
+    ],
+    "products": 90,
+    "complete": 73,
+    "partial": 1,
+    "all_null": 16,
+    "product_rows": [
+      {
+        "code": "CU2611.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "AL2611.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "ZN2611.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "PB2611.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "AU2612.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "RU2701.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "FU2611.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "RB2701.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "WR2701.SHF",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "AG2612.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "BU2611.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "HC2701.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "NI2611.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "SN2611.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "SP2611.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "SS2611.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "AO2701.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "BR2611.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "AD2611.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "OP2611.SHF",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "SC2611.INE",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "NR2611.INE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "LU2611.INE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "BC2610.INE",
+        "status": "partial",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi"
+        ],
+        "missing_fields": [
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "EC2611.INE",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "CF701.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "SR701.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "TA701.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "OI701.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "MA611.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "FG701.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "RS701.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "RM611.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "SF611.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "SM611.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "CY611.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "AP701.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "CJ701.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "UR701.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "SA701.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "PF611.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "PK611.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "PX611.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "SH611.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "PR611.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "PL611.CZC",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "WH611.CZC",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "RI611.CZC",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "PM611.CZC",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "ZC610.CZC",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "JR611.CZC",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "A2611.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "B2611.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "M2701.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "C2611.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "Y2701.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "L2701.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "P2701.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "V2701.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "J2701.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "JM2701.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "I2701.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "JD2611.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "BB2611.DCE",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "FB2611.DCE",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "PP2701.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "CS2611.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "EG2611.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "RR2611.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "EB2611.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "PG2611.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "LH2611.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "LG2611.DCE",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "BZ2611.DCE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "PP2611F.DCE",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "L2611F.DCE",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "V2611F.DCE",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "IF2612.CFE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "TF2612.CFE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "T2612.CFE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "IH2612.CFE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "IC2612.CFE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "TS2612.CFE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "IM2612.CFE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "TL2612.CFE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "SI2611.GFE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "LC2701.GFE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "PS2611.GFE",
+        "status": "complete",
+        "populated_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ],
+        "missing_fields": [],
+        "native_net_equals_long_minus_short": true
+      },
+      {
+        "code": "PT2612.GFE",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      },
+      {
+        "code": "PD2612.GFE",
+        "status": "all_null",
+        "populated_fields": [],
+        "missing_fields": [
+          "oi_lvoi",
+          "oi_svoi",
+          "oi_nvoi"
+        ]
+      }
+    ],
+    "scope_receipts": [
+      {
+        "receipt_id": "a55a3773d05a4a32aaef5e0708866249",
+        "sha256": "7240cecb7c92ff479df9f335bc9b60dfffafcba3c77ad4685c5a8636296c2afb"
+      },
+      {
+        "receipt_id": "e33b7065101f4ec69590257bc9f79e06",
+        "sha256": "a409f11fffac72de824550a92baef6dcc8524b238081491c997636223dc54f69"
+      }
+    ]
+  },
+  "nearby_history": {
+    "field": "oi_nvoi",
+    "order": 40,
+    "non_null_observations": 14580,
+    "column_statistics": {
+      "CU00.SHF": {
+        "rows": 6481,
+        "non_null_rows": 6001,
+        "null_or_blank_rows": 480,
+        "zero_rows": 0,
+        "all_present_values_zero": false,
+        "first_non_null_date": "2002-01-07",
+        "last_non_null_date": "2026-09-29"
+      },
+      "I00.DCE": {
+        "rows": 6481,
+        "non_null_rows": 3152,
+        "null_or_blank_rows": 3329,
+        "zero_rows": 0,
+        "all_present_values_zero": false,
+        "first_non_null_date": "2013-10-18",
+        "last_non_null_date": "2026-09-29"
+      },
+      "TA00.CZC": {
+        "rows": 6481,
+        "non_null_rows": 4726,
+        "null_or_blank_rows": 1755,
+        "zero_rows": 0,
+        "all_present_values_zero": false,
+        "first_non_null_date": "2007-02-16",
+        "last_non_null_date": "2026-09-29"
+      },
+      "LC00.GFE": {
+        "rows": 6481,
+        "non_null_rows": 701,
+        "null_or_blank_rows": 5780,
+        "zero_rows": 0,
+        "all_present_values_zero": false,
+        "first_non_null_date": "2023-11-10",
+        "last_non_null_date": "2026-09-29"
+      }
+    },
+    "names": {
+      "CU00.SHF": "沪铜近月",
+      "I00.DCE": "铁矿石近月",
+      "TA00.CZC": "PTA近月",
+      "LC00.GFE": "碳酸锂近月"
+    },
+    "directory_receipt_id": "22203f0267f7454b883f1cad628c7d79",
+    "directory_receipt_sha256": "d934814751ab46afb28f067bbbd8fc5c73b23aaf918fbccf9cc8337b3df24a57",
+    "short_window_crosschecked_cells": 24,
+    "snapshot_crosschecked_cells": 4
+  },
+  "rank_one_counterexamples": [
+    {
+      "code": "CU2611.SHF",
+      "native_net_equals_separately_ranked_long_minus_short": false
+    },
+    {
+      "code": "I2701.DCE",
+      "native_net_equals_separately_ranked_long_minus_short": false
+    },
+    {
+      "code": "TA701.CZC",
+      "native_net_equals_separately_ranked_long_minus_short": false
+    },
+    {
+      "code": "LC2701.GFE",
+      "native_net_equals_separately_ranked_long_minus_short": false
+    }
+  ],
+  "limitations": [
+    "Parameter 40 is labelled top-20 aggregate in the local lookup; frontend literals use order=40 for these three concepts. Native requests separately accepted the explicit fields/options.",
+    "No general prefix-stripping rule or full frontend-to-WindPy equivalence has been established.",
+    "Native source is unreported; metadata provenance does not replace upstream publisher. Native units, membership/ranking methodology, publication timestamps and vintages remain uncertified.",
+    "Ninety products use the existing August CFA and September 29 Wind sample; not a new October exchange census or all historical contracts.",
+    "Preserve all nulls and leading nulls; never fill missing native net values by subtraction. Rank-1 net is not separately ranked long minus short.",
+    "Four nearby-series histories are samples, not full all-product coverage, earliest-history certification, main contracts, or adjusted-price series."
+  ],
+  "status": "passed",
+  "checks": [
+    {
+      "name": "five_original_metadata_fingerprints_and_order_labels",
+      "passed": true
+    },
+    {
+      "name": "six_native_receipts_request_identity_data_and_axes",
+      "passed": true
+    },
+    {
+      "name": "nearby_directory_and_short_long_history_overlap",
+      "passed": true,
+      "compared_cells": 24
+    },
+    {
+      "name": "four_history_end_values_match_dated_wss",
+      "passed": true
+    },
+    {
+      "name": "rank_one_net_not_separate_long_short_difference",
+      "passed": true,
+      "counterexamples": 4
+    },
+    {
+      "name": "ninety_product_scope_missing_values_and_73_net_crosschecks",
+      "passed": true
+    }
+  ],
+  "new_Wind_calls_by_verifier": 0,
+  "raw_historical_values_bundled": false,
+  "field_units_certified": false,
+  "all_product_history_verified": false,
+  "point_in_time_safe": false
+}

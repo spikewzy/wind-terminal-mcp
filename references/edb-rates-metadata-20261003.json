@@ -1,0 +1,43 @@
+{
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "metadata_source_id": "wind_terminal_ui",
+  "observed_date": "2026-10-03",
+  "ui_url": "http://114.80.154.45/edb.web/index.html?lan=cn#/",
+  "observation_method": "Read original indicator overview with native CUA accessibility tree; no frequency or unit transformation selected",
+  "automatic_seed_import": false,
+  "full_catalog": false,
+  "entitlement_implied": false,
+  "indicators": [
+    {
+      "code": "M0325687",
+      "name": "中国:国债收益率:10年",
+      "unit": "%",
+      "freq": "日",
+      "source": "中国货币网",
+      "country": "中国",
+      "ui_history_start": "2015-01-04",
+      "ui_history_end": "2026-09-30",
+      "ui_updated_at": "2026-09-30",
+      "metadata_scope": "reviewed_original_terminal_indicator",
+      "point_in_time_safe": false,
+      "ui_latest_observation": {
+        "date": "2026-09-30",
+        "value": 1.675,
+        "unit": "%"
+      }
+    }
+  ],
+  "restricted_indicator_observation": {
+    "requested_code": "S0059749",
+    "display_name": "中债国债到期收益率:10年",
+    "display_source": "中债估值中心",
+    "display_frequency": "日",
+    "overview_result": "UI states this third-party data product requires separate purchase to view complete history",
+    "complete_history_subscription_required": true,
+    "api_zero_values_not_certified": true,
+    "zero_value_cause_exclusively_proved": false,
+    "no_permission_bypass_attempted": true
+  },
+  "note": "ChinaMoney and ChinaBond are distinct upstream publications. The newly reviewed code does not replace or rename the restricted ChinaBond series; no unit or method equivalence is certified."
+}

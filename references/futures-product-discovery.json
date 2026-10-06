@@ -1,0 +1,1376 @@
+{
+  "schema_version": 1,
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "source": null,
+  "metadata_source_ids": [
+    "cfa_public_statistics",
+    "wind_terminal_api"
+  ],
+  "scope": "Name discovery for products linked to existing saved queries, not a new data download or executable code resolver",
+  "official_source_period": "2026-08",
+  "official_source_url": "https://www.cfachina.org/servicesupport/researchandpublishin/statisticalsdata/monthlytransactiondata/202609/P020260910575512348173.xlsx",
+  "official_source_sha256": "da4232cc1d0cf4efabc5de2bd33065d4e2f811bf39050dc2c0301800ebf9dc1f",
+  "wind_directory_date": "2026-09-29",
+  "reconciliation_record": "verification/futures-product-reconciliation.json",
+  "reconciliation_sha256": "0633bc6b8fe5db8faf247f71c7ab1bfb75872e05f882ec87ff30879a365ee1ba",
+  "continuous_selection_record": "verification/futures-member-history-plan-20261003.json",
+  "continuous_selection_sha256": "1137674ee7e0972b6294ed1878a5fcfe66fe4bc58c67b6bbf83cf1c4310a9ee7",
+  "directory_receipts": [
+    {
+      "receipt_id": "12400dfcfb834d0084dcb40b85fc09f1",
+      "sha256": "d8aa5541544c8892d5698ca90b806bbce95dfc6abef287d3532f2d408a8c851c",
+      "arguments": {
+        "options": "date=2026-09-29;sectorid=1000015512000000",
+        "tablename": "sectorconstituent"
+      },
+      "fetched_at": "2026-09-30T07:15:16.700603+00:00"
+    },
+    {
+      "receipt_id": "fbbed50e028c486fbf5b9c17f47c99c8",
+      "sha256": "56f7fc9db687c71283bd948dc540db69dcbd35cd12aa958ae6446225da37f86a",
+      "arguments": {
+        "options": "date=2026-09-29;sectorid=a599010101000000",
+        "tablename": "sectorconstituent"
+      },
+      "fetched_at": "2026-09-30T07:15:28.248844+00:00"
+    },
+    {
+      "receipt_id": "22203f0267f7454b883f1cad628c7d79",
+      "sha256": "d934814751ab46afb28f067bbbd8fc5c73b23aaf918fbccf9cc8337b3df24a57",
+      "arguments": {
+        "options": "date=2026-09-29;sectorid=a599020600000000;field=wind_code,sec_name",
+        "tablename": "sectorconstituent"
+      },
+      "fetched_at": "2026-09-30T08:12:30.200242+00:00"
+    }
+  ],
+  "development_source_records_bundled": false,
+  "product_count": 90,
+  "linked_recipe_count": 40,
+  "by_exchange": {
+    "上海期货交易所": 20,
+    "上海国际能源交易中心": 5,
+    "郑州商品交易所": 26,
+    "大连商品交易所": 26,
+    "中国金融期货交易所": 8,
+    "广州期货交易所": 5
+  },
+  "products": [
+    {
+      "product_id": "CU:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "铜",
+      "wind_display_name": "沪铜",
+      "prefix": "CU",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A4:C4",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "AL:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "铝",
+      "wind_display_name": "沪铝",
+      "prefix": "AL",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A5:C5",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "ZN:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "锌",
+      "wind_display_name": "沪锌",
+      "prefix": "ZN",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A6:C6",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "PB:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "铅",
+      "wind_display_name": "沪铅",
+      "prefix": "PB",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A7:C7",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "AU:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "黄金",
+      "wind_display_name": "沪金",
+      "prefix": "AU",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A8:C8",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 8
+    },
+    {
+      "product_id": "RU:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "天然橡胶",
+      "wind_display_name": "橡胶",
+      "prefix": "RU",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A9:C9",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 10
+    },
+    {
+      "product_id": "FU:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "燃料油",
+      "wind_display_name": "燃油",
+      "prefix": "FU",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A10:C10",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "RB:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "螺纹钢",
+      "wind_display_name": "螺纹钢",
+      "prefix": "RB",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A11:C11",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "WR:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "线材",
+      "wind_display_name": "线材",
+      "prefix": "WR",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A12:C12",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "AG:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "白银",
+      "wind_display_name": "沪银",
+      "prefix": "AG",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A13:C13",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "BU:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "石油沥青",
+      "wind_display_name": "沥青",
+      "prefix": "BU",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A14:C14",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 16
+    },
+    {
+      "product_id": "HC:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "热轧卷板",
+      "wind_display_name": "热轧卷板",
+      "prefix": "HC",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A15:C15",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "NI:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "镍",
+      "wind_display_name": "沪镍",
+      "prefix": "NI",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A16:C16",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "SN:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "锡",
+      "wind_display_name": "沪锡",
+      "prefix": "SN",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A17:C17",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "SP:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "纸浆",
+      "wind_display_name": "纸浆",
+      "prefix": "SP",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A18:C18",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "SS:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "不锈钢",
+      "wind_display_name": "不锈钢",
+      "prefix": "SS",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A19:C19",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "AO:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "氧化铝",
+      "wind_display_name": "氧化铝",
+      "prefix": "AO",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A20:C20",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "BR:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "丁二烯橡胶",
+      "wind_display_name": "丁二烯橡胶",
+      "prefix": "BR",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A21:C21",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "AD:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "铸造铝合金",
+      "wind_display_name": "铸造铝合金",
+      "prefix": "AD",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A22:C22",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "OP:standard:SHF",
+      "exchange": "上海期货交易所",
+      "official_name": "胶版印刷纸",
+      "wind_display_name": "双胶纸",
+      "prefix": "OP",
+      "qualifier": "",
+      "suffix": "SHF",
+      "official_source_cells": "A23:C23",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "SC:standard:INE",
+      "exchange": "上海国际能源交易中心",
+      "official_name": "原油",
+      "wind_display_name": "原油",
+      "prefix": "SC",
+      "qualifier": "",
+      "suffix": "INE",
+      "official_source_cells": "A42:C42",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 20
+    },
+    {
+      "product_id": "NR:standard:INE",
+      "exchange": "上海国际能源交易中心",
+      "official_name": "20号胶",
+      "wind_display_name": "20号胶",
+      "prefix": "NR",
+      "qualifier": "",
+      "suffix": "INE",
+      "official_source_cells": "A43:C43",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "LU:standard:INE",
+      "exchange": "上海国际能源交易中心",
+      "official_name": "低硫燃料油",
+      "wind_display_name": "低硫燃料油",
+      "prefix": "LU",
+      "qualifier": "",
+      "suffix": "INE",
+      "official_source_cells": "A44:C44",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "BC:standard:INE",
+      "exchange": "上海国际能源交易中心",
+      "official_name": "铜(BC)",
+      "wind_display_name": "国际铜",
+      "prefix": "BC",
+      "qualifier": "",
+      "suffix": "INE",
+      "official_source_cells": "A45:C45",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "EC:standard:INE",
+      "exchange": "上海国际能源交易中心",
+      "official_name": "SCFIS欧线",
+      "wind_display_name": "集运指数(欧线)",
+      "prefix": "EC",
+      "qualifier": "",
+      "suffix": "INE",
+      "official_source_cells": "A46:C46",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 7
+    },
+    {
+      "product_id": "CF:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "一号棉CF",
+      "wind_display_name": "郑棉",
+      "prefix": "CF",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A51:C51",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "SR:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "白糖SR",
+      "wind_display_name": "白糖",
+      "prefix": "SR",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A52:C52",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "TA:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "PTA",
+      "wind_display_name": "PTA",
+      "prefix": "TA",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A53:C53",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "OI:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "菜籽油",
+      "wind_display_name": "菜油",
+      "prefix": "OI",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A54:C54",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "MA:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "甲醇MA",
+      "wind_display_name": "甲醇",
+      "prefix": "MA",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A55:C55",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "FG:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "玻璃FG",
+      "wind_display_name": "玻璃",
+      "prefix": "FG",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A56:C56",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "RS:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "油菜籽RS",
+      "wind_display_name": "菜籽",
+      "prefix": "RS",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A57:C57",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "RM:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "菜籽粕RM",
+      "wind_display_name": "菜粕",
+      "prefix": "RM",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A58:C58",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 7
+    },
+    {
+      "product_id": "SF:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "硅铁SF",
+      "wind_display_name": "硅铁",
+      "prefix": "SF",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A59:C59",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "SM:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "锰硅SM",
+      "wind_display_name": "锰硅",
+      "prefix": "SM",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A60:C60",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "CY:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "棉纱",
+      "wind_display_name": "棉纱",
+      "prefix": "CY",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A61:C61",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "AP:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "苹果AP",
+      "wind_display_name": "苹果",
+      "prefix": "AP",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A62:C62",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 7
+    },
+    {
+      "product_id": "CJ:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "红枣CJ",
+      "wind_display_name": "红枣",
+      "prefix": "CJ",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A63:C63",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "UR:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "尿素",
+      "wind_display_name": "尿素",
+      "prefix": "UR",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A64:C64",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "SA:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "纯碱",
+      "wind_display_name": "纯碱",
+      "prefix": "SA",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A65:C65",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "PF:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "短纤PF",
+      "wind_display_name": "短纤",
+      "prefix": "PF",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A66:C66",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "PK:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "花生PK",
+      "wind_display_name": "花生",
+      "prefix": "PK",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A67:C67",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 7
+    },
+    {
+      "product_id": "PX:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "对二甲苯PX",
+      "wind_display_name": "对二甲苯",
+      "prefix": "PX",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A68:C68",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "SH:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "烧碱SH",
+      "wind_display_name": "烧碱",
+      "prefix": "SH",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A69:C69",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "PR:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "瓶片PR",
+      "wind_display_name": "瓶片",
+      "prefix": "PR",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A70:C70",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "PL:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "丙烯",
+      "wind_display_name": "丙烯",
+      "prefix": "PL",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A71:C71",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "WH:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "优质强筋小麦",
+      "wind_display_name": "强麦",
+      "prefix": "WH",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A72:C72",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "RI:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "早籼稻",
+      "wind_display_name": "早籼稻",
+      "prefix": "RI",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A73:C73",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "PM:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "普麦PM",
+      "wind_display_name": "普麦",
+      "prefix": "PM",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A74:C74",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "ZC:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "动力煤ZC",
+      "wind_display_name": "动力煤",
+      "prefix": "ZC",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A75:C75",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "JR:standard:CZC",
+      "exchange": "郑州商品交易所",
+      "official_name": "粳稻JR",
+      "wind_display_name": "粳稻",
+      "prefix": "JR",
+      "qualifier": "",
+      "suffix": "CZC",
+      "official_source_cells": "A76:C76",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "A:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "豆一",
+      "wind_display_name": "豆一",
+      "prefix": "A",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A98:C98",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "B:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "豆二",
+      "wind_display_name": "豆二",
+      "prefix": "B",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A99:C99",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "M:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "豆粕",
+      "wind_display_name": "豆粕",
+      "prefix": "M",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A100:C100",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 8
+    },
+    {
+      "product_id": "C:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "玉米",
+      "wind_display_name": "玉米",
+      "prefix": "C",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A101:C101",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "Y:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "豆油",
+      "wind_display_name": "豆油",
+      "prefix": "Y",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A102:C102",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 8
+    },
+    {
+      "product_id": "L:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "聚乙烯",
+      "wind_display_name": "塑料",
+      "prefix": "L",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A103:C103",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "P:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "棕榈油",
+      "wind_display_name": "棕榈油",
+      "prefix": "P",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A104:C104",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "V:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "聚氯乙烯",
+      "wind_display_name": "PVC",
+      "prefix": "V",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A105:C105",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "J:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "焦炭",
+      "wind_display_name": "焦炭",
+      "prefix": "J",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A106:C106",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "JM:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "焦煤",
+      "wind_display_name": "焦煤",
+      "prefix": "JM",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A107:C107",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "I:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "铁矿石",
+      "wind_display_name": "铁矿石",
+      "prefix": "I",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A108:C108",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "JD:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "鸡蛋",
+      "wind_display_name": "鸡蛋",
+      "prefix": "JD",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A109:C109",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "BB:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "胶合板",
+      "wind_display_name": "胶合板",
+      "prefix": "BB",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A110:C110",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "FB:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "纤维板",
+      "wind_display_name": "纤维板",
+      "prefix": "FB",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A111:C111",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "PP:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "聚丙烯",
+      "wind_display_name": "聚丙烯",
+      "prefix": "PP",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A112:C112",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "CS:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "玉米淀粉",
+      "wind_display_name": "玉米淀粉",
+      "prefix": "CS",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A113:C113",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "EG:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "乙二醇",
+      "wind_display_name": "乙二醇",
+      "prefix": "EG",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A114:C114",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "RR:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "粳米",
+      "wind_display_name": "粳米",
+      "prefix": "RR",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A115:C115",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "EB:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "苯乙烯",
+      "wind_display_name": "苯乙烯",
+      "prefix": "EB",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A116:C116",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "PG:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "液化石油气",
+      "wind_display_name": "LPG",
+      "prefix": "PG",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A117:C117",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "LH:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "生猪",
+      "wind_display_name": "生猪",
+      "prefix": "LH",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A118:C118",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "LG:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "原木",
+      "wind_display_name": "原木",
+      "prefix": "LG",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A119:C119",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "BZ:standard:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "纯苯",
+      "wind_display_name": "纯苯",
+      "prefix": "BZ",
+      "qualifier": "",
+      "suffix": "DCE",
+      "official_source_cells": "A120:C120",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "PP:F:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "聚丙烯月均价",
+      "wind_display_name": "聚丙烯月均价",
+      "prefix": "PP",
+      "qualifier": "F",
+      "suffix": "DCE",
+      "official_source_cells": "A121:C121",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "L:F:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "聚乙烯月均价",
+      "wind_display_name": "塑料月均价",
+      "prefix": "L",
+      "qualifier": "F",
+      "suffix": "DCE",
+      "official_source_cells": "A122:C122",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "V:F:DCE",
+      "exchange": "大连商品交易所",
+      "official_name": "聚氯乙烯月均价",
+      "wind_display_name": "PVC月均价",
+      "prefix": "V",
+      "qualifier": "F",
+      "suffix": "DCE",
+      "official_source_cells": "A123:C123",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "IF:standard:CFE",
+      "exchange": "中国金融期货交易所",
+      "official_name": "沪深300股指期货",
+      "wind_display_name": "IF",
+      "prefix": "IF",
+      "qualifier": "",
+      "suffix": "CFE",
+      "official_source_cells": "A144:C144",
+      "directory_receipt_ids": [
+        "fbbed50e028c486fbf5b9c17f47c99c8"
+      ],
+      "directory_contract_count": 4
+    },
+    {
+      "product_id": "TF:standard:CFE",
+      "exchange": "中国金融期货交易所",
+      "official_name": "5年期国债期货",
+      "wind_display_name": "TF",
+      "prefix": "TF",
+      "qualifier": "",
+      "suffix": "CFE",
+      "official_source_cells": "A145:C145",
+      "directory_receipt_ids": [
+        "fbbed50e028c486fbf5b9c17f47c99c8"
+      ],
+      "directory_contract_count": 3
+    },
+    {
+      "product_id": "T:standard:CFE",
+      "exchange": "中国金融期货交易所",
+      "official_name": "10年期国债期货",
+      "wind_display_name": "T",
+      "prefix": "T",
+      "qualifier": "",
+      "suffix": "CFE",
+      "official_source_cells": "A146:C146",
+      "directory_receipt_ids": [
+        "fbbed50e028c486fbf5b9c17f47c99c8"
+      ],
+      "directory_contract_count": 3
+    },
+    {
+      "product_id": "IH:standard:CFE",
+      "exchange": "中国金融期货交易所",
+      "official_name": "上证50股指期货",
+      "wind_display_name": "IH",
+      "prefix": "IH",
+      "qualifier": "",
+      "suffix": "CFE",
+      "official_source_cells": "A147:C147",
+      "directory_receipt_ids": [
+        "fbbed50e028c486fbf5b9c17f47c99c8"
+      ],
+      "directory_contract_count": 4
+    },
+    {
+      "product_id": "IC:standard:CFE",
+      "exchange": "中国金融期货交易所",
+      "official_name": "中证500股指期货",
+      "wind_display_name": "IC",
+      "prefix": "IC",
+      "qualifier": "",
+      "suffix": "CFE",
+      "official_source_cells": "A148:C148",
+      "directory_receipt_ids": [
+        "fbbed50e028c486fbf5b9c17f47c99c8"
+      ],
+      "directory_contract_count": 4
+    },
+    {
+      "product_id": "TS:standard:CFE",
+      "exchange": "中国金融期货交易所",
+      "official_name": "2年期国债期货",
+      "wind_display_name": "TS",
+      "prefix": "TS",
+      "qualifier": "",
+      "suffix": "CFE",
+      "official_source_cells": "A149:C149",
+      "directory_receipt_ids": [
+        "fbbed50e028c486fbf5b9c17f47c99c8"
+      ],
+      "directory_contract_count": 3
+    },
+    {
+      "product_id": "IM:standard:CFE",
+      "exchange": "中国金融期货交易所",
+      "official_name": "中证1000股指期货",
+      "wind_display_name": "IM",
+      "prefix": "IM",
+      "qualifier": "",
+      "suffix": "CFE",
+      "official_source_cells": "A150:C150",
+      "directory_receipt_ids": [
+        "fbbed50e028c486fbf5b9c17f47c99c8"
+      ],
+      "directory_contract_count": 4
+    },
+    {
+      "product_id": "TL:standard:CFE",
+      "exchange": "中国金融期货交易所",
+      "official_name": "30年期国债期货",
+      "wind_display_name": "TL",
+      "prefix": "TL",
+      "qualifier": "",
+      "suffix": "CFE",
+      "official_source_cells": "A151:C151",
+      "directory_receipt_ids": [
+        "fbbed50e028c486fbf5b9c17f47c99c8"
+      ],
+      "directory_contract_count": 3
+    },
+    {
+      "product_id": "SI:standard:GFE",
+      "exchange": "广州期货交易所",
+      "official_name": "工业硅期货",
+      "wind_display_name": "工业硅",
+      "prefix": "SI",
+      "qualifier": "",
+      "suffix": "GFE",
+      "official_source_cells": "A156:C156",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "LC:standard:GFE",
+      "exchange": "广州期货交易所",
+      "official_name": "碳酸锂期货",
+      "wind_display_name": "碳酸锂",
+      "prefix": "LC",
+      "qualifier": "",
+      "suffix": "GFE",
+      "official_source_cells": "A157:C157",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "PS:standard:GFE",
+      "exchange": "广州期货交易所",
+      "official_name": "多晶硅期货",
+      "wind_display_name": "多晶硅",
+      "prefix": "PS",
+      "qualifier": "",
+      "suffix": "GFE",
+      "official_source_cells": "A158:C158",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 12
+    },
+    {
+      "product_id": "PT:standard:GFE",
+      "exchange": "广州期货交易所",
+      "official_name": "铂期货",
+      "wind_display_name": "铂",
+      "prefix": "PT",
+      "qualifier": "",
+      "suffix": "GFE",
+      "official_source_cells": "A159:C159",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    },
+    {
+      "product_id": "PD:standard:GFE",
+      "exchange": "广州期货交易所",
+      "official_name": "钯期货",
+      "wind_display_name": "钯",
+      "prefix": "PD",
+      "qualifier": "",
+      "suffix": "GFE",
+      "official_source_cells": "A160:C160",
+      "directory_receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1"
+      ],
+      "directory_contract_count": 6
+    }
+  ],
+  "linked_recipes": [
+    "futures_history",
+    "futures_deliverable_conversion_factors",
+    "futures_treasury_nearby_historical_mapping",
+    "futures_warehouse_alias_candidate",
+    "futures_warehouse_five_venues",
+    "futures_member_rank_one_candidate",
+    "futures_member_rank_two_contrast",
+    "futures_member_history_six_fields",
+    "futures_ctd_history_candidate",
+    "futures_member_six_venues",
+    "futures_effective_forecast_candidate",
+    "futures_warehouse_copper_long_history",
+    "futures_all_products_daily_0",
+    "futures_all_products_daily_50",
+    "futures_all_products_member_rank_1_0",
+    "futures_all_products_member_rank_1_50",
+    "futures_all_products_warehouse_0",
+    "futures_all_products_warehouse_50",
+    "futures_all_products_contract_spec_0",
+    "futures_all_products_contract_spec_50",
+    "futures_ctd_official_manual_wset",
+    "futures_contract_metadata_community_fields",
+    "futures_member_product_level_contrast",
+    "equity_futures_underlying_candidates",
+    "equity_futures_basis_snapshot",
+    "ctd_ts",
+    "ctd_tf",
+    "ctd_tl",
+    "member_product_top20_20261003",
+    "member_product_rank1_20261003",
+    "member_top20_nearby_short_20261003",
+    "member_top20_nearby_history_20261003",
+    "member_product_90_top20_batch_1",
+    "member_product_90_top20_batch_2",
+    "financial_futures_top20_net_history_20261003",
+    "futures_top20_net_two_day_batch_1_20261004",
+    "futures_top20_net_two_day_batch_2_20261004",
+    "futures_virtual_contract_historical_mapping",
+    "futures_all_products_warehouse_bounded_history_0",
+    "futures_all_products_warehouse_bounded_history_1"
+  ],
+  "current_product_census_verified": false,
+  "all_historical_contracts_verified": false,
+  "automatic_query_execution": false,
+  "automatic_product_selection": false,
+  "new_native_data_requests": 0,
+  "limitations": [
+    "August CFA statistics and September Wind directories have different observation dates.",
+    "Only exact codes observed in saved monthly or selected nearby directories are linked; no unseen contract is generated.",
+    "Regular and monthly-average products retain separate identifiers. TAS entries are excluded from this product map.",
+    "A matching recipe may contain several products. Read product_discovery and preserve original arguments and dates.",
+    "Historical per-code counts do not replace this installation's runtime receipt validation or current data entitlement.",
+    "No full EDB catalog, fundamental history coverage, units or publication-time certification is added."
+  ]
+}

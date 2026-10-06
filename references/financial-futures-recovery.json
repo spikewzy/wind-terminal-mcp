@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "observed_date": "2026-10-03",
+  "native_probe_server_version": "0.21.0",
+  "verification_mode": "saved_actual_native_Codex_tool_responses_no_new_Wind_calls",
+  "records": [
+    "verification/codex-native-session-20261003.json",
+    "verification/chinamoney-10y-history-20261003.json"
+  ],
+  "cases": [
+    {
+      "name": "index_history_000852_recovered",
+      "request": {
+        "method": "wsd",
+        "arguments": {
+          "beginTime": "2000-01-01",
+          "codes": "000852.SH",
+          "endTime": "2026-09-29",
+          "fields": "close,pe_ttm,pb_lf,dividendyield2",
+          "options": "PriceAdj=U"
+        },
+        "max_age_seconds": 0
+      },
+      "receipt_id": "3cb60468958d444392a459748693c5b0",
+      "fetched_at": "2026-10-03T13:20:19.940320+00:00",
+      "source_receipt_sha256": "dd27ac6cde477e77b353a4bf6cba37d1a584b849b63a95bad32531ff033cf8a8",
+      "upstream_ok": true,
+      "query_evidence": "Native Codex tools in the current model conversation; server 0.21.0",
+      "column_statistics": {
+        "CLOSE": {
+          "rows": 6481,
+          "non_null_rows": 5282,
+          "null_or_blank_rows": 1199,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2004-12-31",
+          "last_non_null_date": "2026-09-29"
+        },
+        "PE_TTM": {
+          "rows": 6481,
+          "non_null_rows": 2908,
+          "null_or_blank_rows": 3573,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2014-10-17",
+          "last_non_null_date": "2026-09-29"
+        },
+        "PB_LF": {
+          "rows": 6481,
+          "non_null_rows": 2908,
+          "null_or_blank_rows": 3573,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2014-10-17",
+          "last_non_null_date": "2026-09-29"
+        },
+        "DIVIDENDYIELD2": {
+          "rows": 6481,
+          "non_null_rows": 2908,
+          "null_or_blank_rows": 3573,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2014-10-17",
+          "last_non_null_date": "2026-09-29"
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "chinamoney_10y_history",
+      "request": {
+        "method": "edb",
+        "arguments": {
+          "beginTime": "2015-01-04",
+          "codes": "M0325687",
+          "endTime": "2026-09-30",
+          "options": ""
+        },
+        "max_age_seconds": 0
+      },
+      "receipt_id": "b7dad45f4d1c4444a6d942acc8149c9b",
+      "fetched_at": "2026-10-03T13:35:26.008118+00:00",
+      "source_receipt_sha256": "ffb4c23ea5c00a5b3b5df89a9e6b7813c010240eb2cd8d2fffc19482eaf3ccae",
+      "upstream_ok": true,
+      "query_evidence": "Native Codex tools in the current model conversation; server 0.21.0",
+      "column_statistics": {
+        "M0325687": {
+          "rows": 2930,
+          "non_null_rows": 2930,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2015-01-04",
+          "last_non_null_date": "2026-09-30"
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    }
+  ],
+  "index_history_snapshot_crosscheck": [
+    {
+      "code": "000852.SH",
+      "field": "CLOSE",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000852.SH",
+      "field": "PE_TTM",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000852.SH",
+      "field": "PB_LF",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000852.SH",
+      "field": "DIVIDENDYIELD2",
+      "date": "2026-09-29",
+      "difference": 0.0
+    }
+  ],
+  "prior_failed_receipts_preserved": [
+    "97e8fe5212844235ad7a9f398e5aeb3b",
+    "26c646341c08461fa89515fe2d9736c5"
+  ],
+  "chinamoney_10y": {
+    "data_source_id": "wind_terminal_api",
+    "data_source_name": "Wind 终端 API",
+    "observed_date": "2026-10-03",
+    "request": {
+      "question": "M0325687",
+      "beginDate": "2015-01-04",
+      "endDate": "2026-09-30",
+      "max_age_seconds": 0
+    },
+    "receipt_id": "b7dad45f4d1c4444a6d942acc8149c9b",
+    "fetched_at": "2026-10-03T13:35:26.008118+00:00",
+    "from_cache": false,
+    "code": "M0325687",
+    "name": "中国:国债收益率:10年",
+    "source": "中国货币网",
+    "unit": "%",
+    "frequency": "日",
+    "observation_count": 2930,
+    "non_null_count": 2930,
+    "null_count": 0,
+    "zero_count": 0,
+    "min": 1.5895,
+    "max": 4.0518,
+    "first_date": "2015-01-04",
+    "last_date": "2026-09-30",
+    "last_value": 1.675,
+    "dates_unique": true,
+    "dates_strictly_increasing": true,
+    "ui_latest_observation": {
+      "date": "2026-09-30",
+      "unit": "%",
+      "value": 1.675
+    },
+    "ui_latest_matches": true,
+    "metadata_evidence": "references/edb-rates-metadata-20261003.json",
+    "raw_historical_values_bundled": false,
+    "point_in_time_safe": false,
+    "limitations": [
+      "One distinct ChinaMoney series; not a replacement or equivalence assertion for ChinaBond.",
+      "No proof of earliest available history or vintage/release timestamps.",
+      "Displayed percentage unit and publisher were reviewed in the original terminal overview."
+    ],
+    "source_receipt_sha256": "ffb4c23ea5c00a5b3b5df89a9e6b7813c010240eb2cd8d2fffc19482eaf3ccae"
+  },
+  "restricted_indicator_observation": {
+    "requested_code": "S0059749",
+    "display_name": "中债国债到期收益率:10年",
+    "display_source": "中债估值中心",
+    "display_frequency": "日",
+    "overview_result": "UI states this third-party data product requires separate purchase to view complete history",
+    "complete_history_subscription_required": true,
+    "api_zero_values_not_certified": true,
+    "zero_value_cause_exclusively_proved": false,
+    "no_permission_bypass_attempted": true
+  },
+  "checks": [
+    {
+      "name": "index_history_000852_recovered_receipt_axes_and_identity",
+      "passed": true
+    },
+    {
+      "name": "chinamoney_10y_history_receipt_axes_and_identity",
+      "passed": true
+    },
+    {
+      "name": "index_snapshot_match",
+      "passed": true,
+      "cells": 4
+    },
+    {
+      "name": "edb_native_mcp_values_equal",
+      "passed": true,
+      "observations": 2930
+    },
+    {
+      "name": "edb_terminal_metadata_and_latest_match",
+      "passed": true
+    }
+  ],
+  "status": "passed",
+  "raw_historical_values_bundled": false,
+  "remaining_quota_measured": false,
+  "point_in_time_safe": false,
+  "full_financial_futures_fundamentals_verified": false
+}

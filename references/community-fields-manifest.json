@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "metadata_source_id": "windget_community_0_0_7",
+  "project": "windget",
+  "version": "0.0.7",
+  "released_at": "2022-06-23",
+  "project_url": "https://pypi.org/project/windget/0.0.7/",
+  "documentation_url": "https://windget-doc.readthedocs.io/zh/latest/",
+  "wheel_url": "https://files.pythonhosted.org/packages/a3/9d/83f48e349ec860c7c16fc7d56f4a50a0b5b220078c93dab5a4d8edcd5dae/windget-0.0.7-py3-none-any.whl",
+  "wheel_sha256": "50e9511eff2fc7756a68a0b8f49fe973721ca9a77ef488d5a79091e4d9f023e3",
+  "source_files": {
+    "windget/wss.py": {
+      "sha256": "f5a3fa32b47b62ed8e5043d7031162d82fcfa0536d72fa862a5670fd8c0c4800",
+      "bytes": 1207741
+    },
+    "windget/wsd.py": {
+      "sha256": "161de082af31eaeb1474b1421a5af9be1456ee2cf5ac3f48f38475027483ccb8",
+      "bytes": 1543846
+    },
+    "windget/wsi.py": {
+      "sha256": "cddffc832ec1a4720fe15d7dc047acc1db6acd0c8e2197f04e32a615e995e521",
+      "bytes": 4153
+    },
+    "windget/wst.py": {
+      "sha256": "f8d4eac7b5f9094034f5b4ee14e146492b0165d72e110b14f67fe00997c20a9b",
+      "bytes": 11214
+    },
+    "windget/wsq.py": {
+      "sha256": "d6876b9a336e586f53289bde5c1774f42820e94d8ea1330069099c7d5a95b6d6",
+      "bytes": 58191
+    },
+    "windget/wsee.py": {
+      "sha256": "847b019564c50629fba8ce48ef41be51c8963ed23b68273dc1927b13004d18ba",
+      "bytes": 97525
+    },
+    "windget/wses.py": {
+      "sha256": "09941a87f4a05233f4a46d42a7489e3e3515f89f302c43325968c92f03665e79",
+      "bytes": 93305
+    }
+  },
+  "catalog_file": "references/community-fields.json",
+  "catalog_sha256": "f280d53ef4241d9dac455038dcc0e39e472f5ba4258d0ab920f248102125be4a",
+  "field_count": 6865,
+  "mapping_count": 13375,
+  "mappings_by_method": {
+    "wss": 6111,
+    "wsd": 6111,
+    "wsi": 20,
+    "wst": 60,
+    "wsq": 292,
+    "wsee": 399,
+    "wses": 382
+  },
+  "official_wind_dictionary": false,
+  "options_schema_available": false,
+  "upstream_code_executed": false,
+  "license": "MIT",
+  "license_file": "references/third-party/windget-LICENSE.md"
+}

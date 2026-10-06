@@ -1,0 +1,220 @@
+{
+  "version": "0.24.0",
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "sample_dates_are_not_defaults": true,
+  "notes": [
+    "Each named entry contains one MCP tool name and its arguments; loading this file does not execute any operation.",
+    "Historical development samples do not certify current permissions. Stop on failure and retain completed receipts.",
+    "Replace analysis receipt placeholders with successful validated receipts from your own local installation.",
+    "The 90-product history example is planning only; six planned queries were not executed during documentation validation.",
+    "Subset requests retain verified field/date/option combinations but were not newly fetched as combined subsets."
+  ],
+  "virtual_mapping": {
+    "tool": "query_wind_data",
+    "params": {
+      "method": "wsd",
+      "arguments": {
+        "beginTime": "2026-09-11",
+        "codes": "CU.SHF,CU_S.SHF,CU00.SHF,T.CFE,T_S.CFE,T00.CFE",
+        "endTime": "2026-09-14",
+        "fields": "trade_hiscode",
+        "options": ""
+      }
+    },
+    "parameter_evidence": "references/futures-virtual-mapping-evidence.json"
+  },
+  "batch_history_plan": {
+    "tool": "plan_wind_data_queries",
+    "params": {
+      "method": "wsd",
+      "arguments": {
+        "codes": "CU2611.SHF,AL2611.SHF,ZN2611.SHF,PB2611.SHF,AU2612.SHF,RU2701.SHF,FU2611.SHF,RB2701.SHF,WR2701.SHF,AG2612.SHF,BU2611.SHF,HC2701.SHF,NI2611.SHF,SN2611.SHF,SP2611.SHF,SS2611.SHF,AO2701.SHF,BR2611.SHF,AD2611.SHF,OP2611.SHF,SC2611.INE,NR2611.INE,LU2611.INE,BC2610.INE,EC2611.INE,CF701.CZC,SR701.CZC,TA701.CZC,OI701.CZC,MA611.CZC,FG701.CZC,RS701.CZC,RM611.CZC,SF611.CZC,SM611.CZC,CY611.CZC,AP701.CZC,CJ701.CZC,UR701.CZC,SA701.CZC,PF611.CZC,PK611.CZC,PX611.CZC,SH611.CZC,PR611.CZC,PL611.CZC,WH611.CZC,RI611.CZC,PM611.CZC,ZC610.CZC,JR611.CZC,A2611.DCE,B2611.DCE,M2701.DCE,C2611.DCE,Y2701.DCE,L2701.DCE,P2701.DCE,V2701.DCE,J2701.DCE,JM2701.DCE,I2701.DCE,JD2611.DCE,BB2611.DCE,FB2611.DCE,PP2701.DCE,CS2611.DCE,EG2611.DCE,RR2611.DCE,EB2611.DCE,PG2611.DCE,LH2611.DCE,LG2611.DCE,BZ2611.DCE,PP2611F.DCE,L2611F.DCE,V2611F.DCE,IF2612.CFE,TF2612.CFE,T2612.CFE,IH2612.CFE,IC2612.CFE,TS2612.CFE,IM2612.CFE,TL2612.CFE,SI2611.GFE,LC2701.GFE,PS2611.GFE,PT2612.GFE,PD2612.GFE",
+        "fields": "close,settle,oi",
+        "beginTime": "2026-09-21",
+        "endTime": "2026-09-29",
+        "options": "PriceAdj=U"
+      },
+      "limit": 20,
+      "offset": 0
+    },
+    "parameter_evidence": "references/futures-member-position-evidence.json; futures_history saved recipe for close,settle,oi"
+  },
+  "member_snapshot_subset": {
+    "tool": "query_wind_data",
+    "params": {
+      "method": "wss",
+      "arguments": {
+        "codes": "CU2611.SHF,I2701.DCE,TA701.CZC,LC2701.GFE,BC2610.INE,SC2611.INE",
+        "fields": "oi_lvoi,oi_svoi,oi_nvoi",
+        "options": "tradeDate=20260929;order=40"
+      }
+    },
+    "parameter_evidence": "references/futures-member-position-evidence.json"
+  },
+  "member_snapshot_batch_1": {
+    "tool": "query_wind_data",
+    "params": {
+      "method": "wss",
+      "arguments": {
+        "codes": "CU2611.SHF,AL2611.SHF,ZN2611.SHF,PB2611.SHF,AU2612.SHF,RU2701.SHF,FU2611.SHF,RB2701.SHF,WR2701.SHF,AG2612.SHF,BU2611.SHF,HC2701.SHF,NI2611.SHF,SN2611.SHF,SP2611.SHF,SS2611.SHF,AO2701.SHF,BR2611.SHF,AD2611.SHF,OP2611.SHF,SC2611.INE,NR2611.INE,LU2611.INE,BC2610.INE,EC2611.INE,CF701.CZC,SR701.CZC,TA701.CZC,OI701.CZC,MA611.CZC,FG701.CZC,RS701.CZC,RM611.CZC,SF611.CZC,SM611.CZC,CY611.CZC,AP701.CZC,CJ701.CZC,UR701.CZC,SA701.CZC,PF611.CZC,PK611.CZC,PX611.CZC,SH611.CZC,PR611.CZC,PL611.CZC,WH611.CZC,RI611.CZC,PM611.CZC,ZC610.CZC",
+        "fields": "oi_lvoi,oi_svoi,oi_nvoi",
+        "options": "tradeDate=20260929;order=40"
+      }
+    },
+    "parameter_evidence": "references/futures-member-position-evidence.json"
+  },
+  "member_snapshot_batch_2": {
+    "tool": "query_wind_data",
+    "params": {
+      "method": "wss",
+      "arguments": {
+        "codes": "JR611.CZC,A2611.DCE,B2611.DCE,M2701.DCE,C2611.DCE,Y2701.DCE,L2701.DCE,P2701.DCE,V2701.DCE,J2701.DCE,JM2701.DCE,I2701.DCE,JD2611.DCE,BB2611.DCE,FB2611.DCE,PP2701.DCE,CS2611.DCE,EG2611.DCE,RR2611.DCE,EB2611.DCE,PG2611.DCE,LH2611.DCE,LG2611.DCE,BZ2611.DCE,PP2611F.DCE,L2611F.DCE,V2611F.DCE,IF2612.CFE,TF2612.CFE,T2612.CFE,IH2612.CFE,IC2612.CFE,TS2612.CFE,IM2612.CFE,TL2612.CFE,SI2611.GFE,LC2701.GFE,PS2611.GFE,PT2612.GFE,PD2612.GFE",
+        "fields": "oi_lvoi,oi_svoi,oi_nvoi",
+        "options": "tradeDate=20260929;order=40"
+      }
+    },
+    "parameter_evidence": "references/futures-member-position-evidence.json"
+  },
+  "warehouse_subset": {
+    "tool": "query_wind_data",
+    "params": {
+      "method": "wsd",
+      "arguments": {
+        "codes": "CU00.SHF,I00.DCE,TA00.CZC,LC00.GFE",
+        "fields": "st_stock",
+        "beginTime": "2026-09-21",
+        "endTime": "2026-09-29",
+        "options": ""
+      }
+    },
+    "parameter_evidence": "references/futures-warehouse-bounded-history.json"
+  },
+  "equity_futures_basis": {
+    "tool": "query_wind_data",
+    "params": {
+      "method": "wss",
+      "arguments": {
+        "codes": "IF2612.CFE,IH2612.CFE,IC2612.CFE,IM2612.CFE",
+        "fields": "close,settle,if_basis,anal_basispercent,anal_basisannualyield",
+        "options": "tradeDate=20260929"
+      }
+    },
+    "parameter_evidence": "references/financial-futures-evidence.json"
+  },
+  "equity_index_valuation": {
+    "tool": "query_wind_data",
+    "params": {
+      "method": "wss",
+      "arguments": {
+        "codes": "000300.SH,000016.SH,000905.SH,000852.SH",
+        "fields": "sec_name,close,pe_ttm,pb_lf,dividendyield2",
+        "options": "tradeDate=20260929"
+      }
+    },
+    "parameter_evidence": "references/financial-futures-evidence.json"
+  },
+  "treasury_ctd": {
+    "tool": "query_wind_data",
+    "params": {
+      "method": "wset",
+      "arguments": {
+        "options": "startdate=2026-09-21;enddate=2026-09-29;windcode=T2612.CFE",
+        "tablename": "ctd"
+      }
+    },
+    "parameter_evidence": "references/futures-field-followup-evidence.json"
+  },
+  "treasury_conversion_factors": {
+    "tool": "query_wind_data",
+    "params": {
+      "method": "wset",
+      "arguments": {
+        "options": "windcode=T2612.CFE",
+        "tablename": "conversionfactor"
+      }
+    },
+    "parameter_evidence": "references/futures-query-evidence.json"
+  },
+  "shibor_directory": {
+    "tool": "query_wind_data",
+    "params": {
+      "method": "wset",
+      "arguments": {
+        "tablename": "sectorconstituent",
+        "options": "date=2026-09-29;sectorid=a799010202000000;field=wind_code,sec_name"
+      }
+    },
+    "parameter_evidence": "references/financial-futures-evidence.json"
+  },
+  "shibor_history": {
+    "tool": "query_wind_data",
+    "params": {
+      "method": "wsd",
+      "arguments": {
+        "beginTime": "2026-09-21",
+        "codes": "SHIBOR1M.IR,SHIBOR1W.IR,SHIBOR1Y.IR,SHIBOR2W.IR,SHIBOR3M.IR,SHIBOR6M.IR,SHIBOR9M.IR,SHIBORON.IR",
+        "endTime": "2026-09-29",
+        "fields": "close",
+        "options": ""
+      }
+    },
+    "parameter_evidence": "references/financial-futures-evidence.json"
+  },
+  "soda_inventory": {
+    "tool": "query_economic_indicator_data",
+    "params": {
+      "question": "S5479786",
+      "beginDate": "2018-04-04",
+      "endDate": "2026-09-28"
+    },
+    "parameter_evidence": "references/edb-sa-scfi-history.json"
+  },
+  "soda_to_tonnes": {
+    "tool": "combine_economic_series",
+    "params": {
+      "inputs": {
+        "inventory": "替换为本机纯碱库存receipt_id"
+      },
+      "expression": "inventory * 10000"
+    },
+    "requires_local_receipt": true
+  },
+  "soybean_meal_prices": {
+    "tool": "query_wind_data",
+    "params": {
+      "method": "wsd",
+      "arguments": {
+        "beginTime": "2026-09-21",
+        "codes": "M2701.DCE",
+        "endTime": "2026-09-28",
+        "fields": "close,settle,oi",
+        "options": "PriceAdj=U"
+      }
+    },
+    "parameter_evidence": "references/verified-query-recipes.json: futures_history"
+  },
+  "soybean_meal_series": {
+    "tool": "analyze_wind_series",
+    "params": {
+      "receipt_id": "替换为本机豆粕价格receipt_id",
+      "periods_per_year": 252,
+      "field": "close",
+      "window": 3,
+      "annual_risk_free_rate": 0
+    },
+    "requires_local_receipt": true
+  },
+  "soybean_meal_risk": {
+    "tool": "analyze_wind_risk",
+    "params": {
+      "receipt_id": "替换为本机豆粕价格receipt_id",
+      "periods_per_year": 252,
+      "field": "close",
+      "confidence": 0.95,
+      "annual_risk_free_rate": 0,
+      "alignment": "strict"
+    },
+    "requires_local_receipt": true
+  }
+}

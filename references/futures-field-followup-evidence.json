@@ -1,0 +1,177 @@
+{
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "created_at": "2026-09-30T08:37:21.084458+00:00",
+  "full_coverage_verified": false,
+  "queries": [
+    {
+      "name": "ctd_official_manual_wset",
+      "method": "wset",
+      "arguments": {
+        "tablename": "ctd",
+        "options": "startdate=2026-09-21;enddate=2026-09-29;windcode=T2612.CFE"
+      },
+      "candidate_evidence": {
+        "title": "Wind Python API manual v2.0 (2018), page 28, WSET example 2",
+        "url": "https://www.scribd.com/document/991659560/Wind-Wind-Python-接口使用手册-v2-0-2018",
+        "kind": "vendor_authored_manual_third_party_mirror",
+        "scope": "Documented table and option names, adapted to previously verified T2612.CFE code; current permission and returned data unverified before probe"
+      },
+      "checked_at": "2026-09-30T08:30:13.034936+00:00",
+      "server_version": "0.18.0",
+      "receipt_id": "5686870a1a0e485bae6cf67c1740037f",
+      "ok": true,
+      "returned_fields": [
+        "date",
+        "wind_code",
+        "irr",
+        "ctd_ib",
+        "irr_ib",
+        "ctd_sh",
+        "irr_sh",
+        "ctd_sz",
+        "irr_sz"
+      ],
+      "value_counts": {
+        "date": {
+          "observations": 6,
+          "non_null": 6
+        },
+        "wind_code": {
+          "observations": 6,
+          "non_null": 6
+        },
+        "irr": {
+          "observations": 6,
+          "non_null": 6
+        },
+        "ctd_ib": {
+          "observations": 6,
+          "non_null": 6
+        },
+        "irr_ib": {
+          "observations": 6,
+          "non_null": 6
+        },
+        "ctd_sh": {
+          "observations": 6,
+          "non_null": 6
+        },
+        "irr_sh": {
+          "observations": 6,
+          "non_null": 6
+        },
+        "ctd_sz": {
+          "observations": 6,
+          "non_null": 6
+        },
+        "irr_sz": {
+          "observations": 6,
+          "non_null": 6
+        }
+      },
+      "raw_code_count": 6
+    },
+    {
+      "name": "contract_metadata_community_fields",
+      "method": "wss",
+      "arguments": {
+        "codes": "CU2611.SHF,SC2611.INE,TA701.CZC,I2701.DCE,LC2701.GFE,IF2612.CFE,T2612.CFE,PP2611F.DCE",
+        "fields": "ftdate,lasttrade_date,lastdelivery_date,punit,exe_ratio,mfprice,contract_issuedate",
+        "options": "tradeDate=20260929"
+      },
+      "candidate_evidence": {
+        "file": "references/community-fields.json",
+        "manifest": "references/community-fields-manifest.json",
+        "scope": "Literal fields read from windget 0.0.7 source; bounded metadata probe across six venues and a monthly-average product. Labels are candidates, no units or as-of assumptions."
+      },
+      "checked_at": "2026-09-30T08:34:02.439127+00:00",
+      "server_version": "0.18.0",
+      "receipt_id": "aa69841f2c49444e9802c24e4057e355",
+      "ok": true,
+      "returned_fields": [
+        "FTDATE",
+        "LASTTRADE_DATE",
+        "LASTDELIVERY_DATE",
+        "PUNIT",
+        "EXE_RATIO",
+        "MFPRICE",
+        "CONTRACT_ISSUEDATE"
+      ],
+      "value_counts": {
+        "FTDATE": {
+          "observations": 8,
+          "non_null": 8
+        },
+        "LASTTRADE_DATE": {
+          "observations": 8,
+          "non_null": 8
+        },
+        "LASTDELIVERY_DATE": {
+          "observations": 8,
+          "non_null": 8
+        },
+        "PUNIT": {
+          "observations": 8,
+          "non_null": 8
+        },
+        "EXE_RATIO": {
+          "observations": 8,
+          "non_null": 0
+        },
+        "MFPRICE": {
+          "observations": 8,
+          "non_null": 8
+        },
+        "CONTRACT_ISSUEDATE": {
+          "observations": 8,
+          "non_null": 8
+        }
+      },
+      "raw_code_count": 8
+    },
+    {
+      "name": "member_product_level_contrast",
+      "method": "wss",
+      "arguments": {
+        "codes": "SC2611.INE,EC2611.INE,WR2701.SHF,LG2611.DCE,PT2612.GFE,PD2612.GFE",
+        "fields": "oi_lvoi,oi_lvname,oi_svoi,oi_svname",
+        "options": "tradeDate=20260929;order=1"
+      },
+      "candidate_evidence": {
+        "file": "references/community-fields.json",
+        "manifest": "references/community-fields-manifest.json",
+        "scope": "Explicit product-level alternative, compared with contract-level nulls; never silently substituted for contract-level fields."
+      },
+      "checked_at": "2026-09-30T08:34:16.918764+00:00",
+      "server_version": "0.18.0",
+      "receipt_id": "4e48381c6ce149ae86c4c3a71e20540e",
+      "ok": true,
+      "returned_fields": [
+        "OI_LVOI",
+        "OI_LVNAME",
+        "OI_SVOI",
+        "OI_SVNAME"
+      ],
+      "value_counts": {
+        "OI_LVOI": {
+          "observations": 6,
+          "non_null": 0
+        },
+        "OI_LVNAME": {
+          "observations": 6,
+          "non_null": 0
+        },
+        "OI_SVOI": {
+          "observations": 6,
+          "non_null": 0
+        },
+        "OI_SVNAME": {
+          "observations": 6,
+          "non_null": 0
+        }
+      },
+      "raw_code_count": 6
+    }
+  ]
+}

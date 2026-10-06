@@ -1,0 +1,42 @@
+{
+  "observed_date": "2026-09-29",
+  "metadata_source_id": "wind_api_ui",
+  "application": "com.wind.mac.api",
+  "entry": "工具 → 指标查询 → 常规指标",
+  "evidence_type": "visible official UI inspected through CUA; summaries are paraphrased",
+  "scope": "Selected field definitions only, not a complete exported Wind dictionary",
+  "fields": [
+    {
+      "field": "fund_mgrcomp",
+      "name": "基金管理人",
+      "category": "基本资料/基金条款/中介机构",
+      "meaning": "基金管理公司的全称；不是基金经理个人姓名。",
+      "source": "基金公告",
+      "applicability": ["基金"],
+      "parameters_visible": [],
+      "unit": null
+    },
+    {
+      "field": "issuerupdated",
+      "name": "债务主体",
+      "category": "基本资料/债券条款/基本要素",
+      "meaning": "债务承继或主体变化后使用最新债务主体；集合债可包含多个联合发行人；资产支持证券按原始权益人或发起机构口径。",
+      "source": "公司公告",
+      "applicability": ["债券"],
+      "parameters_visible": [],
+      "unit": null,
+      "warning": "不可当作历史时点的原始发行人。不能无说明地替代 Alice 的发行人字段。"
+    },
+    {
+      "field": "oper_rev",
+      "name": "营业收入",
+      "category": "财务数据/财务报表(中国)/利润表",
+      "meaning": "内地股采用报表营业收入科目；新准则执行前数据经过 Wind 按新准则计算调整；最新正式报表尚未披露而已有业绩快报时可能使用快报值。",
+      "source": null,
+      "applicability": ["股票", "债券", "指数"],
+      "parameters_visible": ["元", "2025-12-31", "其余参数在当前列中截断"],
+      "unit": "元（当前界面选择）",
+      "warning": "报表选项枚举和来源栏下半部分尚未完整核对；不得据此认证所有 rptType、unit 或历史可得时间。"
+    }
+  ]
+}

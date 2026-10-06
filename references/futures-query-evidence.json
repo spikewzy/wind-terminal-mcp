@@ -1,0 +1,778 @@
+{
+  "schema_version": 1,
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "metadata_source_id": "local_wind_query_observations",
+  "updated_at": "2026-09-30T08:15:31.469994+00:00",
+  "probe_server_version": "0.17.1",
+  "probe_file": "verification/futures-parameter-probes.json",
+  "probe_sha256": "4f47537b804522ab59ba5987e533e17b6b43c55c1d05e5395a8145ddc055e903",
+  "units_verified": false,
+  "full_coverage_verified": false,
+  "cases": [
+    {
+      "name": "contract_calendar",
+      "method": "wset",
+      "arguments": {
+        "tablename": "futurecc",
+        "options": "startdate=2026-09-29;enddate=2026-09-29;wind_code=T2612.CFE"
+      },
+      "candidate_evidence": {
+        "url": "https://github.com/TAOSISI/YieldCurveTrade/blob/master/readCFfromWind.py",
+        "kind": "third_party_original_implementation",
+        "official_wind_documentation": false
+      },
+      "checked_at": "2026-09-30T07:57:31.301449+00:00",
+      "query_passed": true,
+      "receipt_id": "34b92c98e62147ddbec8b4d467c14b52",
+      "fields": [
+        "sec_name",
+        "code",
+        "wind_code",
+        "delivery_month",
+        "change_limit",
+        "target_margin",
+        "contract_issue_date",
+        "last_trade_date",
+        "last_delivery_month"
+      ],
+      "non_null_counts_by_column": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "rows_by_column": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "all_values_missing": false,
+      "note": "wind_code输入T2612.CFE，本次返回T品种的3个月份合约；不是仅返回输入合约。列名按原始值保留，保证金和涨跌停单位、历史生效口径未认证。"
+    },
+    {
+      "name": "deliverable_conversion_factors",
+      "method": "wset",
+      "arguments": {
+        "tablename": "conversionfactor",
+        "options": "windcode=T2612.CFE"
+      },
+      "candidate_evidence": {
+        "url": "https://github.com/TAOSISI/YieldCurveTrade/blob/master/readCFfromWind.py",
+        "kind": "third_party_original_implementation",
+        "official_wind_documentation": false
+      },
+      "checked_at": "2026-09-30T07:57:42.607292+00:00",
+      "query_passed": true,
+      "receipt_id": "a00366ada8ab402389f1470a9c0b6dfd",
+      "fields": [
+        "wind_code",
+        "cf"
+      ],
+      "non_null_counts_by_column": [
+        51,
+        51
+      ],
+      "rows_by_column": [
+        51,
+        51
+      ],
+      "all_values_missing": false,
+      "note": "返回51行可交割券代码/转换因子，IB、SH、SZ各17行；跨市场条目未按债券去重，不是51只独立债券。没有as-of参数，不能称为指定历史日可交割券集合。"
+    },
+    {
+      "name": "bundle_contract_start_field",
+      "method": "wss",
+      "arguments": {
+        "codes": "T2612.CFE",
+        "fields": "fs_info_ftdate",
+        "options": ""
+      },
+      "candidate_evidence": {
+        "file": "references/wind-bundle-metadata.json",
+        "node_id": 291799,
+        "name": "开始交易日",
+        "internal_expression": "fs_info_ftdate",
+        "kind": "unverified_internal_expression_not_assumed_api_field"
+      },
+      "checked_at": "2026-09-30T07:57:54.100689+00:00",
+      "query_passed": false,
+      "receipt_id": "ee2775263a654c3baf0e498743be0b3e",
+      "fields": [],
+      "non_null_counts_by_column": [],
+      "rows_by_column": [],
+      "all_values_missing": true,
+      "error_code": "WIND_UPSTREAM_ERROR",
+      "wind_error_code": -40522006,
+      "wind_error_data": [
+        [
+          "CWSSService: invalid indicators."
+        ]
+      ],
+      "returned_codes": []
+    },
+    {
+      "name": "active_domestic_directory",
+      "method": "wset",
+      "arguments": {
+        "tablename": "sectorconstituent",
+        "options": "date=2026-09-29;sectorid=1000015510000000;field=wind_code,sec_name"
+      },
+      "candidate_evidence": {
+        "file": "references/wind-bundle-metadata.json",
+        "sector_id": "1000015510000000",
+        "name": "国内期货活跃月合约(HY)"
+      },
+      "checked_at": "2026-09-30T07:59:45.229739+00:00",
+      "query_passed": true,
+      "receipt_id": "901ec1c99f14422f93a830917a4ccca1",
+      "fields": [
+        "wind_code",
+        "sec_name"
+      ],
+      "non_null_counts_by_column": [
+        90,
+        90
+      ],
+      "rows_by_column": [
+        90,
+        90
+      ],
+      "all_values_missing": false,
+      "note": "90行当前实测结果，包含月均价合约；请求date与raw.Times分别保留。名单没有逐行生效日期，历史选择和主力判定政策未认证。"
+    },
+    {
+      "name": "treasury_nearby_historical_mapping",
+      "method": "wsd",
+      "arguments": {
+        "codes": "T00.CFE",
+        "fields": "trade_hiscode",
+        "beginTime": "2026-09-01",
+        "endTime": "2026-09-29",
+        "options": ""
+      },
+      "candidate_evidence": {
+        "url": "https://github.com/wangluzhou/pyfi/blob/master/pyfi/wind_helper.py",
+        "kind": "third_party_original_implementation",
+        "official_wind_documentation": false
+      },
+      "checked_at": "2026-09-30T07:59:57.272363+00:00",
+      "query_passed": true,
+      "receipt_id": "d5bb7b6289d0449daa9b76c1ba90ba22",
+      "fields": [
+        "TRADE_HISCODE"
+      ],
+      "non_null_counts_by_column": [
+        20
+      ],
+      "rows_by_column": [
+        20
+      ],
+      "all_values_missing": false,
+      "returned_codes": [
+        "T00.CFE"
+      ],
+      "series_ranges": [
+        {
+          "column_index": 0,
+          "first_non_null_date": "2026-09-01",
+          "last_non_null_date": "2026-09-29"
+        }
+      ],
+      "observed_mapping_runs": [
+        {
+          "first_date": "2026-09-01",
+          "last_date": "2026-09-11",
+          "contract_code": "T2609.CFE"
+        },
+        {
+          "first_date": "2026-09-14",
+          "last_date": "2026-09-29",
+          "contract_code": "T2612.CFE"
+        }
+      ],
+      "note": "T00.CFE样本在2026-09-11仍映射T2609.CFE，下一返回日2026-09-14映射T2612.CFE；这里只记录观察到的换月，不推定主力选取或价格调整公式。"
+    },
+    {
+      "name": "warehouse_alias_candidate",
+      "method": "wsd",
+      "arguments": {
+        "codes": "CU2610.SHF",
+        "fields": "st_stock",
+        "beginTime": "2026-09-21",
+        "endTime": "2026-09-29",
+        "options": ""
+      },
+      "candidate_evidence": {
+        "file": "references/wind-bundle-metadata.json",
+        "node_id": 291845,
+        "internal_expression": "fs_st_stock",
+        "field_is_hypothesis": true,
+        "url": "https://www.rdqh.com/upload/files/base/9/i/50887.pdf",
+        "note": "Public research chart uses label st_stock; a bounded hypothesis test, not an assumed general prefix-removal rule"
+      },
+      "checked_at": "2026-09-30T08:00:08.651017+00:00",
+      "query_passed": true,
+      "receipt_id": "29a94058f1034b7b95194dd86b4acf72",
+      "fields": [
+        "ST_STOCK"
+      ],
+      "non_null_counts_by_column": [
+        6
+      ],
+      "rows_by_column": [
+        6
+      ],
+      "all_values_missing": false,
+      "returned_codes": [
+        "CU2610.SHF"
+      ],
+      "series_ranges": [
+        {
+          "column_index": 0,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        }
+      ],
+      "note": "软件明文内部表达式fs_st_stock经过别名假设试取，st_stock被接受并返回非空值；不能据此建立普遍去前缀规则。仓单单位和合约/品种聚合口径未认证。"
+    },
+    {
+      "name": "warehouse_five_venues",
+      "method": "wsd",
+      "arguments": {
+        "codes": "CU2611.SHF,I2701.DCE,TA701.CZC,SC2611.INE,LC2701.GFE",
+        "fields": "st_stock",
+        "beginTime": "2026-09-21",
+        "endTime": "2026-09-29",
+        "options": ""
+      },
+      "candidate_evidence": {
+        "prior_case": "warehouse_alias_candidate",
+        "receipt_id": "29a94058f1034b7b95194dd86b4acf72",
+        "directory_receipt_id": "901ec1c99f14422f93a830917a4ccca1",
+        "scope": "Same accepted field; five selected commodity venues, not every product"
+      },
+      "checked_at": "2026-09-30T08:09:20.042566+00:00",
+      "query_passed": true,
+      "receipt_id": "bc13b7852ab748f198810cc156d54bdd",
+      "fields": [
+        "ST_STOCK"
+      ],
+      "non_null_counts_by_column": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "rows_by_column": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "all_values_missing": false,
+      "returned_codes": [
+        "CU2611.SHF",
+        "I2701.DCE",
+        "TA701.CZC",
+        "SC2611.INE",
+        "LC2701.GFE"
+      ],
+      "series_ranges": [
+        {
+          "column_index": 0,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        {
+          "column_index": 1,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        {
+          "column_index": 2,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        {
+          "column_index": 3,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        {
+          "column_index": 4,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        }
+      ],
+      "note": "SHF、DCE、CZC、INE、GFE各一个明确代码均有非空值，0作为原始观测保留；各品种仓单单位可能不同，不可直接相加。"
+    },
+    {
+      "name": "historical_contract_calendar",
+      "method": "wset",
+      "arguments": {
+        "tablename": "futurecc",
+        "options": "startdate=2020-09-29;enddate=2020-09-29;wind_code=T2612.CFE"
+      },
+      "candidate_evidence": {
+        "prior_case": "contract_calendar",
+        "receipt_id": "34b92c98e62147ddbec8b4d467c14b52",
+        "scope": "Date contrast for same product selector, not point-in-time certification"
+      },
+      "checked_at": "2026-09-30T08:09:31.399651+00:00",
+      "query_passed": true,
+      "receipt_id": "0c3e271bac3642c1a2e8f6c3e5fc9070",
+      "fields": [
+        "sec_name",
+        "code",
+        "wind_code",
+        "delivery_month",
+        "change_limit",
+        "target_margin",
+        "contract_issue_date",
+        "last_trade_date",
+        "last_delivery_month"
+      ],
+      "non_null_counts_by_column": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "rows_by_column": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "all_values_missing": false,
+      "note": "同一T2612.CFE选择器配合2020-09-29日期返回T2012、T2103、T2106；仅证明本次日期参数影响合约集合，不认证当时可得版本或全部退市合约。"
+    },
+    {
+      "name": "member_rank_one_candidate",
+      "method": "wss",
+      "arguments": {
+        "codes": "CU2611.SHF",
+        "fields": "oi_loi,oi_lname",
+        "options": "tradeDate=20260929;order=1"
+      },
+      "candidate_evidence": {
+        "file": "references/wind-bundle-metadata.json",
+        "node_ids": [
+          291835,
+          291841
+        ],
+        "internal_expressions": [
+          "fs_oi_loi",
+          "fs_oi_lname"
+        ],
+        "fields_and_order_option_are_hypotheses": true,
+        "scope": "One bounded read to establish whether candidate aliases and rank option are accepted; not a documented conversion rule"
+      },
+      "checked_at": "2026-09-30T08:09:45.078722+00:00",
+      "query_passed": true,
+      "receipt_id": "fc8536cae6454c4cafad2b73ebe378de",
+      "fields": [
+        "OI_LOI",
+        "OI_LNAME"
+      ],
+      "non_null_counts_by_column": [
+        1,
+        1
+      ],
+      "rows_by_column": [
+        1,
+        1
+      ],
+      "all_values_missing": false,
+      "returned_codes": [
+        "CU2611.SHF"
+      ],
+      "note": "order=1与order=2的其他请求参数相同，沪铜返回不同数量及会员，见第二名对照。字段名来自软件内部表达式的逐项试验映射；未据单样本认证所有排名参数。"
+    },
+    {
+      "name": "member_rank_two_contrast",
+      "method": "wss",
+      "arguments": {
+        "codes": "CU2611.SHF",
+        "fields": "oi_loi,oi_lname",
+        "options": "tradeDate=20260929;order=2"
+      },
+      "candidate_evidence": {
+        "prior_case": "member_rank_one_candidate",
+        "receipt_id": "fc8536cae6454c4cafad2b73ebe378de",
+        "scope": "Only rank option changes; compare returned quantity and member"
+      },
+      "checked_at": "2026-09-30T08:10:37.956433+00:00",
+      "query_passed": true,
+      "receipt_id": "977b526cf86b4dc38ac8c110a6bd597d",
+      "fields": [
+        "OI_LOI",
+        "OI_LNAME"
+      ],
+      "non_null_counts_by_column": [
+        1,
+        1
+      ],
+      "rows_by_column": [
+        1,
+        1
+      ],
+      "all_values_missing": false,
+      "returned_codes": [
+        "CU2611.SHF"
+      ],
+      "note": "order=2的沪铜样本为18720、国泰君安；order=1为27750、中信期货。只证明这两个显式参数的样本差异，完整排名规则尚未独立核对。"
+    },
+    {
+      "name": "member_history_six_fields",
+      "method": "wsd",
+      "arguments": {
+        "codes": "CU2611.SHF",
+        "fields": "oi_loi,oi_lname,oi_soi,oi_sname,oi_volume,oi_vname",
+        "beginTime": "2026-09-21",
+        "endTime": "2026-09-29",
+        "options": "order=1"
+      },
+      "candidate_evidence": {
+        "file": "references/wind-bundle-metadata.json",
+        "node_ids": [
+          291835,
+          291841,
+          291837,
+          291842,
+          291839,
+          291843
+        ],
+        "prior_case": "member_rank_one_candidate",
+        "new_fields_are_candidate_aliases": [
+          "oi_soi",
+          "oi_sname",
+          "oi_volume",
+          "oi_vname"
+        ],
+        "scope": "Bounded extension to historical long/short/volume member fields"
+      },
+      "checked_at": "2026-09-30T08:10:49.355070+00:00",
+      "query_passed": true,
+      "receipt_id": "e652f54ef99c4b0ebce9d2da3f021b8f",
+      "fields": [
+        "OI_LOI",
+        "OI_LNAME",
+        "OI_SOI",
+        "OI_SNAME",
+        "OI_VOLUME",
+        "OI_VNAME"
+      ],
+      "non_null_counts_by_column": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "rows_by_column": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "all_values_missing": false,
+      "returned_codes": [
+        "CU2611.SHF"
+      ],
+      "series_ranges": [
+        {
+          "column_index": 0,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        {
+          "column_index": 1,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        {
+          "column_index": 2,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        {
+          "column_index": 3,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        {
+          "column_index": 4,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        {
+          "column_index": 5,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        }
+      ],
+      "note": "同一合约6个日期的6个字段均非空；多头、空头、成交榜的会员分别保留，不能把同一rank当成同一会员，也不能据榜名直接分类机构/客户。"
+    },
+    {
+      "name": "ctd_history_candidate",
+      "method": "wsd",
+      "arguments": {
+        "codes": "T2612.CFE",
+        "fields": "tbf_ctd2",
+        "beginTime": "2026-09-21",
+        "endTime": "2026-09-29",
+        "options": ""
+      },
+      "candidate_evidence": {
+        "file": "references/wind-bundle-metadata.json",
+        "node_id": 603901,
+        "internal_expression": "b_tbf_CTD2",
+        "name": "CTD(支持历史)",
+        "field_is_hypothesis": true
+      },
+      "checked_at": "2026-09-30T08:11:02.026673+00:00",
+      "query_passed": true,
+      "receipt_id": "f644bd86017e4f90925e830d39452d34",
+      "fields": [
+        "TBF_CTD2"
+      ],
+      "non_null_counts_by_column": [
+        0
+      ],
+      "rows_by_column": [
+        6
+      ],
+      "all_values_missing": true,
+      "returned_codes": [
+        "T2612.CFE"
+      ],
+      "series_ranges": [
+        {
+          "column_index": 0,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        }
+      ],
+      "note": "tbf_ctd2被接受但6个值全为空；没有可用CTD样本，所需选项或适用代码仍需确认。不能因ErrorCode=0宣称CTD已覆盖。"
+    },
+    {
+      "name": "domestic_continuous_directory",
+      "method": "wset",
+      "arguments": {
+        "tablename": "sectorconstituent",
+        "options": "date=2026-09-29;sectorid=a599020600000000;field=wind_code,sec_name"
+      },
+      "candidate_evidence": {
+        "file": "references/wind-bundle-metadata.json",
+        "sector_id": "a599020600000000",
+        "name": "全部期货连续合约",
+        "category_path": [
+          "期货",
+          "国内期货连续"
+        ]
+      },
+      "checked_at": "2026-09-30T08:12:30.223542+00:00",
+      "query_passed": true,
+      "receipt_id": "22203f0267f7454b883f1cad628c7d79",
+      "fields": [
+        "wind_code",
+        "sec_name"
+      ],
+      "non_null_counts_by_column": [
+        1198,
+        1198
+      ],
+      "rows_by_column": [
+        1198,
+        1198
+      ],
+      "all_values_missing": false,
+      "code_suffix_counts": {
+        "DCE": 259,
+        "HK": 293,
+        "SHF": 242,
+        "CFE": 37,
+        "CZC": 252,
+        "INE": 67,
+        "GFE": 48
+      },
+      "note": "虽然本地目录位于国内期货连续下，实际返回1198行并含293个HK后缀条目。按原始代码/场所核对范围，不能将全部行自动标为中国内地期货。"
+    },
+    {
+      "name": "member_six_venues",
+      "method": "wss",
+      "arguments": {
+        "codes": "CU2611.SHF,I2701.DCE,TA701.CZC,SC2611.INE,LC2701.GFE,IF2612.CFE,T2612.CFE",
+        "fields": "oi_loi,oi_lname,oi_soi,oi_sname,oi_volume,oi_vname",
+        "options": "tradeDate=20260929;order=1"
+      },
+      "candidate_evidence": {
+        "prior_case": "member_history_six_fields",
+        "receipt_id": "e652f54ef99c4b0ebce9d2da3f021b8f",
+        "directory_receipt_id": "901ec1c99f14422f93a830917a4ccca1",
+        "scope": "Six venues; includes one equity-index and one treasury future"
+      },
+      "checked_at": "2026-09-30T08:12:42.495356+00:00",
+      "query_passed": true,
+      "receipt_id": "a376da3e27dc4f87bb12648c59f5117a",
+      "fields": [
+        "OI_LOI",
+        "OI_LNAME",
+        "OI_SOI",
+        "OI_SNAME",
+        "OI_VOLUME",
+        "OI_VNAME"
+      ],
+      "non_null_counts_by_column": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "rows_by_column": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "all_values_missing": false,
+      "returned_codes": [
+        "CU2611.SHF",
+        "I2701.DCE",
+        "TA701.CZC",
+        "SC2611.INE",
+        "LC2701.GFE",
+        "IF2612.CFE",
+        "T2612.CFE"
+      ],
+      "non_null_fields_by_code": {
+        "CU2611.SHF": 6,
+        "I2701.DCE": 6,
+        "TA701.CZC": 6,
+        "SC2611.INE": 0,
+        "LC2701.GFE": 6,
+        "IF2612.CFE": 6,
+        "T2612.CFE": 6
+      },
+      "note": "7个合约、六个交易场所的6个字段请求成功，6个合约全部非空，SC2611.INE全部为空；空值原因未认证，不能推定整个INE或账户无权限。"
+    },
+    {
+      "name": "effective_forecast_candidate",
+      "method": "wsd",
+      "arguments": {
+        "codes": "TA701.CZC",
+        "fields": "st_efforecast",
+        "beginTime": "2026-09-21",
+        "endTime": "2026-09-29",
+        "options": ""
+      },
+      "candidate_evidence": {
+        "file": "references/wind-bundle-metadata.json",
+        "node_id": 607166,
+        "internal_expression": "s_st_efforecast",
+        "name": "有效预报",
+        "field_is_hypothesis": true
+      },
+      "checked_at": "2026-09-30T08:12:53.923123+00:00",
+      "query_passed": true,
+      "receipt_id": "1f7d524770a64a80b679c4ddbe7e2dc2",
+      "fields": [
+        "ST_EFFORECAST"
+      ],
+      "non_null_counts_by_column": [
+        6
+      ],
+      "rows_by_column": [
+        6
+      ],
+      "all_values_missing": false,
+      "returned_codes": [
+        "TA701.CZC"
+      ],
+      "series_ranges": [
+        {
+          "column_index": 0,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        }
+      ],
+      "note": "字段st_efforecast被接受，PTA样本6个原始值均为0；没有独立核对是否真实零值、适用范围、单位或缺失值编码。"
+    },
+    {
+      "name": "warehouse_copper_long_history",
+      "method": "wsd",
+      "arguments": {
+        "codes": "CU00.SHF",
+        "fields": "st_stock",
+        "beginTime": "2000-01-01",
+        "endTime": "2026-09-29",
+        "options": ""
+      },
+      "candidate_evidence": {
+        "field_receipt_id": "29a94058f1034b7b95194dd86b4acf72",
+        "directory_receipt_id": "22203f0267f7454b883f1cad628c7d79",
+        "directory_label": "沪铜近月",
+        "scope": "Observe long warehouse history for a directory-confirmed nearby series; requested start is not a claim of earliest availability"
+      },
+      "checked_at": "2026-09-30T08:14:02.917801+00:00",
+      "query_passed": true,
+      "receipt_id": "6e74abf566aa47fea0bfb37281ea42f9",
+      "fields": [
+        "ST_STOCK"
+      ],
+      "non_null_counts_by_column": [
+        6481
+      ],
+      "rows_by_column": [
+        6481
+      ],
+      "all_values_missing": false,
+      "returned_codes": [
+        "CU00.SHF"
+      ],
+      "series_ranges": [
+        {
+          "column_index": 0,
+          "first_non_null_date": "2000-01-04",
+          "last_non_null_date": "2026-09-29"
+        }
+      ],
+      "note": "2000-01-01至2026-09-29请求返回6481个非空观察，实际首日2000-01-04；这不是最早可用日期认证。默认填充、品种聚合、单位及修订历史未认证。"
+    }
+  ],
+  "queries_attempted": 16,
+  "queries_passed": 15,
+  "queries_with_non_null_values": 14
+}

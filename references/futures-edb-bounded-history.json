@@ -1,0 +1,258 @@
+{
+  "checked_at": "2026-10-03T18:53:25.615561+00:00",
+  "version": "0.23.8",
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "verification_type": "offline_replay_of_saved_native_EDB_response",
+  "status": "passed",
+  "query_validation_status": "failed",
+  "native_requests_during_replay": 0,
+  "original_native_request_count": 1,
+  "original_native_server_version": "0.21.0",
+  "original_receipt_id": "1e50af35a0ec4d2d8de52aed895faa7b",
+  "original_receipt_sha256": "96c87ba2b68c52e6dbc8bb6da02e461bf4aa74dfec80e24e1007360a3f8131eb",
+  "original_fetched_at": "2026-10-03T18:48:22.882092+00:00",
+  "plan_record": "verification/futures-edb-bounded-plan-20261004.json",
+  "native_response_record": "verification/futures-edb-bounded-response-20261004.json",
+  "returned_matrix_cells": 1200,
+  "non_null_cells": 325,
+  "in_range_non_null_cells": 324,
+  "out_of_range_non_null_cells": 1,
+  "per_code_in_range_non_null_counts": {
+    "S5716165": 26,
+    "S5449460": 0,
+    "S5479786": 72,
+    "S9988490": 0,
+    "S0031550": 189,
+    "S0114089": 37
+  },
+  "empty_codes": [
+    "S9988490"
+  ],
+  "out_of_range_only_codes": [
+    "S5449460"
+  ],
+  "new_history_success_certification": false,
+  "metadata_or_entitlement_certified": false,
+  "automatically_retried": false,
+  "automatically_filtered_filled_or_registered": false,
+  "raw_receipt_unchanged": true,
+  "pagination_preserves_full_diagnostics": true,
+  "source": null,
+  "original_arguments": {
+    "codes": "S5716165,S5449460,S5479786,S9988490,S0031550,S0114089",
+    "beginTime": "2026-01-01",
+    "endTime": "2026-09-30",
+    "options": ""
+  },
+  "query_error": "OUT_OF_RANGE_DATA",
+  "raw_error_code": 0,
+  "candidate_discovery_receipt_id": "b4773e3cfa854047ab64c42dfd925561",
+  "name_evidence": "WAI full-text lexical recognition; definitions, frequency, units and publisher remain unverified",
+  "historical_edb_series_observations": {
+    "scope": "entire_raw_edb_matrix_before_pagination",
+    "series": [
+      {
+        "code": "S5716165",
+        "column_index": 0,
+        "status": "values_only_inside_requested_interval",
+        "in_range": {
+          "row_count": 199,
+          "non_null_count": 26,
+          "null_count": 173,
+          "numeric_count": 26,
+          "non_numeric_non_null_count": 0,
+          "zero_count": 0,
+          "first_non_null_date": "2026-01-10",
+          "last_non_null_date": "2026-09-20"
+        },
+        "out_of_range": {
+          "row_count": 1,
+          "non_null_count": 0,
+          "null_count": 1,
+          "numeric_count": 0,
+          "non_numeric_non_null_count": 0,
+          "zero_count": 0,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "out_of_range_non_null_dates_sample": [],
+        "value_semantics_verified": false,
+        "recognized_name": "中国:社会库存:螺纹钢"
+      },
+      {
+        "code": "S5449460",
+        "column_index": 1,
+        "status": "values_only_outside_requested_interval",
+        "in_range": {
+          "row_count": 199,
+          "non_null_count": 0,
+          "null_count": 199,
+          "numeric_count": 0,
+          "non_numeric_non_null_count": 0,
+          "zero_count": 0,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "out_of_range": {
+          "row_count": 1,
+          "non_null_count": 1,
+          "null_count": 0,
+          "numeric_count": 1,
+          "non_numeric_non_null_count": 0,
+          "zero_count": 0,
+          "first_non_null_date": "2024-12-31",
+          "last_non_null_date": "2024-12-31"
+        },
+        "out_of_range_non_null_dates_sample": [
+          "2024-12-31"
+        ],
+        "value_semantics_verified": false,
+        "recognized_name": "中国:产量:碳酸锂"
+      },
+      {
+        "code": "S5479786",
+        "column_index": 2,
+        "status": "values_only_inside_requested_interval",
+        "in_range": {
+          "row_count": 199,
+          "non_null_count": 72,
+          "null_count": 127,
+          "numeric_count": 72,
+          "non_numeric_non_null_count": 0,
+          "zero_count": 0,
+          "first_non_null_date": "2026-01-05",
+          "last_non_null_date": "2026-09-28"
+        },
+        "out_of_range": {
+          "row_count": 1,
+          "non_null_count": 0,
+          "null_count": 1,
+          "numeric_count": 0,
+          "non_numeric_non_null_count": 0,
+          "zero_count": 0,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "out_of_range_non_null_dates_sample": [],
+        "value_semantics_verified": false,
+        "recognized_name": "中国:库存:纯碱"
+      },
+      {
+        "code": "S9988490",
+        "column_index": 3,
+        "status": "no_non_null_values_in_returned_matrix",
+        "in_range": {
+          "row_count": 199,
+          "non_null_count": 0,
+          "null_count": 199,
+          "numeric_count": 0,
+          "non_numeric_non_null_count": 0,
+          "zero_count": 0,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "out_of_range": {
+          "row_count": 1,
+          "non_null_count": 0,
+          "null_count": 1,
+          "numeric_count": 0,
+          "non_numeric_non_null_count": 0,
+          "zero_count": 0,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "out_of_range_non_null_dates_sample": [],
+        "value_semantics_verified": false,
+        "recognized_name": "中国:产量:多晶硅"
+      },
+      {
+        "code": "S0031550",
+        "column_index": 4,
+        "status": "values_only_inside_requested_interval",
+        "in_range": {
+          "row_count": 199,
+          "non_null_count": 189,
+          "null_count": 10,
+          "numeric_count": 189,
+          "non_numeric_non_null_count": 0,
+          "zero_count": 0,
+          "first_non_null_date": "2026-01-02",
+          "last_non_null_date": "2026-09-30"
+        },
+        "out_of_range": {
+          "row_count": 1,
+          "non_null_count": 0,
+          "null_count": 1,
+          "numeric_count": 0,
+          "non_numeric_non_null_count": 0,
+          "zero_count": 0,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "out_of_range_non_null_dates_sample": [],
+        "value_semantics_verified": false,
+        "recognized_name": "波罗的海干散货指数(bdi)"
+      },
+      {
+        "code": "S0114089",
+        "column_index": 5,
+        "status": "values_only_inside_requested_interval",
+        "in_range": {
+          "row_count": 199,
+          "non_null_count": 37,
+          "null_count": 162,
+          "numeric_count": 37,
+          "non_numeric_non_null_count": 0,
+          "zero_count": 0,
+          "first_non_null_date": "2026-01-09",
+          "last_non_null_date": "2026-09-24"
+        },
+        "out_of_range": {
+          "row_count": 1,
+          "non_null_count": 0,
+          "null_count": 1,
+          "numeric_count": 0,
+          "non_numeric_non_null_count": 0,
+          "zero_count": 0,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "out_of_range_non_null_dates_sample": [],
+        "value_semantics_verified": false,
+        "recognized_name": "上海出口集装箱运价指数(SCFI)"
+      }
+    ],
+    "series_mapping_verified": true,
+    "dates_compared": true,
+    "numeric_data_selected": false,
+    "frequency_inferred": false,
+    "unit_or_publisher_verified": false,
+    "history_completeness_verified": false,
+    "point_in_time_safe": false,
+    "note": "EDB columns share a returned date axis. A date or a null cell is not a populated observation for every code. Counts describe the saved response only; query validation remains separate. No rows are removed, no values are filled, and zero values remain zero.",
+    "returned_date_count": 200,
+    "returned_column_count": 6,
+    "requested_date_interval": [
+      "2026-01-01",
+      "2026-09-30"
+    ],
+    "status": "observed",
+    "in_range_date_count": 199,
+    "out_of_range_date_count": 1,
+    "out_of_range_dates_sample": [
+      "2024-12-31"
+    ],
+    "populated_out_of_range_codes": [
+      "S5449460"
+    ],
+    "all_returned_dates_within_bounds": false
+  },
+  "numeric_values_bundled": false,
+  "raw_receipt_bundled": false,
+  "definitions_verified": false,
+  "frequency_inferred": false,
+  "all_six_successful_histories_verified": false,
+  "current_entitlement_checked": false,
+  "record": "verification/futures-edb-date-diagnostics-replay-0.23.8.json"
+}

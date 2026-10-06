@@ -1,0 +1,1326 @@
+{
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "checked_at": "2026-09-30T09:36:15.066642+00:00",
+  "cases": [
+    {
+      "name": "equity_futures_underlying_candidates",
+      "request": {
+        "method": "wss",
+        "arguments": {
+          "codes": "IF2612.CFE,IH2612.CFE,IC2612.CFE,IM2612.CFE",
+          "fields": "sec_name,us_code,us_name",
+          "options": "tradeDate=20260929"
+        }
+      },
+      "receipt_id": "d0264e10a3d04cee9fa75b191ebc15af",
+      "fetched_at": "2026-09-30T09:24:12.396785+00:00",
+      "source_receipt_sha256": "889adf9534948874ba74a1809bf4ebf2405c891372feb1ac7033e58d96a17670",
+      "upstream_ok": true,
+      "query_evidence": "Actual futures codes from receipt 901ec1c99f14422f93a830917a4ccca1; us_code/us_name are windget 0.0.7 candidates only; not inferred from option labels",
+      "column_statistics": {
+        "SEC_NAME": {
+          "rows": 4,
+          "non_null_rows": 4,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "US_CODE": {
+          "rows": 4,
+          "non_null_rows": 0,
+          "null_or_blank_rows": 4,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "US_NAME": {
+          "rows": 4,
+          "non_null_rows": 0,
+          "null_or_blank_rows": 4,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "equity_index_valuation_snapshot",
+      "request": {
+        "method": "wss",
+        "arguments": {
+          "codes": "000300.SH,000016.SH,000905.SH,000852.SH",
+          "fields": "sec_name,close,pe_ttm,pb_lf,dividendyield2",
+          "options": "tradeDate=20260929"
+        }
+      },
+      "receipt_id": "24693c2e066b4dc38d2a334a3fe7263d",
+      "fetched_at": "2026-09-30T09:24:23.461682+00:00",
+      "source_receipt_sha256": "9d95f45796118e2ea708b8e327e71630d2942542ed637583d2767b56018bb011",
+      "upstream_ok": true,
+      "query_evidence": "Codes found in official local sector/index mappings and prior CSI300 reads; PE/PB/dividendyield2 literal candidate fields in references/community-fields.json; index weighting and units not yet verified",
+      "column_statistics": {
+        "SEC_NAME": {
+          "rows": 4,
+          "non_null_rows": 4,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "CLOSE": {
+          "rows": 4,
+          "non_null_rows": 4,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "PE_TTM": {
+          "rows": 4,
+          "non_null_rows": 4,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "PB_LF": {
+          "rows": 4,
+          "non_null_rows": 4,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "DIVIDENDYIELD2": {
+          "rows": 4,
+          "non_null_rows": 4,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "equity_futures_basis_snapshot",
+      "request": {
+        "method": "wss",
+        "arguments": {
+          "codes": "IF2612.CFE,IH2612.CFE,IC2612.CFE,IM2612.CFE",
+          "fields": "close,settle,if_basis,anal_basispercent,anal_basisannualyield",
+          "options": "tradeDate=20260929"
+        }
+      },
+      "receipt_id": "b2d918013498453e96c15858c1be06ad",
+      "fetched_at": "2026-09-30T09:24:34.431089+00:00",
+      "source_receipt_sha256": "3068eb8b7c21760a4c95257f2ece24365da8ae9d7af595b7fc0e47df69f6b669",
+      "upstream_ok": true,
+      "query_evidence": "Actual CFE codes; basis fields in static windget candidate mappings; sign, cash-price timing and annualization convention unverified",
+      "column_statistics": {
+        "CLOSE": {
+          "rows": 4,
+          "non_null_rows": 4,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "SETTLE": {
+          "rows": 4,
+          "non_null_rows": 4,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "IF_BASIS": {
+          "rows": 4,
+          "non_null_rows": 4,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "ANAL_BASISPERCENT": {
+          "rows": 4,
+          "non_null_rows": 4,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "ANAL_BASISANNUALYIELD": {
+          "rows": 4,
+          "non_null_rows": 4,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "shibor_official_sector",
+      "request": {
+        "method": "wset",
+        "arguments": {
+          "tablename": "sectorconstituent",
+          "options": "date=2026-09-29;sectorid=a799010202000000;field=wind_code,sec_name"
+        }
+      },
+      "receipt_id": "bb7342f3c195413f97d72a5cdbd720d0",
+      "fetched_at": "2026-09-30T09:24:57.277297+00:00",
+      "source_receipt_sha256": "5b65160626adb40b7545ba2d417a39d22806af6e1ed5bc6b5ff97f62d622631a",
+      "upstream_ok": true,
+      "query_evidence": "Official local SysGrp.xml sector a799010202000000: 利率/Shibor/人民币Shibor; sector metadata does not guarantee returned instrument coverage",
+      "column_statistics": {
+        "wind_code": {
+          "rows": 8,
+          "non_null_rows": 8,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "sec_name": {
+          "rows": 8,
+          "non_null_rows": 8,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "rates_edb_short_history",
+      "request": {
+        "method": "edb",
+        "arguments": {
+          "codes": "S0059745,S0059747,S0059749,S0059752,M0041653,M0017138,M0017139",
+          "beginTime": "2026-09-21",
+          "endTime": "2026-09-29",
+          "options": ""
+        }
+      },
+      "receipt_id": "4b81f43d66994f3dba454a129aaad5a3",
+      "fetched_at": "2026-09-30T09:27:25.014036+00:00",
+      "source_receipt_sha256": "8fa3f42d71e10da6aa980ecf598fb49a9ae5f2e813a29c217a13fe6ea6755767",
+      "upstream_ok": true,
+      "query_evidence": "Explicit seven EDB codes recognized in e16a3febec4c484da7236fdc83981322, covering 2/5/10/30y government yield, DR007 and SHIBOR ON/1W; publisher, frequency and units remain unknown; ambiguous R007 excluded",
+      "column_statistics": {
+        "S0059745": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 6,
+          "all_present_values_zero": true,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "S0059747": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 6,
+          "all_present_values_zero": true,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "S0059749": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 6,
+          "all_present_values_zero": true,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "S0059752": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 6,
+          "all_present_values_zero": true,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "M0041653": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "M0017138": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "M0017139": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "shibor_eight_tenors_short_history",
+      "request": {
+        "method": "wsd",
+        "arguments": {
+          "codes": "SHIBOR1M.IR,SHIBOR1W.IR,SHIBOR1Y.IR,SHIBOR2W.IR,SHIBOR3M.IR,SHIBOR6M.IR,SHIBOR9M.IR,SHIBORON.IR",
+          "fields": "close",
+          "beginTime": "2026-09-21",
+          "endTime": "2026-09-29",
+          "options": ""
+        }
+      },
+      "receipt_id": "8e4f021e292f4283b81ffce635945167",
+      "fetched_at": "2026-09-30T09:27:35.861923+00:00",
+      "source_receipt_sha256": "5b6e4dfa340593da1b34d82741097b6588f953e8fc8c5c4fb3e179942cdc94e1",
+      "upstream_ok": true,
+      "query_evidence": "All eight explicit instruments returned by official sector receipt bb7342f3c195413f97d72a5cdbd720d0; close applicability to rate instruments is a bounded candidate probe",
+      "column_statistics": {
+        "SHIBOR1M.IR": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "SHIBOR1W.IR": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "SHIBOR1Y.IR": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "SHIBOR2W.IR": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "SHIBOR3M.IR": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "SHIBOR6M.IR": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "SHIBOR9M.IR": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        },
+        "SHIBORON.IR": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2026-09-21",
+          "last_non_null_date": "2026-09-29"
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "ctd_ts",
+      "request": {
+        "method": "wset",
+        "arguments": {
+          "tablename": "ctd",
+          "options": "startdate=2026-09-21;enddate=2026-09-29;windcode=TS2612.CFE"
+        }
+      },
+      "receipt_id": "26559e4e15994763ade5e124072cbb6b",
+      "fetched_at": "2026-09-30T09:27:46.988342+00:00",
+      "source_receipt_sha256": "a1099cad17a671fadb605a7a058bb0b01eac54cf61227f0b53e67a96e4822878",
+      "upstream_ok": true,
+      "query_evidence": "Same WSET ctd grammar already verified for T2612.CFE in receipt 5686870a1a0e485bae6cf67c1740037f; actual TS/TF/TL contract codes in receipt 901ec1c99f14422f93a830917a4ccca1; product-specific availability still being tested",
+      "column_statistics": {
+        "date": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "wind_code": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "irr": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "ctd_ib": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "irr_ib": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "ctd_sh": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "irr_sh": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "ctd_sz": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "irr_sz": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "ctd_tf",
+      "request": {
+        "method": "wset",
+        "arguments": {
+          "tablename": "ctd",
+          "options": "startdate=2026-09-21;enddate=2026-09-29;windcode=TF2612.CFE"
+        }
+      },
+      "receipt_id": "97d10b653de4482aa5d1fb8f889e48d2",
+      "fetched_at": "2026-09-30T09:27:58.399086+00:00",
+      "source_receipt_sha256": "85542fc2731723091769137ad65818e55bc1bf6af0a4c9eeece1e684a065f01f",
+      "upstream_ok": true,
+      "query_evidence": "Same WSET ctd grammar already verified for T2612.CFE in receipt 5686870a1a0e485bae6cf67c1740037f; actual TS/TF/TL contract codes in receipt 901ec1c99f14422f93a830917a4ccca1; product-specific availability still being tested",
+      "column_statistics": {
+        "date": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "wind_code": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "irr": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "ctd_ib": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "irr_ib": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "ctd_sh": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "irr_sh": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "ctd_sz": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "irr_sz": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "ctd_tl",
+      "request": {
+        "method": "wset",
+        "arguments": {
+          "tablename": "ctd",
+          "options": "startdate=2026-09-21;enddate=2026-09-29;windcode=TL2612.CFE"
+        }
+      },
+      "receipt_id": "c69bd8f9b3534e6ba31928ab1cb715c0",
+      "fetched_at": "2026-09-30T09:28:09.782326+00:00",
+      "source_receipt_sha256": "0af588f8e2d5a491aad82b5de2400daa07c8e88244d82b8ce872b8de778911a1",
+      "upstream_ok": true,
+      "query_evidence": "Same WSET ctd grammar already verified for T2612.CFE in receipt 5686870a1a0e485bae6cf67c1740037f; actual TS/TF/TL contract codes in receipt 901ec1c99f14422f93a830917a4ccca1; product-specific availability still being tested",
+      "column_statistics": {
+        "date": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "wind_code": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "irr": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "ctd_ib": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "irr_ib": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "ctd_sh": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "irr_sh": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "ctd_sz": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        },
+        "irr_sz": {
+          "rows": 6,
+          "non_null_rows": 6,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": null,
+          "last_non_null_date": null
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "index_history_000300",
+      "request": {
+        "method": "wsd",
+        "arguments": {
+          "codes": "000300.SH",
+          "fields": "close,pe_ttm,pb_lf,dividendyield2",
+          "beginTime": "2000-01-01",
+          "endTime": "2026-09-29",
+          "options": "PriceAdj=U"
+        }
+      },
+      "receipt_id": "9f41a5eb030049cc8f1975b50a2e0a60",
+      "fetched_at": "2026-09-30T09:28:21.778353+00:00",
+      "source_receipt_sha256": "829dc6450b771d6e55260bd3cb14aea51eaff6a216efd485c181e51bc9e30cec",
+      "upstream_ok": true,
+      "query_evidence": "Index name and these four non-null fields observed in WSS receipt 24693c2e066b4dc38d2a334a3fe7263d; WSD literal candidate mappings from windget 0.0.7; request start not earliest-availability or historical-publication claim",
+      "column_statistics": {
+        "CLOSE": {
+          "rows": 6481,
+          "non_null_rows": 6002,
+          "null_or_blank_rows": 479,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2002-01-04",
+          "last_non_null_date": "2026-09-29"
+        },
+        "PE_TTM": {
+          "rows": 6481,
+          "non_null_rows": 5220,
+          "null_or_blank_rows": 1261,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2005-04-08",
+          "last_non_null_date": "2026-09-29"
+        },
+        "PB_LF": {
+          "rows": 6481,
+          "non_null_rows": 5220,
+          "null_or_blank_rows": 1261,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2005-04-08",
+          "last_non_null_date": "2026-09-29"
+        },
+        "DIVIDENDYIELD2": {
+          "rows": 6481,
+          "non_null_rows": 5220,
+          "null_or_blank_rows": 1261,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2005-04-08",
+          "last_non_null_date": "2026-09-29"
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "index_history_000016",
+      "request": {
+        "method": "wsd",
+        "arguments": {
+          "codes": "000016.SH",
+          "fields": "close,pe_ttm,pb_lf,dividendyield2",
+          "beginTime": "2000-01-01",
+          "endTime": "2026-09-29",
+          "options": "PriceAdj=U"
+        }
+      },
+      "receipt_id": "807d2a4eebd84db4bddc3f3406a7512b",
+      "fetched_at": "2026-09-30T09:28:33.413511+00:00",
+      "source_receipt_sha256": "8b040a24b2154760ead79d6d9093dcce63fbc9735fb4ba9a7cccfd08a0546d15",
+      "upstream_ok": true,
+      "query_evidence": "Index name and these four non-null fields observed in WSS receipt 24693c2e066b4dc38d2a334a3fe7263d; WSD literal candidate mappings from windget 0.0.7; request start not earliest-availability or historical-publication claim",
+      "column_statistics": {
+        "CLOSE": {
+          "rows": 6481,
+          "non_null_rows": 5525,
+          "null_or_blank_rows": 956,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2003-12-31",
+          "last_non_null_date": "2026-09-29"
+        },
+        "PE_TTM": {
+          "rows": 6481,
+          "non_null_rows": 5524,
+          "null_or_blank_rows": 957,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2004-01-02",
+          "last_non_null_date": "2026-09-29"
+        },
+        "PB_LF": {
+          "rows": 6481,
+          "non_null_rows": 5524,
+          "null_or_blank_rows": 957,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2004-01-02",
+          "last_non_null_date": "2026-09-29"
+        },
+        "DIVIDENDYIELD2": {
+          "rows": 6481,
+          "non_null_rows": 5524,
+          "null_or_blank_rows": 957,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2004-01-02",
+          "last_non_null_date": "2026-09-29"
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "index_history_000905",
+      "request": {
+        "method": "wsd",
+        "arguments": {
+          "codes": "000905.SH",
+          "fields": "close,pe_ttm,pb_lf,dividendyield2",
+          "beginTime": "2000-01-01",
+          "endTime": "2026-09-29",
+          "options": "PriceAdj=U"
+        }
+      },
+      "receipt_id": "31948c88c7064570b39efff0b70203d5",
+      "fetched_at": "2026-09-30T09:28:46.134571+00:00",
+      "source_receipt_sha256": "fbc8495d4a091ce119c2f1fa812dbc40ce9b9a7dddffbbb56d0b6fb12921b9ad",
+      "upstream_ok": true,
+      "query_evidence": "Index name and these four non-null fields observed in WSS receipt 24693c2e066b4dc38d2a334a3fe7263d; WSD literal candidate mappings from windget 0.0.7; request start not earliest-availability or historical-publication claim",
+      "column_statistics": {
+        "CLOSE": {
+          "rows": 6481,
+          "non_null_rows": 5282,
+          "null_or_blank_rows": 1199,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2004-12-31",
+          "last_non_null_date": "2026-09-29"
+        },
+        "PE_TTM": {
+          "rows": 6481,
+          "non_null_rows": 4791,
+          "null_or_blank_rows": 1690,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2007-01-15",
+          "last_non_null_date": "2026-09-29"
+        },
+        "PB_LF": {
+          "rows": 6481,
+          "non_null_rows": 4791,
+          "null_or_blank_rows": 1690,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2007-01-15",
+          "last_non_null_date": "2026-09-29"
+        },
+        "DIVIDENDYIELD2": {
+          "rows": 6481,
+          "non_null_rows": 4791,
+          "null_or_blank_rows": 1690,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2007-01-15",
+          "last_non_null_date": "2026-09-29"
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "index_history_000852",
+      "request": {
+        "method": "wsd",
+        "arguments": {
+          "codes": "000852.SH",
+          "fields": "close,pe_ttm,pb_lf,dividendyield2",
+          "beginTime": "2000-01-01",
+          "endTime": "2026-09-29",
+          "options": "PriceAdj=U"
+        }
+      },
+      "receipt_id": "97e8fe5212844235ad7a9f398e5aeb3b",
+      "fetched_at": "2026-09-30T09:28:57.791139+00:00",
+      "source_receipt_sha256": "8ec62c092c257f2fa3db4ac37e8e7d9aa78c65647f1fcb873c4671f43b2f1f16",
+      "upstream_ok": false,
+      "query_evidence": "Index name and these four non-null fields observed in WSS receipt 24693c2e066b4dc38d2a334a3fe7263d; WSD literal candidate mappings from windget 0.0.7; request start not earliest-availability or historical-publication claim",
+      "upstream_error": {
+        "Codes": [
+          "ErrorReport"
+        ],
+        "Data": [
+          [
+            "CWSDService: quota exceeded."
+          ]
+        ],
+        "ErrorCode": -40522017,
+        "Fields": [
+          "OUTMESSAGE"
+        ],
+        "Times": [
+          "2026-09-30"
+        ]
+      }
+    },
+    {
+      "name": "index_history_000852_recovered",
+      "request": {
+        "method": "wsd",
+        "arguments": {
+          "beginTime": "2000-01-01",
+          "codes": "000852.SH",
+          "endTime": "2026-09-29",
+          "fields": "close,pe_ttm,pb_lf,dividendyield2",
+          "options": "PriceAdj=U"
+        },
+        "max_age_seconds": 0
+      },
+      "receipt_id": "3cb60468958d444392a459748693c5b0",
+      "fetched_at": "2026-10-03T13:20:19.940320+00:00",
+      "source_receipt_sha256": "dd27ac6cde477e77b353a4bf6cba37d1a584b849b63a95bad32531ff033cf8a8",
+      "upstream_ok": true,
+      "query_evidence": "Native Codex tools in the current model conversation; server 0.21.0",
+      "column_statistics": {
+        "CLOSE": {
+          "rows": 6481,
+          "non_null_rows": 5282,
+          "null_or_blank_rows": 1199,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2004-12-31",
+          "last_non_null_date": "2026-09-29"
+        },
+        "PE_TTM": {
+          "rows": 6481,
+          "non_null_rows": 2908,
+          "null_or_blank_rows": 3573,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2014-10-17",
+          "last_non_null_date": "2026-09-29"
+        },
+        "PB_LF": {
+          "rows": 6481,
+          "non_null_rows": 2908,
+          "null_or_blank_rows": 3573,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2014-10-17",
+          "last_non_null_date": "2026-09-29"
+        },
+        "DIVIDENDYIELD2": {
+          "rows": 6481,
+          "non_null_rows": 2908,
+          "null_or_blank_rows": 3573,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2014-10-17",
+          "last_non_null_date": "2026-09-29"
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    },
+    {
+      "name": "chinamoney_10y_history",
+      "request": {
+        "method": "edb",
+        "arguments": {
+          "beginTime": "2015-01-04",
+          "codes": "M0325687",
+          "endTime": "2026-09-30",
+          "options": ""
+        },
+        "max_age_seconds": 0
+      },
+      "receipt_id": "b7dad45f4d1c4444a6d942acc8149c9b",
+      "fetched_at": "2026-10-03T13:35:26.008118+00:00",
+      "source_receipt_sha256": "ffb4c23ea5c00a5b3b5df89a9e6b7813c010240eb2cd8d2fffc19482eaf3ccae",
+      "upstream_ok": true,
+      "query_evidence": "Native Codex tools in the current model conversation; server 0.21.0",
+      "column_statistics": {
+        "M0325687": {
+          "rows": 2930,
+          "non_null_rows": 2930,
+          "null_or_blank_rows": 0,
+          "zero_rows": 0,
+          "all_present_values_zero": false,
+          "first_non_null_date": "2015-01-04",
+          "last_non_null_date": "2026-09-30"
+        }
+      },
+      "earliest_available_history_certified": false,
+      "units_and_methodology_certified": false
+    }
+  ],
+  "basis_crosscheck": [
+    {
+      "future": "IF2612.CFE",
+      "index": "000300.SH",
+      "basis_matches_future_close_minus_index_close": true,
+      "basis_percent_matches_100_basis_over_index": true,
+      "numeric_differences": [
+        0.0,
+        0.0
+      ],
+      "annualization_rule_certified": false,
+      "requested_trade_date": "2026-09-29",
+      "single_snapshot_only": true
+    },
+    {
+      "future": "IH2612.CFE",
+      "index": "000016.SH",
+      "basis_matches_future_close_minus_index_close": true,
+      "basis_percent_matches_100_basis_over_index": true,
+      "numeric_differences": [
+        0.0,
+        0.0
+      ],
+      "annualization_rule_certified": false,
+      "requested_trade_date": "2026-09-29",
+      "single_snapshot_only": true
+    },
+    {
+      "future": "IC2612.CFE",
+      "index": "000905.SH",
+      "basis_matches_future_close_minus_index_close": true,
+      "basis_percent_matches_100_basis_over_index": true,
+      "numeric_differences": [
+        0.0,
+        0.0
+      ],
+      "annualization_rule_certified": false,
+      "requested_trade_date": "2026-09-29",
+      "single_snapshot_only": true
+    },
+    {
+      "future": "IM2612.CFE",
+      "index": "000852.SH",
+      "basis_matches_future_close_minus_index_close": true,
+      "basis_percent_matches_100_basis_over_index": true,
+      "numeric_differences": [
+        0.0,
+        2.220446049250313e-16
+      ],
+      "annualization_rule_certified": false,
+      "requested_trade_date": "2026-09-29",
+      "single_snapshot_only": true
+    }
+  ],
+  "index_history_snapshot_crosscheck": [
+    {
+      "code": "000300.SH",
+      "field": "CLOSE",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000300.SH",
+      "field": "PE_TTM",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000300.SH",
+      "field": "PB_LF",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000300.SH",
+      "field": "DIVIDENDYIELD2",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000016.SH",
+      "field": "CLOSE",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000016.SH",
+      "field": "PE_TTM",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000016.SH",
+      "field": "PB_LF",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000016.SH",
+      "field": "DIVIDENDYIELD2",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000905.SH",
+      "field": "CLOSE",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000905.SH",
+      "field": "PE_TTM",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000905.SH",
+      "field": "PB_LF",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000905.SH",
+      "field": "DIVIDENDYIELD2",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000852.SH",
+      "field": "CLOSE",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000852.SH",
+      "field": "PE_TTM",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000852.SH",
+      "field": "PB_LF",
+      "date": "2026-09-29",
+      "difference": 0.0
+    },
+    {
+      "code": "000852.SH",
+      "field": "DIVIDENDYIELD2",
+      "date": "2026-09-29",
+      "difference": 0.0
+    }
+  ],
+  "shibor_edb_wsd_crosscheck": [
+    {
+      "edb": "M0017138",
+      "ir": "SHIBORON.IR",
+      "observations": 6,
+      "all_dates_and_values_equal": true,
+      "all_history_equivalence_certified": false
+    },
+    {
+      "edb": "M0017139",
+      "ir": "SHIBOR1W.IR",
+      "observations": 6,
+      "all_dates_and_values_equal": true,
+      "all_history_equivalence_certified": false
+    }
+  ],
+  "limitations": [
+    "Four government yield EDB candidates returned only zero in this six-date window; retain raw zeros but do not certify usable yield curves",
+    "us_code/us_name returned null for all four futures; underlying mapping is based on reviewed external contract names and Wind index-name queries, not those fields",
+    "R007 WAI candidates 201001.SH/206007.SH were not selected as interbank repo; market/name ambiguity preserved",
+    "Index valuation weighting/exclusion rules, rate units/publishers, annualized basis and IRR formulas remain unverified",
+    "CTD market rows are not deduplicated bond issues; historical values do not certify publication-time availability",
+    "CSI1000 long history succeeded on 2026-10-03; earlier quota and SkyClient failures remain separate observations, not current availability claims"
+  ],
+  "full_financial_futures_fundamentals_verified": false,
+  "point_in_time_safe": false,
+  "schema_version": 1,
+  "metadata_source_id": "local_wind_query_observations",
+  "native_probe_server_version": "0.20.0",
+  "probe_file": "verification/financial-futures-probes.json",
+  "probe_sha256": "e6f5606ebbf4e6f29a3f82e1293bd99f5a79708640eae4ac66beec3cedcc572b",
+  "raw_historical_values_bundled": false,
+  "followup": {
+    "record": "references/financial-futures-recovery.json",
+    "observed_date": "2026-10-03",
+    "native_probe_server_version": "0.21.0",
+    "prior_failed_receipts_preserved": [
+      "97e8fe5212844235ad7a9f398e5aeb3b",
+      "26c646341c08461fa89515fe2d9736c5"
+    ]
+  },
+  "chinamoney_10y": {
+    "data_source_id": "wind_terminal_api",
+    "data_source_name": "Wind 终端 API",
+    "observed_date": "2026-10-03",
+    "request": {
+      "question": "M0325687",
+      "beginDate": "2015-01-04",
+      "endDate": "2026-09-30",
+      "max_age_seconds": 0
+    },
+    "receipt_id": "b7dad45f4d1c4444a6d942acc8149c9b",
+    "fetched_at": "2026-10-03T13:35:26.008118+00:00",
+    "from_cache": false,
+    "code": "M0325687",
+    "name": "中国:国债收益率:10年",
+    "source": "中国货币网",
+    "unit": "%",
+    "frequency": "日",
+    "observation_count": 2930,
+    "non_null_count": 2930,
+    "null_count": 0,
+    "zero_count": 0,
+    "min": 1.5895,
+    "max": 4.0518,
+    "first_date": "2015-01-04",
+    "last_date": "2026-09-30",
+    "last_value": 1.675,
+    "dates_unique": true,
+    "dates_strictly_increasing": true,
+    "ui_latest_observation": {
+      "date": "2026-09-30",
+      "unit": "%",
+      "value": 1.675
+    },
+    "ui_latest_matches": true,
+    "metadata_evidence": "references/edb-rates-metadata-20261003.json",
+    "raw_historical_values_bundled": false,
+    "point_in_time_safe": false,
+    "limitations": [
+      "One distinct ChinaMoney series; not a replacement or equivalence assertion for ChinaBond.",
+      "No proof of earliest available history or vintage/release timestamps.",
+      "Displayed percentage unit and publisher were reviewed in the original terminal overview."
+    ],
+    "source_receipt_sha256": "ffb4c23ea5c00a5b3b5df89a9e6b7813c010240eb2cd8d2fffc19482eaf3ccae"
+  },
+  "restricted_indicator_observation": {
+    "requested_code": "S0059749",
+    "display_name": "中债国债到期收益率:10年",
+    "display_source": "中债估值中心",
+    "display_frequency": "日",
+    "overview_result": "UI states this third-party data product requires separate purchase to view complete history",
+    "complete_history_subscription_required": true,
+    "api_zero_values_not_certified": true,
+    "zero_value_cause_exclusively_proved": false,
+    "no_permission_bypass_attempted": true
+  },
+  "underlying_mapping_evidence": [
+    {
+      "product": "IF",
+      "index": "000300.SH",
+      "name": "沪深300",
+      "url": "https://www.cffex.com.cn/u/cms/www/201712/29190619cz7t.pdf"
+    },
+    {
+      "product": "IH",
+      "index": "000016.SH",
+      "name": "上证50",
+      "url": "https://www.cffex.com.cn/cn/sz50gzqh.html"
+    },
+    {
+      "product": "IC",
+      "index": "000905.SH",
+      "name": "中证500",
+      "url": "https://www.cffex.com.cn/cn/zz500.html"
+    },
+    {
+      "product": "IM",
+      "index": "000852.SH",
+      "name": "中证1000",
+      "url": "https://www.cffex.com.cn/cn/ssxz/20220718/43093.html"
+    }
+  ],
+  "underlying_mapping_note": "CFFEX contract underlying names were checked through indexed official-source results; Wind codes/names through receipt 24693c2e066b4dc38d2a334a3fe7263d. Direct CFFEX page opens timed out. us_code/us_name were all null and are not mapping evidence.",
+  "ctd_all_four_products": [
+    {
+      "product": "T",
+      "contract": "T2612.CFE",
+      "receipt_id": "5686870a1a0e485bae6cf67c1740037f",
+      "evidence": "references/futures-field-followup-evidence.json"
+    },
+    {
+      "product": "TS",
+      "contract": "TS2612.CFE",
+      "receipt_id": "26559e4e15994763ade5e124072cbb6b"
+    },
+    {
+      "product": "TF",
+      "contract": "TF2612.CFE",
+      "receipt_id": "97d10b653de4482aa5d1fb8f889e48d2"
+    },
+    {
+      "product": "TL",
+      "contract": "TL2612.CFE",
+      "receipt_id": "c69bd8f9b3534e6ba31928ab1cb715c0"
+    }
+  ],
+  "ctd_window": {
+    "start": "2026-09-21",
+    "end": "2026-09-29",
+    "rows_per_product": 6,
+    "columns": 9,
+    "all_values_non_null": true,
+    "irr_units_and_model_certified": false
+  },
+  "quota": {
+    "error_category": "quota_exceeded",
+    "native_method": "wsd",
+    "wind_error_code": -40522017,
+    "upstream_message": "CWSDService: quota exceeded.",
+    "automatic_retry_recommended": false,
+    "quota_scope": null,
+    "remaining_quota": null,
+    "reset_at": null,
+    "quota_scope_and_reset_reported": false,
+    "recovery_hint": "Preserve completed receipts and stop automatic retries or new bulk reads. Resume after Wind availability is confirmed; no automatic source switch. Quota scope and reset time were not reported by this response.",
+    "receipt_id": "97e8fe5212844235ad7a9f398e5aeb3b",
+    "observed_at": "2026-09-30T09:28:57.791139+00:00",
+    "new_handler_validation": "offline_replay_of_real_response_no_native_request",
+    "new_native_reads_stopped_after_error": true,
+    "current_availability_checked": true,
+    "successful_later_same_request_receipt_id": "3cb60468958d444392a459748693c5b0",
+    "later_observation_date": "2026-10-03",
+    "later_success_does_not_measure_remaining_quota": true,
+    "historical_error_not_current_availability": true
+  }
+}

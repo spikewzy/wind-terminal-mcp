@@ -1,0 +1,392 @@
+{
+  "checked_at": "2026-10-03T19:29:12.887801+00:00",
+  "release_version": "0.23.11",
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "status": "passed_for_explicit_code_probe_and_annual_ranges",
+  "native_data_queries": 2,
+  "max_native_data_queries": 2,
+  "returned_value_cells": 57,
+  "non_null_values": 44,
+  "annual_non_null_values": 40,
+  "rebar_probe_non_null_values": 4,
+  "null_cells": 13,
+  "raw_zero_cells": 0,
+  "jobs": [
+    {
+      "id": "rebar_ui_code_probe",
+      "method": "edb",
+      "arguments": {
+        "beginTime": "2026-09-14",
+        "codes": "S5716165,H6924748,K4569350",
+        "endTime": "2026-09-24",
+        "options": ""
+      },
+      "receipt_id": "6db7b07df74b40c58ed48ce20df6cb23",
+      "sha256": "0d5c5760f737f10762cb638ee7cbbde8b13b5e198d4ce1777e812f74fd81a1eb",
+      "fetched_at": "2026-10-03T19:25:59.326996+00:00",
+      "native_server_version": "0.21.0",
+      "raw_error_code": 0,
+      "stored_query_validation_status": "passed",
+      "returned_date_count": 3,
+      "returned_columns": 3,
+      "returned_value_cells": 9,
+      "non_null_values": 4,
+      "null_cells": 5,
+      "zero_cells": 0,
+      "per_code": [
+        {
+          "code": "S5716165",
+          "metadata": {
+            "code": "S5716165",
+            "name": "中国:社会库存:螺纹钢",
+            "unit": null,
+            "freq": null,
+            "source": null,
+            "name_evidence": "WAI recognition only; exact-code terminal metadata unresolved"
+          },
+          "metadata_source_id": "wind_wai_fer_name_only",
+          "non_null_count": 1,
+          "null_count": 2,
+          "zero_count": 0,
+          "first_non_null_date": "2026-09-20",
+          "last_non_null_date": "2026-09-20",
+          "exact_year_end_sequence_within_displayed_ui_range": false,
+          "metadata_same_as_other_code": false,
+          "source_or_unit_inferred": false,
+          "point_in_time_safe": false
+        },
+        {
+          "code": "H6924748",
+          "metadata": {
+            "code": "H6924748",
+            "name": "中国:社会库存量:螺纹钢",
+            "unit": "万吨",
+            "freq": "周",
+            "source": "Wind",
+            "ui_history_start": "2020-01-20",
+            "ui_history_end": "2026-09-24"
+          },
+          "metadata_source_id": "wind_terminal_ui",
+          "non_null_count": 2,
+          "null_count": 1,
+          "zero_count": 0,
+          "first_non_null_date": "2026-09-17",
+          "last_non_null_date": "2026-09-24",
+          "exact_year_end_sequence_within_displayed_ui_range": false,
+          "metadata_same_as_other_code": false,
+          "source_or_unit_inferred": false,
+          "point_in_time_safe": false
+        },
+        {
+          "code": "K4569350",
+          "metadata": {
+            "code": "K4569350",
+            "name": "中国:社会库存量:螺纹钢",
+            "unit": "万吨",
+            "freq": "周",
+            "source": "根据新闻整理",
+            "ui_history_start": "2015-09-30",
+            "ui_history_end": "2026-09-20"
+          },
+          "metadata_source_id": "wind_terminal_ui",
+          "non_null_count": 1,
+          "null_count": 2,
+          "zero_count": 0,
+          "first_non_null_date": "2026-09-20",
+          "last_non_null_date": "2026-09-20",
+          "exact_year_end_sequence_within_displayed_ui_range": false,
+          "metadata_same_as_other_code": false,
+          "source_or_unit_inferred": false,
+          "point_in_time_safe": false
+        }
+      ],
+      "date_diagnostics": {
+        "scope": "entire_raw_edb_matrix_before_pagination",
+        "series": [
+          {
+            "code": "S5716165",
+            "column_index": 0,
+            "status": "values_only_inside_requested_interval",
+            "in_range": {
+              "row_count": 3,
+              "non_null_count": 1,
+              "null_count": 2,
+              "numeric_count": 1,
+              "non_numeric_non_null_count": 0,
+              "zero_count": 0,
+              "first_non_null_date": "2026-09-20",
+              "last_non_null_date": "2026-09-20"
+            },
+            "out_of_range": {
+              "row_count": 0,
+              "non_null_count": 0,
+              "null_count": 0,
+              "numeric_count": 0,
+              "non_numeric_non_null_count": 0,
+              "zero_count": 0,
+              "first_non_null_date": null,
+              "last_non_null_date": null
+            },
+            "out_of_range_non_null_dates_sample": [],
+            "value_semantics_verified": false
+          },
+          {
+            "code": "H6924748",
+            "column_index": 1,
+            "status": "values_only_inside_requested_interval",
+            "in_range": {
+              "row_count": 3,
+              "non_null_count": 2,
+              "null_count": 1,
+              "numeric_count": 2,
+              "non_numeric_non_null_count": 0,
+              "zero_count": 0,
+              "first_non_null_date": "2026-09-17",
+              "last_non_null_date": "2026-09-24"
+            },
+            "out_of_range": {
+              "row_count": 0,
+              "non_null_count": 0,
+              "null_count": 0,
+              "numeric_count": 0,
+              "non_numeric_non_null_count": 0,
+              "zero_count": 0,
+              "first_non_null_date": null,
+              "last_non_null_date": null
+            },
+            "out_of_range_non_null_dates_sample": [],
+            "value_semantics_verified": false
+          },
+          {
+            "code": "K4569350",
+            "column_index": 2,
+            "status": "values_only_inside_requested_interval",
+            "in_range": {
+              "row_count": 3,
+              "non_null_count": 1,
+              "null_count": 2,
+              "numeric_count": 1,
+              "non_numeric_non_null_count": 0,
+              "zero_count": 0,
+              "first_non_null_date": "2026-09-20",
+              "last_non_null_date": "2026-09-20"
+            },
+            "out_of_range": {
+              "row_count": 0,
+              "non_null_count": 0,
+              "null_count": 0,
+              "numeric_count": 0,
+              "non_numeric_non_null_count": 0,
+              "zero_count": 0,
+              "first_non_null_date": null,
+              "last_non_null_date": null
+            },
+            "out_of_range_non_null_dates_sample": [],
+            "value_semantics_verified": false
+          }
+        ],
+        "series_mapping_verified": true,
+        "dates_compared": true,
+        "numeric_data_selected": false,
+        "frequency_inferred": false,
+        "unit_or_publisher_verified": false,
+        "history_completeness_verified": false,
+        "point_in_time_safe": false,
+        "note": "EDB columns share a returned date axis. A date or a null cell is not a populated observation for every code. Counts describe the saved response only; query validation remains separate. No rows are removed, no values are filled, and zero values remain zero.",
+        "returned_date_count": 3,
+        "returned_column_count": 3,
+        "requested_date_interval": [
+          "2026-09-14",
+          "2026-09-24"
+        ],
+        "status": "observed",
+        "in_range_date_count": 3,
+        "out_of_range_date_count": 0,
+        "out_of_range_dates_sample": [],
+        "populated_out_of_range_codes": [],
+        "all_returned_dates_within_bounds": true
+      },
+      "no_fill_filter_or_alias": true
+    },
+    {
+      "id": "lithium_polysilicon_annual_history",
+      "method": "edb",
+      "arguments": {
+        "beginTime": "2001-12-31",
+        "codes": "S5449460,S5100860",
+        "endTime": "2024-12-31",
+        "options": ""
+      },
+      "receipt_id": "62671f42b53e428bbe6b43c40d2a7b4d",
+      "sha256": "9ddb352cd6daa46651a794509c8af282fcfa48478e1451fa87e29deb5040dc44",
+      "fetched_at": "2026-10-03T19:26:20.170774+00:00",
+      "native_server_version": "0.21.0",
+      "raw_error_code": 0,
+      "stored_query_validation_status": "passed",
+      "returned_date_count": 24,
+      "returned_columns": 2,
+      "returned_value_cells": 48,
+      "non_null_values": 40,
+      "null_cells": 8,
+      "zero_cells": 0,
+      "per_code": [
+        {
+          "code": "S5449460",
+          "metadata": {
+            "code": "S5449460",
+            "name": "中国:产量:碳酸锂",
+            "unit": "万吨",
+            "freq": "年",
+            "source": "根据新闻整理",
+            "ui_history_start": "2009-12-31",
+            "ui_history_end": "2024-12-31"
+          },
+          "metadata_source_id": "wind_terminal_ui",
+          "non_null_count": 16,
+          "null_count": 8,
+          "zero_count": 0,
+          "first_non_null_date": "2009-12-31",
+          "last_non_null_date": "2024-12-31",
+          "exact_year_end_sequence_within_displayed_ui_range": true,
+          "metadata_same_as_other_code": false,
+          "source_or_unit_inferred": false,
+          "point_in_time_safe": false
+        },
+        {
+          "code": "S5100860",
+          "metadata": {
+            "code": "S5100860",
+            "name": "中国:产量:多晶硅",
+            "unit": "吨",
+            "freq": "年",
+            "source": "Wind",
+            "ui_history_start": "2001-12-31",
+            "ui_history_end": "2024-12-31"
+          },
+          "metadata_source_id": "wind_terminal_ui",
+          "non_null_count": 24,
+          "null_count": 0,
+          "zero_count": 0,
+          "first_non_null_date": "2001-12-31",
+          "last_non_null_date": "2024-12-31",
+          "exact_year_end_sequence_within_displayed_ui_range": true,
+          "metadata_same_as_other_code": false,
+          "source_or_unit_inferred": false,
+          "point_in_time_safe": false
+        }
+      ],
+      "date_diagnostics": {
+        "scope": "entire_raw_edb_matrix_before_pagination",
+        "series": [
+          {
+            "code": "S5449460",
+            "column_index": 0,
+            "status": "values_only_inside_requested_interval",
+            "in_range": {
+              "row_count": 24,
+              "non_null_count": 16,
+              "null_count": 8,
+              "numeric_count": 16,
+              "non_numeric_non_null_count": 0,
+              "zero_count": 0,
+              "first_non_null_date": "2009-12-31",
+              "last_non_null_date": "2024-12-31"
+            },
+            "out_of_range": {
+              "row_count": 0,
+              "non_null_count": 0,
+              "null_count": 0,
+              "numeric_count": 0,
+              "non_numeric_non_null_count": 0,
+              "zero_count": 0,
+              "first_non_null_date": null,
+              "last_non_null_date": null
+            },
+            "out_of_range_non_null_dates_sample": [],
+            "value_semantics_verified": false
+          },
+          {
+            "code": "S5100860",
+            "column_index": 1,
+            "status": "values_only_inside_requested_interval",
+            "in_range": {
+              "row_count": 24,
+              "non_null_count": 24,
+              "null_count": 0,
+              "numeric_count": 24,
+              "non_numeric_non_null_count": 0,
+              "zero_count": 0,
+              "first_non_null_date": "2001-12-31",
+              "last_non_null_date": "2024-12-31"
+            },
+            "out_of_range": {
+              "row_count": 0,
+              "non_null_count": 0,
+              "null_count": 0,
+              "numeric_count": 0,
+              "non_numeric_non_null_count": 0,
+              "zero_count": 0,
+              "first_non_null_date": null,
+              "last_non_null_date": null
+            },
+            "out_of_range_non_null_dates_sample": [],
+            "value_semantics_verified": false
+          }
+        ],
+        "series_mapping_verified": true,
+        "dates_compared": true,
+        "numeric_data_selected": false,
+        "frequency_inferred": false,
+        "unit_or_publisher_verified": false,
+        "history_completeness_verified": false,
+        "point_in_time_safe": false,
+        "note": "EDB columns share a returned date axis. A date or a null cell is not a populated observation for every code. Counts describe the saved response only; query validation remains separate. No rows are removed, no values are filled, and zero values remain zero.",
+        "returned_date_count": 24,
+        "returned_column_count": 2,
+        "requested_date_interval": [
+          "2001-12-31",
+          "2024-12-31"
+        ],
+        "status": "observed",
+        "in_range_date_count": 24,
+        "out_of_range_date_count": 0,
+        "out_of_range_dates_sample": [],
+        "populated_out_of_range_codes": [],
+        "all_returned_dates_within_bounds": true
+      },
+      "no_fill_filter_or_alias": true
+    }
+  ],
+  "h_k_codes_roundtrip_to_windpy": true,
+  "same_name_rebar_series_mergeable": false,
+  "s5716165_k4569350_comparison": {
+    "overlapping_non_null_pairs": 1,
+    "equal_on_observed_overlap": true,
+    "alias_certified": false,
+    "reason": "One matching date/value cannot prove identical histories or methodology."
+  },
+  "h_k_rebar_comparison": {
+    "overlapping_non_null_pairs": 0,
+    "same_name_and_unit": true,
+    "upstream_sources_differ": true,
+    "sample_and_methodology_equivalence_verified": false
+  },
+  "annual_latest_year": 2024,
+  "annual_units": {
+    "S5449460": "万吨",
+    "S5100860": "吨"
+  },
+  "mixed_units_aggregated_or_converted": false,
+  "lithium_pre_2009_leading_nulls": 8,
+  "lithium_old_out_of_range_value_matches_in_new_requested_range": true,
+  "prior_failed_batch_unchanged": true,
+  "s9988490_retried_or_replaced": false,
+  "full_history_or_publication_vintage_certified": false,
+  "full_futures_fundamental_coverage_verified": false,
+  "account_remaining_quota_known": false,
+  "automatic_retry": false,
+  "new_queries_after_plan": 0,
+  "plan_record": "verification/edb-code-and-annual-plan-20261004.json",
+  "metadata_evidence": "references/edb-terminal-metadata-20261004.json"
+}

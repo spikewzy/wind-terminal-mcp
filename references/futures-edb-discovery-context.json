@@ -1,0 +1,552 @@
+{
+  "schema_version": 1,
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "source": null,
+  "implemented_version": "0.23.7",
+  "observed_at": "2026-10-03T18:34:11.457200+00:00",
+  "native_server_version_at_observation": "0.21.0",
+  "receipt_id": "b4773e3cfa854047ab64c42dfd925561",
+  "receipt_sha256": "2111cc7ddedf934bffb53788e1503341277723b7c88def75972d210d7cc3cef4",
+  "verification_record": "verification/futures-edb-discovery-replay-0.23.7.json",
+  "observation_record": "verification/futures-edb-discovery-20261004.json",
+  "request_count": 1,
+  "numerical_series_requests": 0,
+  "offline_replay_native_requests": 0,
+  "unique_edb_candidates": 9,
+  "paragraph_status_counts": {
+    "partial_text_candidates_only": 4,
+    "full_text_candidates": 6,
+    "no_edb_candidates": 6
+  },
+  "full_catalog_search": false,
+  "entitlement_verified": false,
+  "metadata_definitions_verified": false,
+  "automatic_selection": false,
+  "automatic_registration": false,
+  "history_coverage_added": false,
+  "original_entities_unchanged": true,
+  "edb_text_coverage": {
+    "input_paragraph_count": 16,
+    "returned_paragraph_count": 16,
+    "paragraph_counts_match": true,
+    "paragraphs": [
+      {
+        "paragraph_index": 0,
+        "input_text": "中国:库存:电解铝:合计",
+        "candidate_codes": [
+          "S5811172"
+        ],
+        "full_text_candidate_codes": [],
+        "partial_text_candidate_codes": [
+          "S5811172"
+        ],
+        "unverified_span_candidate_codes": [],
+        "status": "partial_text_candidates_only",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 1,
+        "input_text": "中国:社会库存:螺纹钢",
+        "candidate_codes": [
+          "S5716165"
+        ],
+        "full_text_candidate_codes": [
+          "S5716165"
+        ],
+        "partial_text_candidate_codes": [],
+        "unverified_span_candidate_codes": [],
+        "status": "full_text_candidates",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 2,
+        "input_text": "中国:库存:铁矿石:港口合计",
+        "candidate_codes": [
+          "S0110152"
+        ],
+        "full_text_candidate_codes": [],
+        "partial_text_candidate_codes": [
+          "S0110152"
+        ],
+        "unverified_span_candidate_codes": [],
+        "status": "partial_text_candidates_only",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 3,
+        "input_text": "中国:产量:碳酸锂",
+        "candidate_codes": [
+          "S5449460"
+        ],
+        "full_text_candidate_codes": [
+          "S5449460"
+        ],
+        "partial_text_candidate_codes": [],
+        "unverified_span_candidate_codes": [],
+        "status": "full_text_candidates",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 4,
+        "input_text": "中国:库存:碳酸锂",
+        "candidate_codes": [
+          "S0029672"
+        ],
+        "full_text_candidate_codes": [],
+        "partial_text_candidate_codes": [
+          "S0029672"
+        ],
+        "unverified_span_candidate_codes": [],
+        "status": "partial_text_candidates_only",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 5,
+        "input_text": "中国:开工率:工业硅",
+        "candidate_codes": [],
+        "full_text_candidate_codes": [],
+        "partial_text_candidate_codes": [],
+        "unverified_span_candidate_codes": [],
+        "status": "no_edb_candidates",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 6,
+        "input_text": "中国:开工率:浮法玻璃",
+        "candidate_codes": [],
+        "full_text_candidate_codes": [],
+        "partial_text_candidate_codes": [],
+        "unverified_span_candidate_codes": [],
+        "status": "no_edb_candidates",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 7,
+        "input_text": "中国:库存:纯碱",
+        "candidate_codes": [
+          "S5479786"
+        ],
+        "full_text_candidate_codes": [
+          "S5479786"
+        ],
+        "partial_text_candidate_codes": [],
+        "unverified_span_candidate_codes": [],
+        "status": "full_text_candidates",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 8,
+        "input_text": "中国:开工率:焦化企业",
+        "candidate_codes": [],
+        "full_text_candidate_codes": [],
+        "partial_text_candidate_codes": [],
+        "unverified_span_candidate_codes": [],
+        "status": "no_edb_candidates",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 9,
+        "input_text": "中国:港口库存:原油",
+        "candidate_codes": [],
+        "full_text_candidate_codes": [],
+        "partial_text_candidate_codes": [],
+        "unverified_span_candidate_codes": [],
+        "status": "no_edb_candidates",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 10,
+        "input_text": "中国:产量:多晶硅",
+        "candidate_codes": [
+          "S9988490"
+        ],
+        "full_text_candidate_codes": [
+          "S9988490"
+        ],
+        "partial_text_candidate_codes": [],
+        "unverified_span_candidate_codes": [],
+        "status": "full_text_candidates",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 11,
+        "input_text": "波罗的海干散货指数(BDI)",
+        "candidate_codes": [
+          "S0031550"
+        ],
+        "full_text_candidate_codes": [
+          "S0031550"
+        ],
+        "partial_text_candidate_codes": [],
+        "unverified_span_candidate_codes": [],
+        "status": "full_text_candidates",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 12,
+        "input_text": "上海出口集装箱运价指数(SCFI)",
+        "candidate_codes": [
+          "S0114089"
+        ],
+        "full_text_candidate_codes": [
+          "S0114089"
+        ],
+        "partial_text_candidate_codes": [],
+        "unverified_span_candidate_codes": [],
+        "status": "full_text_candidates",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 13,
+        "input_text": "中国:港口库存:甲醇",
+        "candidate_codes": [],
+        "full_text_candidate_codes": [],
+        "partial_text_candidate_codes": [],
+        "unverified_span_candidate_codes": [],
+        "status": "no_edb_candidates",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 14,
+        "input_text": "中国:库存:聚丙烯",
+        "candidate_codes": [
+          "S0029672"
+        ],
+        "full_text_candidate_codes": [],
+        "partial_text_candidate_codes": [
+          "S0029672"
+        ],
+        "unverified_span_candidate_codes": [],
+        "status": "partial_text_candidates_only",
+        "selection_verified": false
+      },
+      {
+        "paragraph_index": 15,
+        "input_text": "中国:加工利润:沥青",
+        "candidate_codes": [],
+        "full_text_candidate_codes": [],
+        "partial_text_candidate_codes": [],
+        "unverified_span_candidate_codes": [],
+        "status": "no_edb_candidates",
+        "selection_verified": false
+      }
+    ],
+    "lexical_coverage_only": true,
+    "note": "Matching the full text does not certify the indicator definition or resolve alternative codes. Partial matches leave qualifiers outside the recognized span. Invalid/missing offsets and changed paragraph segmentation remain unverified; embedded param IDs are not promoted to EDB candidates."
+  },
+  "candidates": [
+    {
+      "code": "S5811172",
+      "recognized_name": "中国:库存:电解铝",
+      "selection_verified": false,
+      "entitlement_verified": false,
+      "occurrences": [
+        {
+          "paragraph_index": 0,
+          "entity_index": 0,
+          "origin": "recognized_entity",
+          "candidate_index": null,
+          "recognized_name": "中国:库存:电解铝",
+          "same_name_different_codes": [],
+          "span_verified": true,
+          "text_match_scope": "partial_paragraph",
+          "start_index": 0,
+          "end_index_inclusive": 8,
+          "matched_text": "中国:库存:电解铝",
+          "unmatched_text": {
+            "before": "",
+            "after": ":合计"
+          },
+          "lexical_coverage_only": true
+        }
+      ]
+    },
+    {
+      "code": "S5716165",
+      "recognized_name": "中国:社会库存:螺纹钢",
+      "selection_verified": false,
+      "entitlement_verified": false,
+      "occurrences": [
+        {
+          "paragraph_index": 1,
+          "entity_index": 0,
+          "origin": "recognized_entity",
+          "candidate_index": null,
+          "recognized_name": "中国:社会库存:螺纹钢",
+          "same_name_different_codes": [],
+          "span_verified": true,
+          "text_match_scope": "full_paragraph",
+          "start_index": 0,
+          "end_index_inclusive": 10,
+          "matched_text": "中国:社会库存:螺纹钢",
+          "unmatched_text": {
+            "before": "",
+            "after": ""
+          },
+          "lexical_coverage_only": true
+        }
+      ]
+    },
+    {
+      "code": "S0110152",
+      "recognized_name": "库存:铁矿石:港口合计",
+      "selection_verified": false,
+      "entitlement_verified": false,
+      "occurrences": [
+        {
+          "paragraph_index": 2,
+          "entity_index": 1,
+          "origin": "recognized_entity",
+          "candidate_index": null,
+          "recognized_name": "库存:铁矿石:港口合计",
+          "same_name_different_codes": [],
+          "span_verified": true,
+          "text_match_scope": "partial_paragraph",
+          "start_index": 3,
+          "end_index_inclusive": 13,
+          "matched_text": "库存:铁矿石:港口合计",
+          "unmatched_text": {
+            "before": "中国:",
+            "after": ""
+          },
+          "lexical_coverage_only": true
+        }
+      ]
+    },
+    {
+      "code": "S5449460",
+      "recognized_name": "中国:产量:碳酸锂",
+      "selection_verified": false,
+      "entitlement_verified": false,
+      "occurrences": [
+        {
+          "paragraph_index": 3,
+          "entity_index": 0,
+          "origin": "recognized_entity",
+          "candidate_index": null,
+          "recognized_name": "中国:产量:碳酸锂",
+          "same_name_different_codes": [],
+          "span_verified": true,
+          "text_match_scope": "full_paragraph",
+          "start_index": 0,
+          "end_index_inclusive": 8,
+          "matched_text": "中国:产量:碳酸锂",
+          "unmatched_text": {
+            "before": "",
+            "after": ""
+          },
+          "lexical_coverage_only": true
+        }
+      ]
+    },
+    {
+      "code": "S0029672",
+      "recognized_name": "库存",
+      "selection_verified": false,
+      "entitlement_verified": false,
+      "occurrences": [
+        {
+          "paragraph_index": 4,
+          "entity_index": 1,
+          "origin": "recognized_entity",
+          "candidate_index": null,
+          "recognized_name": "库存",
+          "same_name_different_codes": [],
+          "span_verified": true,
+          "text_match_scope": "partial_paragraph",
+          "start_index": 3,
+          "end_index_inclusive": 4,
+          "matched_text": "库存",
+          "unmatched_text": {
+            "before": "中国:",
+            "after": ":碳酸锂"
+          },
+          "lexical_coverage_only": true
+        },
+        {
+          "paragraph_index": 4,
+          "entity_index": 1,
+          "origin": "alternative_entity",
+          "candidate_index": 0,
+          "recognized_name": "库存",
+          "same_name_different_codes": [],
+          "span_verified": true,
+          "text_match_scope": "partial_paragraph",
+          "start_index": 3,
+          "end_index_inclusive": 4,
+          "matched_text": "库存",
+          "unmatched_text": {
+            "before": "中国:",
+            "after": ":碳酸锂"
+          },
+          "lexical_coverage_only": true
+        },
+        {
+          "paragraph_index": 14,
+          "entity_index": 1,
+          "origin": "recognized_entity",
+          "candidate_index": null,
+          "recognized_name": "库存",
+          "same_name_different_codes": [],
+          "span_verified": true,
+          "text_match_scope": "partial_paragraph",
+          "start_index": 3,
+          "end_index_inclusive": 4,
+          "matched_text": "库存",
+          "unmatched_text": {
+            "before": "中国:",
+            "after": ":聚丙烯"
+          },
+          "lexical_coverage_only": true
+        },
+        {
+          "paragraph_index": 14,
+          "entity_index": 1,
+          "origin": "alternative_entity",
+          "candidate_index": 0,
+          "recognized_name": "库存",
+          "same_name_different_codes": [],
+          "span_verified": true,
+          "text_match_scope": "partial_paragraph",
+          "start_index": 3,
+          "end_index_inclusive": 4,
+          "matched_text": "库存",
+          "unmatched_text": {
+            "before": "中国:",
+            "after": ":聚丙烯"
+          },
+          "lexical_coverage_only": true
+        }
+      ]
+    },
+    {
+      "code": "S5479786",
+      "recognized_name": "中国:库存:纯碱",
+      "selection_verified": false,
+      "entitlement_verified": false,
+      "occurrences": [
+        {
+          "paragraph_index": 7,
+          "entity_index": 0,
+          "origin": "recognized_entity",
+          "candidate_index": null,
+          "recognized_name": "中国:库存:纯碱",
+          "same_name_different_codes": [],
+          "span_verified": true,
+          "text_match_scope": "full_paragraph",
+          "start_index": 0,
+          "end_index_inclusive": 7,
+          "matched_text": "中国:库存:纯碱",
+          "unmatched_text": {
+            "before": "",
+            "after": ""
+          },
+          "lexical_coverage_only": true
+        }
+      ]
+    },
+    {
+      "code": "S9988490",
+      "recognized_name": "中国:产量:多晶硅",
+      "selection_verified": false,
+      "entitlement_verified": false,
+      "occurrences": [
+        {
+          "paragraph_index": 10,
+          "entity_index": 0,
+          "origin": "recognized_entity",
+          "candidate_index": null,
+          "recognized_name": "中国:产量:多晶硅",
+          "same_name_different_codes": [],
+          "span_verified": true,
+          "text_match_scope": "full_paragraph",
+          "start_index": 0,
+          "end_index_inclusive": 8,
+          "matched_text": "中国:产量:多晶硅",
+          "unmatched_text": {
+            "before": "",
+            "after": ""
+          },
+          "lexical_coverage_only": true
+        }
+      ]
+    },
+    {
+      "code": "S0031550",
+      "recognized_name": "波罗的海干散货指数(bdi)",
+      "selection_verified": false,
+      "entitlement_verified": false,
+      "occurrences": [
+        {
+          "paragraph_index": 11,
+          "entity_index": 0,
+          "origin": "recognized_entity",
+          "candidate_index": null,
+          "recognized_name": "波罗的海干散货指数(bdi)",
+          "same_name_different_codes": [],
+          "span_verified": true,
+          "text_match_scope": "full_paragraph",
+          "start_index": 0,
+          "end_index_inclusive": 13,
+          "matched_text": "波罗的海干散货指数(BDI)",
+          "unmatched_text": {
+            "before": "",
+            "after": ""
+          },
+          "lexical_coverage_only": true
+        },
+        {
+          "paragraph_index": 11,
+          "entity_index": 0,
+          "origin": "alternative_entity",
+          "candidate_index": 0,
+          "recognized_name": "波罗的海干散货指数(bdi)",
+          "same_name_different_codes": [],
+          "span_verified": true,
+          "text_match_scope": "full_paragraph",
+          "start_index": 0,
+          "end_index_inclusive": 13,
+          "matched_text": "波罗的海干散货指数(BDI)",
+          "unmatched_text": {
+            "before": "",
+            "after": ""
+          },
+          "lexical_coverage_only": true
+        }
+      ]
+    },
+    {
+      "code": "S0114089",
+      "recognized_name": "上海出口集装箱运价指数(SCFI)",
+      "selection_verified": false,
+      "entitlement_verified": false,
+      "occurrences": [
+        {
+          "paragraph_index": 12,
+          "entity_index": 0,
+          "origin": "recognized_entity",
+          "candidate_index": null,
+          "recognized_name": "上海出口集装箱运价指数(SCFI)",
+          "same_name_different_codes": [],
+          "span_verified": true,
+          "text_match_scope": "full_paragraph",
+          "start_index": 0,
+          "end_index_inclusive": 16,
+          "matched_text": "上海出口集装箱运价指数(SCFI)",
+          "unmatched_text": {
+            "before": "",
+            "after": ""
+          },
+          "lexical_coverage_only": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Text coverage is lexical, not a confirmation of indicator meaning, units, frequency, publisher or entitlement.",
+    "A commodity entity param code is not an indicator match for inventory, output or profit.",
+    "No candidate is selected or registered automatically; no numeric history was queried.",
+    "The development raw receipt is not distributed. The packaged record describes a historical observation only."
+  ]
+}

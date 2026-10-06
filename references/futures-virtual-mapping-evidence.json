@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-03T17:50:43.613589+00:00",
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "source": null,
+  "native_probe_server_version": "0.21.0",
+  "harness": "Codex current conversation native MCP",
+  "record_kind": "bounded_live_mapping_sample",
+  "plan": "verification/futures-virtual-mapping-plan-20261004.json",
+  "plan_sha256": "eb840f228fdcfde2a37f2cf66a8c0eef2ffd01177812de284efba686ec539c45",
+  "receipt_id": "94c0dcf85be448d19521d83b6e844b14",
+  "source_receipt_sha256": "ffc9b0ad63de5a1420db885eab0991be19c94592fc7173399314b883e5bce5fd",
+  "fetched_at": "2026-10-03T17:46:15.451017+00:00",
+  "method": "wsd",
+  "arguments": {
+    "beginTime": "2026-09-11",
+    "codes": "CU.SHF,CU_S.SHF,CU00.SHF,T.CFE,T_S.CFE,T00.CFE",
+    "endTime": "2026-09-14",
+    "fields": "trade_hiscode",
+    "options": ""
+  },
+  "from_cache": false,
+  "field": "trade_hiscode",
+  "code_evidence": {
+    "main_and_secondary": "Official terminal PDF Wind期货合约名称规则 pages 4-5 and 13-14; read 2026-10-04; code examples not current entitlement certification",
+    "nearby_directory_receipt_id": "22203f0267f7454b883f1cad628c7d79",
+    "field_and_nearby_mapping_receipt_id": "d5bb7b6289d0449daa9b76c1ba90ba22"
+  },
+  "dates": [
+    "2026-09-11",
+    "2026-09-14"
+  ],
+  "summary": {
+    "products": 2,
+    "virtual_codes": 6,
+    "returned_dates": 2,
+    "new_native_requests": 1,
+    "estimated_cells": 24,
+    "returned_cells": 12,
+    "nonempty_cells": 12,
+    "missing_cells": 0,
+    "prior_nearby_cells_crosschecked": 2,
+    "full_mapping_history_verified": false,
+    "main_selection_algorithm_reproduced": false,
+    "price_adjustment_certified": false,
+    "point_in_time_safe": false,
+    "completed_member_long_history_samples_unchanged": 12
+  },
+  "checks": {
+    "request_matches_bounded_plan": true,
+    "validated_saved_receipts": true,
+    "exact_requested_codes_and_dates": true,
+    "all_12_mapping_values_nonempty": true,
+    "same_exchange_suffix_preserved": true,
+    "treasury_nearby_values_match_prior_receipt": true,
+    "main_and_secondary_distinct_on_both_dates": true,
+    "treasury_nearby_rolls_while_main_unchanged": true,
+    "one_native_request_within_announced_cap": true,
+    "returned_cells_within_calendar_grid_estimate": true
+  },
+  "limitations": [
+    "Two products with three virtual-code routes each, not six products or a full domestic futures census.",
+    "Two returned trading dates only; no complete mapping history or full price series was downloaded.",
+    "Observed mappings do not independently reproduce or certify the full main/secondary selection algorithm.",
+    "Price adjustment, historical revisions, publication timing and point-in-time safety remain unverified.",
+    "trade_hiscode is validated as a returned-code sample, not a complete official field definition or parameter dictionary.",
+    "The official PDF rule summary is a separately sourced terminal observation; it does not contain these live API values.",
+    "Account remaining quota, billable units and reset time remain unknown. The natural-day cell estimate is not a quota balance."
+  ],
+  "local_detail_record": "verification/futures-virtual-mapping-20261004.json",
+  "local_detail_sha256": "acca80dad45a0c7b57b73550ef767d0626318b3f7f0786e3298d39b66038fa45",
+  "raw_receipts_distributed": false,
+  "virtual_codes": [
+    "CU.SHF",
+    "CU_S.SHF",
+    "CU00.SHF",
+    "T.CFE",
+    "T_S.CFE",
+    "T00.CFE"
+  ],
+  "sample_observation": "2026-09-11: T.CFE mapped to T2612.CFE while T00.CFE mapped to T2609.CFE. On 2026-09-14 T00.CFE mapped to T2612.CFE; T.CFE was unchanged.",
+  "prior_receipt_crosscheck": {
+    "receipt_id": "d5bb7b6289d0449daa9b76c1ba90ba22",
+    "source_receipt_sha256": "c465925d65ca9581256c5989254ba5edbbcd25a898143c8e6681b598e0f121d5",
+    "compared_cells": 2,
+    "matched_cells": 2
+  }
+}

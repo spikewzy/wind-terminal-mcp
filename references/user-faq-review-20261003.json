@@ -1,0 +1,103 @@
+{
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "reviewed_at": "2026-10-03T14:23:59.011979+00:00",
+  "input_provenance": {
+    "type": "user_supplied_Q_and_A",
+    "date": "2026-10-03",
+    "question_count": 32,
+    "exact_document_version_provided": false,
+    "user_current_quota_information": "not_visible",
+    "account_manager_currently_available": false,
+    "reason": "National Day holiday per user"
+  },
+  "related_saved_official_documents": [
+    {
+      "document": "api_faq",
+      "page_url": "http://114.80.154.45/ApiHelpCenter/web/webapp/manual/id-3218ff17-dbc3-4691-b473-18eabf697c77",
+      "fetched_at": "2026-09-30T01:46:16.330689+00:00",
+      "local_text_sha256": "d7bcca35e094d51bf148817290bbdc4f432ac47cb17e9538ee2afc26505fd6b2"
+    },
+    {
+      "document": "client_api",
+      "page_url": "http://114.80.154.45/ApiHelpCenter/web/webapp/manual/id-0bd5f99c-3a53-4cc4-a818-03fe3f0b34f8",
+      "fetched_at": "2026-09-30T01:51:40.510369+00:00",
+      "local_text_sha256": "924420beb9a975f129dae2e22492eb73c05b2ed94dae0ef24841e0a55d83437e"
+    }
+  ],
+  "actions": [
+    {
+      "questions": [
+        8,
+        31
+      ],
+      "topic": "report_period_calendar",
+      "action": "Preserve options and reference existing report-calendar comparison; do not globally inject Days=Alldays",
+      "existing_verification": "verification/validation-summary.json#financial_calendar"
+    },
+    {
+      "questions": [
+        9,
+        10,
+        12
+      ],
+      "topic": "parameter_syntax_and_matrix_grouping",
+      "action": "Added local WSD/WSS request planner with shape limits, pagination, explicit arguments and unmodified options",
+      "tool": "plan_wind_data_queries"
+    },
+    {
+      "questions": [
+        11
+      ],
+      "topic": "missing_values",
+      "action": "No automatic zero filling or previous-value insertion; raw WSQ zeros remain semantically uncertain"
+    },
+    {
+      "questions": [
+        19
+      ],
+      "topic": "index_weight_dates",
+      "action": "Preserve requested versus returned row dates; no global fixed-lag assumption"
+    },
+    {
+      "questions": [
+        23,
+        29
+      ],
+      "topic": "quota",
+      "action": "No new native queries; account quota/reset remain unknown and no repeat request to user for unavailable information"
+    },
+    {
+      "questions": [
+        24
+      ],
+      "topic": "data_ingestion_times",
+      "action": "General guidance only; not used as a completed-update SLA"
+    },
+    {
+      "questions": [
+        2,
+        3,
+        4,
+        5,
+        15,
+        27
+      ],
+      "topic": "installation_login_or_permissions",
+      "action": "Historical Windows or other-language guidance not applied to functioning Mac installation; no logout, site switch or settings changes"
+    },
+    {
+      "questions": [
+        28,
+        30,
+        32
+      ],
+      "topic": "error_and_field_help",
+      "action": "Existing official documentation and bundle discovery remain available; field-specific meanings still need evidence"
+    }
+  ],
+  "new_native_calls": 0,
+  "account_remaining_quota": null,
+  "account_reset_at": null,
+  "no_full_account_or_field_certification": true
+}

@@ -1,0 +1,52 @@
+{
+  "observed_at": "2026-09-29T08:01:01.070555+00:00",
+  "platform": "Darwin",
+  "architecture": "arm64",
+  "app_version": "26.1.7",
+  "app_build": "60050",
+  "module_path": "/Applications/Wind API.app/Contents/python/WindPy.py",
+  "module_sha256": "e05d64e750f28a4dc7329613c6862d55cfcf29a513df07c2626abe7b83c3b801",
+  "library_path": "/Applications/Wind API.app/Contents/Frameworks/libWind.QuantData.dylib",
+  "library_sha256": "934517c281f5e653c34bf61b0511b3f3208a7e6a4760c72dbd5c4da3208fa2d3",
+  "library_size": 3751744,
+  "inspection": "Read-only examination of official SDK exported-function instructions; no vendor files modified, credentials accessed or protected dictionaries decoded.",
+  "methods": {
+    "wnd": {
+      "status": "unavailable_in_this_binary",
+      "evidence": [
+        "00000000000b6b6c\tmov\tx0, #0x0",
+        "00000000000b6b70\tret"
+      ],
+      "behavior": "Returns NULL unconditionally; no request processing in this exported function."
+    },
+    "wnq": {
+      "status": "unavailable_in_this_binary",
+      "evidence": [
+        "00000000000b6b74\tmov\tx0, #0x0",
+        "00000000000b6b78\tret"
+      ],
+      "behavior": "Returns NULL unconditionally; no request processing in this exported function."
+    },
+    "wnc": {
+      "status": "unavailable_in_this_binary",
+      "evidence": [
+        "00000000000b6b7c\tmov\tx0, #0x0",
+        "00000000000b6b80\tret"
+      ],
+      "behavior": "Returns NULL unconditionally; no request processing in this exported function."
+    },
+    "wnq_asyn": {
+      "status": "unavailable_in_this_binary",
+      "evidence": [
+        "00000000000b6b84\tmov\tx0, #0x0",
+        "00000000000b6b88\tret"
+      ],
+      "behavior": "Returns NULL unconditionally; no request processing in this exported function."
+    }
+  },
+  "live_failure_evidence": [
+    "verification/news-snapshot-probe.json",
+    "verification/news-history-probe.json"
+  ],
+  "scope": "Only this exact module/library fingerprint and running architecture. Other versions and platforms remain unverified."
+}

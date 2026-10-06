@@ -1,0 +1,1554 @@
+{
+  "schema_version": 1,
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "updated_at": "2026-10-03T19:30:44.078347+00:00",
+  "product_scope": "general_multi_asset_wind_terminal_mcp",
+  "agriculture_priority": false,
+  "asset_or_field_whitelist": false,
+  "asset_domains": [
+    "equities",
+    "bonds",
+    "funds",
+    "indices",
+    "futures",
+    "options",
+    "foreign_exchange",
+    "macro",
+    "industry_fundamentals"
+  ],
+  "coverage_claim": "Generic query routing is implemented; exhaustive data coverage and account entitlements are not certified.",
+  "economic_discovery": {
+    "local_catalog": "user-maintained metadata; fresh installations are empty",
+    "automatic_research_seed_import": false,
+    "terminal_candidates": "search_economic_indicator(scope=terminal), official WAI fer",
+    "full_catalog_search": false,
+    "query_codes_need_catalog_registration": false,
+    "terminal_export_metadata": {
+      "tool": "parse_wind_edb_export",
+      "native_metadata_auto_promoted": false,
+      "read_only": true,
+      "official_single_series_export_verified": true,
+      "multi_series_export_live_verified": false,
+      "ui_reviewed_cross_industry_indicators": 6,
+      "metadata_reference": "references/edb-terminal-metadata-20260930.json",
+      "direct_native_metadata_request": {
+        "options": "FIELD_INFO=T",
+        "status": "no_authority",
+        "wind_error_code": -40522015,
+        "independent_from_numeric_edb_permission": true
+      }
+    },
+    "candidate_text_coverage": {
+      "implemented_version": "0.23.7",
+      "repeated_code_occurrences_preserved": true,
+      "unmatched_qualifiers_reported": true,
+      "invalid_offsets_or_changed_segmentation": "unverified",
+      "full_text_is_semantic_confirmation": false,
+      "commodity_param_ids_promoted": false,
+      "evidence": "references/futures-edb-discovery-context.json",
+      "historical_observation": {
+        "requested_paragraphs": 16,
+        "unique_edb_candidates": 9,
+        "partial_text_candidates_only": 4,
+        "full_text_candidates": 6,
+        "no_edb_candidates": 6,
+        "native_requests": 1,
+        "numerical_series_requests": 0,
+        "metadata_or_entitlement_verified": false
+      }
+    },
+    "per_code_date_diagnostics": {
+      "implemented_version": "0.23.8",
+      "query_and_receipt_paths": true,
+      "full_matrix_before_pagination": true,
+      "raw_values_filtered_or_filled": false,
+      "strict_date_validation_unchanged": true,
+      "evidence": "references/futures-edb-bounded-history.json",
+      "bounded_experiment": {
+        "requested_codes": 6,
+        "native_requests": 1,
+        "returned_matrix_cells": 1200,
+        "in_range_non_null_values": 324,
+        "out_of_range_non_null_values": 1,
+        "out_of_range_only_codes": [
+          "S5449460"
+        ],
+        "all_null_codes": [
+          "S9988490"
+        ],
+        "batch_validation": "failed",
+        "failure_code": "OUT_OF_RANGE_DATA",
+        "all_six_successful_histories_verified": false
+      }
+    },
+    "local_catalog_code_search": {
+      "implemented_version": "0.23.9",
+      "complete_code_match": "exact_only",
+      "missing_code_name_fallback": false,
+      "name_queries_keep_distinct_codes": true,
+      "catalog_is_query_whitelist": false
+    },
+    "terminal_ui_metadata_followup": {
+      "observed_date": "2026-10-04",
+      "reference": "references/edb-terminal-metadata-20261004.json",
+      "reviewed_codes": 7,
+      "exact_original_candidate_codes": 4,
+      "different_ui_codes": 3,
+      "unresolved_original_codes": [
+        "S5716165",
+        "S9988490"
+      ],
+      "registered_codes": [
+        "S5449460",
+        "S5479786",
+        "S0031550",
+        "S0114089",
+        "S5100860",
+        "H6924748",
+        "K4569350"
+      ],
+      "blank_unit_codes": [
+        "S0031550"
+      ],
+      "development_catalog_count": 141,
+      "terminal_ui_metadata_count": 17,
+      "historical_alice_metadata_count": 124,
+      "new_native_windpy_requests": 0,
+      "terminal_ui_quota_usage": "unknown",
+      "new_successful_histories": 0,
+      "earlier_failed_batch_status_unchanged": true,
+      "automatic_aliases_or_seed_import": false,
+      "entitlement_or_publication_vintage_certified": false
+    },
+    "reviewed_sa_scfi_histories": {
+      "reference": "references/edb-sa-scfi-history.json",
+      "observed_date": "2026-10-04",
+      "native_queries": 2,
+      "total_non_null_observations": 1388,
+      "series": [
+        {
+          "code": "S5479786",
+          "name": "中国:库存量:纯碱",
+          "source": "隆众资讯",
+          "unit": "万吨",
+          "observations": 538,
+          "range": [
+            "2018-04-04",
+            "2026-09-28"
+          ]
+        },
+        {
+          "code": "S0114089",
+          "name": "中国:上海出口集装箱运价指数:综合指数",
+          "source": "根据新闻整理",
+          "unit": "2009年10月16日=1000",
+          "observations": 850,
+          "range": [
+            "2009-10-16",
+            "2026-09-24"
+          ]
+        }
+      ],
+      "overlap_comparisons": 109,
+      "overlap_differences": 0,
+      "old_failed_batch_still_failed": true,
+      "economic_tool_cache_reuse_verified": true,
+      "regular_weekly_calendar_certified": false,
+      "full_history_or_publication_vintage_certified": false,
+      "all_futures_fundamentals_complete": false
+    },
+    "terminal_code_and_annual_production": {
+      "reference": "references/edb-code-and-annual-history.json",
+      "observed_date": "2026-10-04",
+      "native_queries": 2,
+      "returned_value_cells": 57,
+      "non_null_values": 44,
+      "annual_history_non_null_values": 40,
+      "h_k_code_roundtrip_confirmed": [
+        "H6924748",
+        "K4569350"
+      ],
+      "automatic_aliases": false,
+      "metadata_copied_to_unconfirmed_s_code": false,
+      "annual_series": [
+        {
+          "code": "S5449460",
+          "non_null_count": 16,
+          "unit": "万吨",
+          "source": "根据新闻整理",
+          "range": [
+            "2009-12-31",
+            "2024-12-31"
+          ],
+          "leading_nulls_on_shared_grid": 8
+        },
+        {
+          "code": "S5100860",
+          "non_null_count": 24,
+          "unit": "吨",
+          "source": "Wind",
+          "range": [
+            "2001-12-31",
+            "2024-12-31"
+          ],
+          "leading_nulls_on_shared_grid": 0
+        }
+      ],
+      "latest_annual_statistical_year": 2024,
+      "represents_current_monthly_production": false,
+      "old_failed_batch_still_failed": true,
+      "s9988490_replaced": false,
+      "full_history_or_publication_vintage_certified": false,
+      "all_futures_fundamentals_complete": false
+    }
+  },
+  "futures_acceptance": {
+    "user_requested_scope": "domestic commodity and financial futures with related fundamentals",
+    "frequency_priority": "daily",
+    "data_priority": "fundamental_history",
+    "required_venues": [
+      "SHFE",
+      "INE",
+      "DCE",
+      "CZCE",
+      "GFEX",
+      "CFFEX"
+    ],
+    "full_coverage_verified": false,
+    "requirements": [
+      {
+        "id": "contract_master",
+        "requirement": "全部国内商品和金融期货品种、月份合约、退市合约与合约规则",
+        "native_routes": [
+          "wset",
+          "wss"
+        ],
+        "verification_status": "90_product_active_contract_specs_7_fields_all_populated_20260929_not_full_historical_master"
+      },
+      {
+        "id": "daily_quotes",
+        "requirement": "开高低收、结算、成交量额、持仓、涨跌停及历史日线",
+        "native_routes": [
+          "wsd",
+          "wss"
+        ],
+        "verification_status": "90_products_8_fields_85_complete_5_missing_open_high_low_with_zero_volume_not_all_history"
+      },
+      {
+        "id": "continuous_and_roll",
+        "requirement": "主力与连续合约、历史映射、换月规则和调整口径",
+        "native_routes": [
+          "wset",
+          "wsd",
+          "wss"
+        ],
+        "verification_status": "CU_and_T_main_secondary_nearby_routes_6_codes_2_dates_12_nonempty_mappings_T00_crosschecked_no_full_history_algorithm_or_adjustment_certification",
+        "documented_rule_summary": "futures_rules; main/secondary, nearby-rank, fixed-month and index meanings reviewed in official terminal PDF; historical regimes kept separate; no full mapping or price-adjustment certification",
+        "mapping_sample_evidence": "references/futures-virtual-mapping-evidence.json"
+      },
+      {
+        "id": "member_positions",
+        "requirement": "会员成交及多空持仓排名、历史变化",
+        "native_routes": [
+          "wset",
+          "wsd",
+          "wss"
+        ],
+        "verification_status": "contract_rank1_74_of_90_complete; separate_product_top20_73_complete_1_partial_16_null; four_net_histories_14580_non_null; all_product_history_incomplete; expanded_to_12_net_histories_33885_non_null_then_quota_stopped_19_failed_59_pending"
+      },
+      {
+        "id": "warehouse_and_inventory",
+        "requirement": "仓单、有效预报、交易所及社会库存的历史序列",
+        "native_routes": [
+          "edb",
+          "wsd",
+          "wset",
+          "wss"
+        ],
+        "verification_status": "82_commodity_products_6_dates_78_complete_4_all_null_140_native_zeros_all_82_endpoints_match_saved_snapshot_CU_only_long_history_sample",
+        "bounded_history_evidence": "references/futures-warehouse-bounded-history.json"
+      },
+      {
+        "id": "delivery_and_basis",
+        "requirement": "交割、现货价格、基差、期限结构及国债期货可交割券和CTD",
+        "native_routes": [
+          "wset",
+          "wss",
+          "wsd",
+          "edb"
+        ],
+        "verification_status": "TS_TF_T_TL_CTD_6_dates_9_columns_non_null_4_stock_index_basis_snapshots_arithmetic_checked_historical_basis_and_IRR_rules_unverified"
+      },
+      {
+        "id": "physical_fundamentals",
+        "requirement": "能源、黑色、有色、贵金属、化工、建材、新能源及农林畜牧的产销、供需、库存、开工、进出口、利润和运费历史",
+        "native_routes": [
+          "edb",
+          "wsd",
+          "wset"
+        ],
+        "verification_status": "six_physical_history_samples_and_one_CPI_sample_non_null_one_crude_oil_code_permission_failed"
+      },
+      {
+        "id": "financial_fundamentals",
+        "requirement": "股指及国债期货相关的指数、估值、利率、资金、收益率曲线与宏观历史",
+        "native_routes": [
+          "edb",
+          "wsd",
+          "wss",
+          "wset"
+        ],
+        "verification_status": "4_index_valuation_long_histories_1_ChinaMoney_10y_history_8_SHIBOR_tenors_6_days_DR007_6_days_4_ChinaBond_zero_candidates_preserved"
+      },
+      {
+        "id": "historical_completeness",
+        "requirement": "逐序列历史起点、末期、缺失、频率、单位、来源、修订和公布时点",
+        "native_routes": [
+          "edb",
+          "wsd",
+          "wset"
+        ],
+        "verification_status": "EDB_CU_warehouse_4_index_valuation_and_ChinaMoney_10y_ranges_observed_publication_vintages_missing_ChinaBond_restriction_preserved"
+      }
+    ],
+    "current_instrument_snapshot": {
+      "requested_date": "2026-09-29",
+      "data_source_id": "wind_terminal_api",
+      "evidence_scope": "Observed sector results from this development machine; not independent exchange reconciliation or historical completeness",
+      "contracts_by_suffix": {
+        "DCE": 250,
+        "SHF": 238,
+        "CZC": 243,
+        "INE": 66,
+        "GFE": 48,
+        "CFE": 28
+      },
+      "observed_prefixes_by_suffix": {
+        "DCE": [
+          "A",
+          "B",
+          "BB",
+          "BZ",
+          "C",
+          "CS",
+          "EB",
+          "EG",
+          "FB",
+          "I",
+          "J",
+          "JD",
+          "JM",
+          "L",
+          "LG",
+          "LH",
+          "M",
+          "P",
+          "PG",
+          "PP",
+          "RR",
+          "V",
+          "Y"
+        ],
+        "SHF": [
+          "AD",
+          "AG",
+          "AL",
+          "AO",
+          "AU",
+          "BR",
+          "BU",
+          "CU",
+          "FU",
+          "HC",
+          "NI",
+          "OP",
+          "PB",
+          "RB",
+          "RU",
+          "SN",
+          "SP",
+          "SS",
+          "WR",
+          "ZN"
+        ],
+        "CZC": [
+          "AP",
+          "CF",
+          "CJ",
+          "CY",
+          "FG",
+          "JR",
+          "MA",
+          "OI",
+          "PF",
+          "PK",
+          "PL",
+          "PM",
+          "PR",
+          "PX",
+          "RI",
+          "RM",
+          "RS",
+          "SA",
+          "SF",
+          "SH",
+          "SM",
+          "SR",
+          "TA",
+          "UR",
+          "WH",
+          "ZC"
+        ],
+        "INE": [
+          "BC",
+          "EC",
+          "LU",
+          "NR",
+          "SC"
+        ],
+        "GFE": [
+          "LC",
+          "PD",
+          "PS",
+          "PT",
+          "SI"
+        ],
+        "CFE": [
+          "IC",
+          "IF",
+          "IH",
+          "IM",
+          "T",
+          "TF",
+          "TL",
+          "TS"
+        ]
+      },
+      "prefixes_are_not_certified_product_definitions": true,
+      "total_directory_entries": 873,
+      "contract_variants": [
+        {
+          "code": "L2610F.DCE",
+          "name": "塑料月均价2610F",
+          "qualifier": "F"
+        },
+        {
+          "code": "L2611F.DCE",
+          "name": "塑料月均价2611F",
+          "qualifier": "F"
+        },
+        {
+          "code": "L2612F.DCE",
+          "name": "塑料月均价2612F",
+          "qualifier": "F"
+        },
+        {
+          "code": "L2701F.DCE",
+          "name": "塑料月均价2701F",
+          "qualifier": "F"
+        },
+        {
+          "code": "L2702F.DCE",
+          "name": "塑料月均价2702F",
+          "qualifier": "F"
+        },
+        {
+          "code": "L2703F.DCE",
+          "name": "塑料月均价2703F",
+          "qualifier": "F"
+        },
+        {
+          "code": "PP2610F.DCE",
+          "name": "聚丙烯月均价2610F",
+          "qualifier": "F"
+        },
+        {
+          "code": "PP2611F.DCE",
+          "name": "聚丙烯月均价2611F",
+          "qualifier": "F"
+        },
+        {
+          "code": "PP2612F.DCE",
+          "name": "聚丙烯月均价2612F",
+          "qualifier": "F"
+        },
+        {
+          "code": "PP2701F.DCE",
+          "name": "聚丙烯月均价2701F",
+          "qualifier": "F"
+        },
+        {
+          "code": "PP2702F.DCE",
+          "name": "聚丙烯月均价2702F",
+          "qualifier": "F"
+        },
+        {
+          "code": "PP2703F.DCE",
+          "name": "聚丙烯月均价2703F",
+          "qualifier": "F"
+        },
+        {
+          "code": "SC2611TAS.INE",
+          "name": "原油2611TAS",
+          "qualifier": "TAS"
+        },
+        {
+          "code": "SC2612TAS.INE",
+          "name": "原油2612TAS",
+          "qualifier": "TAS"
+        },
+        {
+          "code": "SC2701TAS.INE",
+          "name": "原油2701TAS",
+          "qualifier": "TAS"
+        },
+        {
+          "code": "V2610F.DCE",
+          "name": "PVC月均价2610F",
+          "qualifier": "F"
+        },
+        {
+          "code": "V2611F.DCE",
+          "name": "PVC月均价2611F",
+          "qualifier": "F"
+        },
+        {
+          "code": "V2612F.DCE",
+          "name": "PVC月均价2612F",
+          "qualifier": "F"
+        },
+        {
+          "code": "V2701F.DCE",
+          "name": "PVC月均价2701F",
+          "qualifier": "F"
+        },
+        {
+          "code": "V2702F.DCE",
+          "name": "PVC月均价2702F",
+          "qualifier": "F"
+        },
+        {
+          "code": "V2703F.DCE",
+          "name": "PVC月均价2703F",
+          "qualifier": "F"
+        }
+      ],
+      "variants_are_preserved_not_discarded": true,
+      "receipt_ids": [
+        "12400dfcfb834d0084dcb40b85fc09f1",
+        "fbbed50e028c486fbf5b9c17f47c99c8"
+      ],
+      "record": "verification/futures-universe-initial.json",
+      "account_entitlement_inference": false
+    },
+    "current_gaps": [
+      "Same-date exchange product-list reconciliation and September additions; August CFA table matched 90/90",
+      "Delisted contracts and continuous-contract roll history",
+      "Warehouse/inventory, member positions, delivery and contract-rule mappings",
+      "Fundamental metadata discovery breadth and observed history by series",
+      "Full-catalog field/EDB discovery and permission coverage are not provided by WAI recognition",
+      "Observed gaps: crude oil S9986860 permission error; furnace S5708175 returns through 2021 only; units and earliest available history not certified",
+      "Financial fundamentals: four ChinaBond yield candidates remain zero-only; terminal requires a separate subscription for complete S0059749 history. Distinct ChinaMoney M0325687 history verified; other tenors, curve methodology and historical publication vintages remain unverified."
+    ],
+    "representative_history_observation": {
+      "recognized_name": "中国:产量:粗钢:当月值",
+      "code": "S5718658",
+      "requested_range": [
+        "1990-01-01",
+        "2026-09-29"
+      ],
+      "first_returned_date": "2019-09-30",
+      "last_returned_date": "2026-08-31",
+      "first_non_null_date": "2019-09-30",
+      "last_non_null_date": "2026-08-31",
+      "rows": 68,
+      "non_null_rows": 68,
+      "unit": null,
+      "earliest_available_history_certified": false,
+      "publication_dates_verified": false,
+      "all_futures_fundamentals_verified": false
+    },
+    "representative_history_record": "verification/general-discovery-live.json",
+    "representative_daily_evidence": {
+      "record": "verification/futures-products-daily.json",
+      "venues": 6,
+      "product_rows": 90,
+      "non_null_product_samples": 90,
+      "field": "close",
+      "contracts_per_product": 1,
+      "date_range": [
+        "2026-09-21",
+        "2026-09-29"
+      ],
+      "all_contracts_verified": false,
+      "all_fields_verified": false,
+      "source_period": "2026-08",
+      "directory_date": "2026-09-29"
+    },
+    "product_reconciliation": {
+      "source_period": "2026-08",
+      "publication_page": "https://www.cfachina.org/servicesupport/researchandpublishin/statisticalsdata/monthlytransactiondata/202609/t20260910_90594.html",
+      "source_url": "https://www.cfachina.org/servicesupport/researchandpublishin/statisticalsdata/monthlytransactiondata/202609/P020260910575512348173.xlsx",
+      "source_sha256": "da4232cc1d0cf4efabc5de2bd33065d4e2f811bf39050dc2c0301800ebf9dc1f",
+      "official_futures_rows": 90,
+      "matched_rows": 90,
+      "by_exchange": {
+        "上海期货交易所": 20,
+        "上海国际能源交易中心": 5,
+        "郑州商品交易所": 26,
+        "大连商品交易所": 26,
+        "中国金融期货交易所": 8,
+        "广州期货交易所": 5
+      },
+      "all_source_rows_matched": true,
+      "wind_directory_date": "2026-09-29",
+      "same_date_exchange_reconciliation": false,
+      "september_new_products_independently_verified": false,
+      "record": "verification/futures-product-reconciliation.json",
+      "includes_three_monthly_average_product_rows": true
+    },
+    "fundamental_history_examples": {
+      "record": "verification/futures-fundamental-history.json",
+      "requested_range": [
+        "1990-01-01",
+        "2026-09-29"
+      ],
+      "series": [
+        {
+          "name": "中国:产量:原油:当月值",
+          "code": "S9986860",
+          "status": "permission_validation_failed",
+          "wind_error_code": -40521007,
+          "receipt_id": "93cc1829569c48bd960db7d4634ed512"
+        },
+        {
+          "name": "中国:产量:原煤:当月值",
+          "code": "S0026989",
+          "status": "non_null_observations",
+          "rows": 413,
+          "non_null_rows": 413,
+          "first_non_null_date": "1990-01-31",
+          "last_non_null_date": "2026-08-31",
+          "unit": null,
+          "source": null,
+          "receipt_id": "de90f472d87141f3ba46f1d8e8c56cec"
+        },
+        {
+          "name": "中国:产量:十种有色金属:当月值",
+          "code": "S0027551",
+          "status": "non_null_observations",
+          "rows": 415,
+          "non_null_rows": 415,
+          "first_non_null_date": "1990-01-31",
+          "last_non_null_date": "2026-08-31",
+          "unit": null,
+          "source": null,
+          "receipt_id": "217f97649afd476f9005c5be0134f64b"
+        },
+        {
+          "name": "中国:产量:乙烯:当月值",
+          "code": "S0027159",
+          "status": "non_null_observations",
+          "rows": 415,
+          "non_null_rows": 415,
+          "first_non_null_date": "1990-01-31",
+          "last_non_null_date": "2026-08-31",
+          "unit": null,
+          "source": null,
+          "receipt_id": "81f6ce1b5e714d7e845edf59ebe320eb"
+        },
+        {
+          "name": "中国:CPI:当月同比",
+          "code": "M0000612",
+          "status": "non_null_observations",
+          "rows": 440,
+          "non_null_rows": 440,
+          "first_non_null_date": "1990-01-31",
+          "last_non_null_date": "2026-08-31",
+          "unit": null,
+          "source": null,
+          "receipt_id": "49c1c1c56ff44169837cfe23cd3d4951"
+        },
+        {
+          "name": "开工率:PTA:国内",
+          "code": "S5446148",
+          "status": "non_null_observations",
+          "rows": 649,
+          "non_null_rows": 649,
+          "first_non_null_date": "2013-09-01",
+          "last_non_null_date": "2026-09-24",
+          "unit": null,
+          "source": null,
+          "receipt_id": "c655fbf365b14b9b81aaaa15382ecca7"
+        },
+        {
+          "name": "高炉开工率:全国",
+          "code": "S5708175",
+          "status": "non_null_observations",
+          "rows": 475,
+          "non_null_rows": 475,
+          "first_non_null_date": "2012-08-03",
+          "last_non_null_date": "2021-12-24",
+          "unit": null,
+          "source": null,
+          "receipt_id": "851c8657169f424395c4bdd072c5d84e"
+        }
+      ],
+      "units_verified": false,
+      "earliest_available_history_certified": false,
+      "publication_times_verified": false
+    },
+    "parameter_observations": {
+      "evidence": "references/futures-query-evidence.json",
+      "probe_server_version": "0.17.1",
+      "queries_attempted": 16,
+      "queries_passed": 15,
+      "queries_with_non_null_values": 14,
+      "full_coverage_verified": false,
+      "important_gaps": [
+        "Contract-level member ranking absent in 16 of 90 tested products; six product-level alternatives also all null",
+        "WSD tbf_ctd2 remains null although WSET ctd returns six dates",
+        "Warehouse units and aggregation not independently verified; four commodity product snapshots null",
+        "Continuous directory includes non-mainland markets",
+        "All months, ranking positions and full historical coverage not exhausted"
+      ]
+    },
+    "product_field_snapshot": {
+      "record": "references/futures-product-field-coverage.json",
+      "requested_date": "2026-09-29",
+      "selection_evidence": {
+        "product_record": "verification/futures-product-reconciliation.json",
+        "product_record_sha256": "0633bc6b8fe5db8faf247f71c7ab1bfb75872e05f882ec87ff30879a365ee1ba",
+        "active_directory_receipt_id": "901ec1c99f14422f93a830917a4ccca1",
+        "requested_date": "2026-09-29",
+        "selection": "Exact product prefix, qualifier and venue match to saved active-month directory; not an inferred main-contract rule"
+      },
+      "groups": {
+        "daily": {
+          "fields": [
+            "open",
+            "high",
+            "low",
+            "close",
+            "settle",
+            "volume",
+            "amt",
+            "oi"
+          ],
+          "queried_products": 90,
+          "status_counts": {
+            "all_populated": 85,
+            "partly_populated": 5
+          },
+          "products_with_zero_values": 5,
+          "incomplete_products": [
+            {
+              "official_name": "优质强筋小麦",
+              "code": "WH611.CZC",
+              "status": "partly_populated",
+              "null_fields": [
+                "open",
+                "high",
+                "low"
+              ],
+              "zero_fields": [
+                "volume",
+                "amt",
+                "oi"
+              ]
+            },
+            {
+              "official_name": "早籼稻",
+              "code": "RI611.CZC",
+              "status": "partly_populated",
+              "null_fields": [
+                "open",
+                "high",
+                "low"
+              ],
+              "zero_fields": [
+                "volume",
+                "amt",
+                "oi"
+              ]
+            },
+            {
+              "official_name": "普麦PM",
+              "code": "PM611.CZC",
+              "status": "partly_populated",
+              "null_fields": [
+                "open",
+                "high",
+                "low"
+              ],
+              "zero_fields": [
+                "volume",
+                "amt",
+                "oi"
+              ]
+            },
+            {
+              "official_name": "动力煤ZC",
+              "code": "ZC610.CZC",
+              "status": "partly_populated",
+              "null_fields": [
+                "open",
+                "high",
+                "low"
+              ],
+              "zero_fields": [
+                "volume",
+                "amt",
+                "oi"
+              ]
+            },
+            {
+              "official_name": "粳稻JR",
+              "code": "JR611.CZC",
+              "status": "partly_populated",
+              "null_fields": [
+                "open",
+                "high",
+                "low"
+              ],
+              "zero_fields": [
+                "volume",
+                "amt",
+                "oi"
+              ]
+            }
+          ],
+          "receipt_ids": [
+            "633fd9b140e940998812aa1d69695d66",
+            "f67ac2e08bb24e95839c5087bec08e90"
+          ]
+        },
+        "member_rank_1": {
+          "fields": [
+            "oi_loi",
+            "oi_lname",
+            "oi_soi",
+            "oi_sname",
+            "oi_volume",
+            "oi_vname"
+          ],
+          "queried_products": 90,
+          "status_counts": {
+            "all_populated": 74,
+            "all_missing": 16
+          },
+          "products_with_zero_values": 0,
+          "incomplete_products": [
+            {
+              "official_name": "线材",
+              "code": "WR2701.SHF",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "原油",
+              "code": "SC2611.INE",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "SCFIS欧线",
+              "code": "EC2611.INE",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "优质强筋小麦",
+              "code": "WH611.CZC",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "早籼稻",
+              "code": "RI611.CZC",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "普麦PM",
+              "code": "PM611.CZC",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "动力煤ZC",
+              "code": "ZC610.CZC",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "粳稻JR",
+              "code": "JR611.CZC",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "胶合板",
+              "code": "BB2611.DCE",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "纤维板",
+              "code": "FB2611.DCE",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "原木",
+              "code": "LG2611.DCE",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "聚丙烯月均价",
+              "code": "PP2611F.DCE",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "聚乙烯月均价",
+              "code": "L2611F.DCE",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "聚氯乙烯月均价",
+              "code": "V2611F.DCE",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "铂期货",
+              "code": "PT2612.GFE",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "钯期货",
+              "code": "PD2612.GFE",
+              "status": "all_missing",
+              "null_fields": [
+                "oi_loi",
+                "oi_lname",
+                "oi_soi",
+                "oi_sname",
+                "oi_volume",
+                "oi_vname"
+              ],
+              "zero_fields": []
+            }
+          ],
+          "receipt_ids": [
+            "a55a3773d05a4a32aaef5e0708866249",
+            "e33b7065101f4ec69590257bc9f79e06"
+          ]
+        },
+        "warehouse": {
+          "fields": [
+            "st_stock"
+          ],
+          "queried_products": 82,
+          "status_counts": {
+            "all_populated": 78,
+            "all_missing": 4
+          },
+          "products_with_zero_values": 19,
+          "incomplete_products": [
+            {
+              "official_name": "SCFIS欧线",
+              "code": "EC2611.INE",
+              "status": "all_missing",
+              "null_fields": [
+                "st_stock"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "聚丙烯月均价",
+              "code": "PP2611F.DCE",
+              "status": "all_missing",
+              "null_fields": [
+                "st_stock"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "聚乙烯月均价",
+              "code": "L2611F.DCE",
+              "status": "all_missing",
+              "null_fields": [
+                "st_stock"
+              ],
+              "zero_fields": []
+            },
+            {
+              "official_name": "聚氯乙烯月均价",
+              "code": "V2611F.DCE",
+              "status": "all_missing",
+              "null_fields": [
+                "st_stock"
+              ],
+              "zero_fields": []
+            }
+          ],
+          "receipt_ids": [
+            "d25dbcd980394bc39d3459592e0ce388",
+            "ba84c56ad62046cfafab36a5b58f3021"
+          ]
+        },
+        "contract_spec": {
+          "fields": [
+            "ftdate",
+            "lasttrade_date",
+            "lastdelivery_date",
+            "punit",
+            "tunit",
+            "mfprice",
+            "contract_issuedate"
+          ],
+          "queried_products": 90,
+          "status_counts": {
+            "all_populated": 90
+          },
+          "products_with_zero_values": 0,
+          "incomplete_products": [],
+          "receipt_ids": [
+            "56c1069b90024aa1836f2282b456d63f",
+            "915c6320df274f34937142186841c19b"
+          ]
+        }
+      },
+      "full_history_verified": false,
+      "all_contracts_verified": false,
+      "field_applicability_certified": false,
+      "point_in_time_safe": false
+    },
+    "ctd_table_sample": {
+      "record": "references/futures-field-followup-evidence.json",
+      "receipt_id": "5686870a1a0e485bae6cf67c1740037f",
+      "method": "wset",
+      "tablename": "ctd",
+      "contract": "T2612.CFE",
+      "requested_range": [
+        "2026-09-21",
+        "2026-09-29"
+      ],
+      "returned_date_rows": 6,
+      "returned_columns": 9,
+      "all_values_non_null": true,
+      "IRR_units_and_model_certified": false,
+      "point_in_time_safe": false
+    },
+    "reviewed_fundamental_history": {
+      "record": "references/edb-terminal-history-evidence.json",
+      "metadata_reference": "references/edb-terminal-metadata-20260930.json",
+      "series": [
+        {
+          "code": "S0026989",
+          "name": "中国:产量:原煤:当月值",
+          "arguments": {
+            "codes": "S0026989",
+            "beginTime": "1986-01-01",
+            "endTime": "2026-09-29",
+            "options": ""
+          },
+          "receipt_id": "37161b04661f4e55a5e64ca2bf16727f",
+          "rows": 461,
+          "non_null_rows": 461,
+          "first_non_null_date": "1986-01-31",
+          "last_non_null_date": "2026-08-31",
+          "unit_from_ui": "万吨",
+          "freq_from_ui": "月",
+          "source_from_ui": "国家统计局",
+          "earliest_available_history_certified": false,
+          "full_value_export_comparison": {
+            "compared": 461,
+            "differences": [],
+            "all_dates_and_values_equal": true
+          },
+          "receipt_read_passed": true
+        },
+        {
+          "code": "S0027551",
+          "name": "中国:产量:十种有色金属:当月值",
+          "arguments": {
+            "codes": "S0027551",
+            "beginTime": "1989-02-01",
+            "endTime": "2026-09-29",
+            "options": ""
+          },
+          "receipt_id": "6813ab2a412044bcbf4ccfdd88594be6",
+          "rows": 426,
+          "non_null_rows": 426,
+          "first_non_null_date": "1989-02-28",
+          "last_non_null_date": "2026-08-31",
+          "unit_from_ui": "万吨",
+          "freq_from_ui": "月",
+          "source_from_ui": "国家统计局",
+          "earliest_available_history_certified": false,
+          "full_value_export_comparison": null,
+          "receipt_read_passed": true
+        },
+        {
+          "code": "S0027159",
+          "name": "中国:产量:乙烯:当月值",
+          "arguments": {
+            "codes": "S0027159",
+            "beginTime": "1989-02-01",
+            "endTime": "2026-09-29",
+            "options": ""
+          },
+          "receipt_id": "fc770d6026aa4d6c996e36cbe11469fa",
+          "rows": 426,
+          "non_null_rows": 426,
+          "first_non_null_date": "1989-02-28",
+          "last_non_null_date": "2026-08-31",
+          "unit_from_ui": "万吨",
+          "freq_from_ui": "月",
+          "source_from_ui": "国家统计局",
+          "earliest_available_history_certified": false,
+          "full_value_export_comparison": null,
+          "receipt_read_passed": true
+        },
+        {
+          "code": "M0000612",
+          "name": "中国:CPI:当月同比",
+          "arguments": {
+            "codes": "M0000612",
+            "beginTime": "1987-01-01",
+            "endTime": "2026-09-29",
+            "options": ""
+          },
+          "receipt_id": "32a7b41cf5d144af92abff6c1a2ac5c8",
+          "rows": 476,
+          "non_null_rows": 476,
+          "first_non_null_date": "1987-01-31",
+          "last_non_null_date": "2026-08-31",
+          "unit_from_ui": "%",
+          "freq_from_ui": "月",
+          "source_from_ui": "国家统计局",
+          "earliest_available_history_certified": false,
+          "full_value_export_comparison": null,
+          "receipt_read_passed": true
+        },
+        {
+          "code": "S5446148",
+          "name": "中国:开工率:精对苯二甲酸",
+          "arguments": {
+            "codes": "S5446148",
+            "beginTime": "2013-09-01",
+            "endTime": "2026-09-29",
+            "options": ""
+          },
+          "receipt_id": "c6d1280e9b3549cca58609e6180605bd",
+          "rows": 649,
+          "non_null_rows": 649,
+          "first_non_null_date": "2013-09-01",
+          "last_non_null_date": "2026-09-24",
+          "unit_from_ui": "%",
+          "freq_from_ui": "周",
+          "source_from_ui": "隆众资讯",
+          "earliest_available_history_certified": false,
+          "full_value_export_comparison": null,
+          "receipt_read_passed": true
+        },
+        {
+          "code": "S5708175",
+          "name": "(停止)中国:高炉开工率(163家)",
+          "arguments": {
+            "codes": "S5708175",
+            "beginTime": "2012-08-03",
+            "endTime": "2026-09-29",
+            "options": ""
+          },
+          "receipt_id": "029590c5ea1d4febb9097f9b5c5b96cf",
+          "rows": 475,
+          "non_null_rows": 475,
+          "first_non_null_date": "2012-08-03",
+          "last_non_null_date": "2021-12-24",
+          "unit_from_ui": "%",
+          "freq_from_ui": "周",
+          "source_from_ui": "Wind",
+          "earliest_available_history_certified": false,
+          "full_value_export_comparison": null,
+          "receipt_read_passed": true
+        }
+      ],
+      "observations": 2913,
+      "additional_pre_1990_observations": 106,
+      "ui_units_frequencies_publishers_verified": true,
+      "all_values_export_compared_codes": [
+        "S0026989"
+      ],
+      "full_futures_fundamentals_verified": false,
+      "publication_times_verified": false
+    },
+    "financial_fundamentals": {
+      "record": "references/financial-futures-evidence.json",
+      "valuation_snapshots": 4,
+      "index_histories": 4,
+      "index_history_failed_on_quota": null,
+      "ctd_product_samples": [
+        "TS",
+        "TF",
+        "T",
+        "TL"
+      ],
+      "shibor_short_history_tenors": 8,
+      "dr007_short_history_observations": 6,
+      "zero_only_yield_curve_candidates": 4,
+      "full_coverage_verified": false,
+      "point_in_time_safe": false,
+      "prior_quota_failed_history_recovered": "000852.SH",
+      "index_history_recovery_receipt_id": "3cb60468958d444392a459748693c5b0",
+      "chinamoney_yield_histories": 1,
+      "chinamoney_10y_observations": 2930,
+      "restricted_chinabond_full_history_code": "S0059749"
+    },
+    "member_product_top20": {
+      "record": "references/futures-member-position-evidence.json",
+      "snapshot_date": "2026-09-29",
+      "products": 90,
+      "complete": 73,
+      "partial": 1,
+      "all_null": 16,
+      "history_series": 12,
+      "history_non_null_observations": 33885,
+      "rank_one_counterexamples": 4,
+      "full_coverage_verified": false,
+      "point_in_time_safe": false,
+      "expansion_record": "references/futures-member-history-expansion.json"
+    },
+    "member_history_expansion": {
+      "record": "references/futures-member-history-expansion.json",
+      "planned_products": 90,
+      "completed_history_samples": 12,
+      "quota_failed_products": 19,
+      "pending_products": 59,
+      "combined_non_null_observations": 33885,
+      "prior_history_reference": "references/futures-member-position-evidence.json",
+      "full_coverage_verified": false,
+      "point_in_time_safe": false
+    },
+    "member_two_day_routes": {
+      "record": "references/futures-member-bounded-history.json",
+      "dates": [
+        "2026-09-28",
+        "2026-09-29"
+      ],
+      "field": "oi_nvoi",
+      "options": "order=40",
+      "products": 90,
+      "newly_queried_products": 78,
+      "reused_long_history_products": 12,
+      "new_native_requests": 2,
+      "estimated_new_cells": 156,
+      "returned_new_cells": 156,
+      "new_non_null_cells": 123,
+      "new_null_cells": 33,
+      "complete_products": 73,
+      "partial_products": 1,
+      "all_null_products": 16,
+      "combined_two_day_cells": 180,
+      "combined_non_null_cells": 147,
+      "combined_null_cells": 33,
+      "numeric_endpoint_matches": 73,
+      "null_endpoint_matches": 17,
+      "completed_long_history_samples_unchanged": 12,
+      "full_history_verified": false,
+      "current_product_census_verified": false,
+      "units_certified": false,
+      "point_in_time_safe": false
+    },
+    "virtual_contract_rule_documentation": {
+      "metadata_source_id": "wind_terminal_ui",
+      "summary_record": "references/official-help/raw/futures_rules.json",
+      "summary_record_sha256": "e845af8cc088931c9f1d7ff3db9d594bc6c9f00e972ecea7fbd240f2820ea0ca",
+      "summary_text": "references/official-help/futures_rules.md",
+      "summary_text_sha256": "52cf458e982b248bd0a08e05560843a8a3e2e945a0443e03edbbbbaf10fb01ed",
+      "native_wind_data_requests": 0,
+      "coverage_change": "Documented rule meanings only; no added numerical history coverage, native main-contract selection, adjustment model or current rules certification",
+      "documented_rule_effective_from": "2020-05-01",
+      "current_rule_freshness_certified": false,
+      "original_pdf_saved": false
+    },
+    "virtual_contract_mapping_samples": {
+      "status": "limited_live_sample_verified",
+      "record": "references/futures-virtual-mapping-evidence.json",
+      "summary": {
+        "products": 2,
+        "virtual_codes": 6,
+        "returned_dates": 2,
+        "new_native_requests": 1,
+        "estimated_cells": 24,
+        "returned_cells": 12,
+        "nonempty_cells": 12,
+        "missing_cells": 0,
+        "prior_nearby_cells_crosschecked": 2,
+        "full_mapping_history_verified": false,
+        "main_selection_algorithm_reproduced": false,
+        "price_adjustment_certified": false,
+        "point_in_time_safe": false,
+        "completed_member_long_history_samples_unchanged": 12
+      },
+      "receipt_id": "94c0dcf85be448d19521d83b6e844b14",
+      "source_receipt_sha256": "ffc9b0ad63de5a1420db885eab0991be19c94592fc7173399314b883e5bce5fd",
+      "limitations": [
+        "Two products with three virtual-code routes each, not six products or a full domestic futures census.",
+        "Two returned trading dates only; no complete mapping history or full price series was downloaded.",
+        "Observed mappings do not independently reproduce or certify the full main/secondary selection algorithm.",
+        "Price adjustment, historical revisions, publication timing and point-in-time safety remain unverified.",
+        "trade_hiscode is validated as a returned-code sample, not a complete official field definition or parameter dictionary.",
+        "The official PDF rule summary is a separately sourced terminal observation; it does not contain these live API values.",
+        "Account remaining quota, billable units and reset time remain unknown. The natural-day cell estimate is not a quota balance."
+      ]
+    },
+    "warehouse_bounded_history": {
+      "record": "references/futures-warehouse-bounded-history.json",
+      "products": 82,
+      "newly_queried_products": 81,
+      "reused_products": 1,
+      "new_native_requests": 2,
+      "estimated_new_cells": 729,
+      "returned_new_cells": 486,
+      "new_non_null_cells": 462,
+      "new_null_cells": 24,
+      "combined_cells": 492,
+      "combined_non_null_cells": 468,
+      "combined_null_cells": 24,
+      "zero_cells": 140,
+      "complete_products": 78,
+      "partial_products": 0,
+      "all_missing_products": 4,
+      "all_zero_products": 18,
+      "numeric_endpoint_matches": 78,
+      "null_endpoint_matches": 4,
+      "prior_five_venue_cells_compared": 30,
+      "prior_five_venue_cells_matched": 30,
+      "warehouse_long_history_samples_unchanged": 1,
+      "member_long_history_samples_unchanged": 12,
+      "full_history_verified": false,
+      "units_verified": false,
+      "point_in_time_safe": false,
+      "current_product_census_verified": false,
+      "all_missing_codes": [
+        "EC00.INE",
+        "PP_F00.DCE",
+        "L_F00.DCE",
+        "V_F00.DCE"
+      ],
+      "official_rule_context": [
+        {
+          "id": "ine_delivery_rules_2026_article_216",
+          "title": "上海国际能源交易中心交割细则",
+          "url": "https://www.shfe.cn/regulation/ineregulation/businessmethods/delivery/202606/t20260626_832297.html",
+          "publisher": "上海期货交易所网站 / 上海国际能源交易中心",
+          "displayed_publication_date": "2026-07-25",
+          "reviewed_date": "2026-10-04",
+          "section": "第十五章 第二百一十六条",
+          "paraphrase": "集运指数（欧线）期货以现金方式交割。",
+          "metadata_source_id": "exchange_official_rule",
+          "scope": "Contract settlement mechanism only; not Wind field definition or returned-series source.",
+          "original_document_saved": false
+        }
+      ]
+    },
+    "product_name_discovery": {
+      "record": "references/futures-product-discovery.json",
+      "products": 90,
+      "linked_recipes": 40,
+      "lookup_tool": "search_wind_query_recipes",
+      "official_source_period": "2026-08",
+      "wind_directory_date": "2026-09-29",
+      "exact_observed_request_codes_only": true,
+      "original_recipe_arguments_preserved": true,
+      "historical_per_code_null_and_zero_counts": true,
+      "automatic_product_selection": false,
+      "current_product_census_verified": false,
+      "full_fundamental_history_verified": false,
+      "new_native_data_requests": 0
+    }
+  },
+  "field_discovery": {
+    "observed_scope": "local UI definitions and saved receipt evidence",
+    "candidate_scope": "search_wind_fields(scope=candidates)",
+    "candidate_fields": 6865,
+    "candidate_method_mappings": 13375,
+    "candidate_version": "windget 0.0.7 / 2022-06-23",
+    "candidate_manifest": "references/community-fields-manifest.json",
+    "candidate_options_schema_available": false,
+    "candidate_current_entitlement_checked": false,
+    "full_wind_dictionary": false
+  },
+  "quota_observation": {
+    "error_category": "quota_exceeded",
+    "native_method": "wsd",
+    "wind_error_code": -40522017,
+    "upstream_message": "CWSDService: quota exceeded.",
+    "automatic_retry_recommended": false,
+    "quota_scope": null,
+    "remaining_quota": null,
+    "reset_at": null,
+    "quota_scope_and_reset_reported": false,
+    "recovery_hint": "Preserve completed receipts and stop automatic retries or new bulk reads. Resume after Wind availability is confirmed; no automatic source switch. Quota scope and reset time were not reported by this response.",
+    "receipt_id": "6fd5f3e26395404488a93ca400e8984a",
+    "source_receipt_sha256": "4e6c94c94e783d3766fc3436df39c7e12f190d1ccde80b8c1751457146132914",
+    "observed_at": "2026-10-03T14:09:08.157492+00:00",
+    "request": {
+      "method": "wsd",
+      "arguments": {
+        "codes": "AL00.SHF,ZN00.SHF,PB00.SHF,AU00.SHF,RU00.SHF,FU00.SHF,RB00.SHF,WR00.SHF,AG00.SHF,BU00.SHF,HC00.SHF,NI00.SHF,SN00.SHF,SP00.SHF,SS00.SHF,AO00.SHF,BR00.SHF,AD00.SHF,OP00.SHF",
+        "fields": "oi_nvoi",
+        "beginTime": "2000-01-01",
+        "endTime": "2026-09-29",
+        "options": "order=40"
+      },
+      "max_age_seconds": 0
+    },
+    "new_Wind_data_calls_after_error": 0,
+    "quota_is_not_a_field_or_product_permission_failure": true,
+    "current_remaining_quota_measured": false,
+    "reference": "references/futures-member-history-expansion.json",
+    "official_general_policy": {
+      "metadata_source_id": "wind_api_official_help",
+      "page_url": "http://114.80.154.45/ApiHelpCenter/web/webapp/manual/id-0bd5f99c-3a53-4cc4-a818-03fe3f0b34f8",
+      "local_file": "references/official-help/client_api.md",
+      "lines": [
+        59,
+        64
+      ],
+      "fetched_at": "2026-09-30T01:51:40.510369+00:00",
+      "local_file_sha256": "924420beb9a975f129dae2e22492eb73c05b2ed94dae0ef24841e0a55d83437e",
+      "summary": "Published Client API help describes a rolling seven-day usage window; function-specific limits must be confirmed with the account manager.",
+      "account_specific_quota_or_reset_verified": false,
+      "remote_freshness_checked_now": false
+    }
+  }
+}

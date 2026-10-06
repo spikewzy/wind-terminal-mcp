@@ -1,0 +1,12 @@
+.venv/
+runtime/
+__pycache__/
+dist/
+client-configs/
+.DS_Store
+*.pyc
+.env
+.env.*
+verification/delivery-*.json
+references/wind-bundle-metadata.json
+references/official-help/

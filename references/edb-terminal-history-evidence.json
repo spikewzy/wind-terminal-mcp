@@ -1,0 +1,147 @@
+{
+  "data_source_id": "wind_terminal_api",
+  "data_source_name": "Wind 终端 API",
+  "server_version": "0.20.0",
+  "checked_at": "2026-09-30T09:10:14.035274+00:00",
+  "client": "official Python MCP SDK",
+  "metadata_file": "references/edb-terminal-metadata-20260930.json",
+  "source_export_sha256": "1a9d25473f6a8926ec9be1a89cbdc7d325560e7b798780b9be158a46f306c7f8",
+  "encoding": "gb18030",
+  "full_catalog_verified": false,
+  "point_in_time_safe": false,
+  "series": [
+    {
+      "code": "S0026989",
+      "name": "中国:产量:原煤:当月值",
+      "arguments": {
+        "codes": "S0026989",
+        "beginTime": "1986-01-01",
+        "endTime": "2026-09-29",
+        "options": ""
+      },
+      "receipt_id": "37161b04661f4e55a5e64ca2bf16727f",
+      "rows": 461,
+      "non_null_rows": 461,
+      "first_non_null_date": "1986-01-31",
+      "last_non_null_date": "2026-08-31",
+      "unit_from_ui": "万吨",
+      "freq_from_ui": "月",
+      "source_from_ui": "国家统计局",
+      "earliest_available_history_certified": false,
+      "full_value_export_comparison": {
+        "compared": 461,
+        "differences": [],
+        "all_dates_and_values_equal": true
+      },
+      "receipt_read_passed": true
+    },
+    {
+      "code": "S0027551",
+      "name": "中国:产量:十种有色金属:当月值",
+      "arguments": {
+        "codes": "S0027551",
+        "beginTime": "1989-02-01",
+        "endTime": "2026-09-29",
+        "options": ""
+      },
+      "receipt_id": "6813ab2a412044bcbf4ccfdd88594be6",
+      "rows": 426,
+      "non_null_rows": 426,
+      "first_non_null_date": "1989-02-28",
+      "last_non_null_date": "2026-08-31",
+      "unit_from_ui": "万吨",
+      "freq_from_ui": "月",
+      "source_from_ui": "国家统计局",
+      "earliest_available_history_certified": false,
+      "full_value_export_comparison": null,
+      "receipt_read_passed": true
+    },
+    {
+      "code": "S0027159",
+      "name": "中国:产量:乙烯:当月值",
+      "arguments": {
+        "codes": "S0027159",
+        "beginTime": "1989-02-01",
+        "endTime": "2026-09-29",
+        "options": ""
+      },
+      "receipt_id": "fc770d6026aa4d6c996e36cbe11469fa",
+      "rows": 426,
+      "non_null_rows": 426,
+      "first_non_null_date": "1989-02-28",
+      "last_non_null_date": "2026-08-31",
+      "unit_from_ui": "万吨",
+      "freq_from_ui": "月",
+      "source_from_ui": "国家统计局",
+      "earliest_available_history_certified": false,
+      "full_value_export_comparison": null,
+      "receipt_read_passed": true
+    },
+    {
+      "code": "M0000612",
+      "name": "中国:CPI:当月同比",
+      "arguments": {
+        "codes": "M0000612",
+        "beginTime": "1987-01-01",
+        "endTime": "2026-09-29",
+        "options": ""
+      },
+      "receipt_id": "32a7b41cf5d144af92abff6c1a2ac5c8",
+      "rows": 476,
+      "non_null_rows": 476,
+      "first_non_null_date": "1987-01-31",
+      "last_non_null_date": "2026-08-31",
+      "unit_from_ui": "%",
+      "freq_from_ui": "月",
+      "source_from_ui": "国家统计局",
+      "earliest_available_history_certified": false,
+      "full_value_export_comparison": null,
+      "receipt_read_passed": true
+    },
+    {
+      "code": "S5446148",
+      "name": "中国:开工率:精对苯二甲酸",
+      "arguments": {
+        "codes": "S5446148",
+        "beginTime": "2013-09-01",
+        "endTime": "2026-09-29",
+        "options": ""
+      },
+      "receipt_id": "c6d1280e9b3549cca58609e6180605bd",
+      "rows": 649,
+      "non_null_rows": 649,
+      "first_non_null_date": "2013-09-01",
+      "last_non_null_date": "2026-09-24",
+      "unit_from_ui": "%",
+      "freq_from_ui": "周",
+      "source_from_ui": "隆众资讯",
+      "earliest_available_history_certified": false,
+      "full_value_export_comparison": null,
+      "receipt_read_passed": true
+    },
+    {
+      "code": "S5708175",
+      "name": "(停止)中国:高炉开工率(163家)",
+      "arguments": {
+        "codes": "S5708175",
+        "beginTime": "2012-08-03",
+        "endTime": "2026-09-29",
+        "options": ""
+      },
+      "receipt_id": "029590c5ea1d4febb9097f9b5c5b96cf",
+      "rows": 475,
+      "non_null_rows": 475,
+      "first_non_null_date": "2012-08-03",
+      "last_non_null_date": "2021-12-24",
+      "unit_from_ui": "%",
+      "freq_from_ui": "周",
+      "source_from_ui": "Wind",
+      "earliest_available_history_certified": false,
+      "full_value_export_comparison": null,
+      "receipt_read_passed": true
+    }
+  ],
+  "status": "passed",
+  "metadata_roundtrip_passed": true,
+  "development_receipts_distributed": false
+}
