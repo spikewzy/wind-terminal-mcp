@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent
 
 def public_payload(root=ROOT):
     exact = ["server.py", "client_config.py", "install.py", "verify_delivery.py", "build_release.py",
-             "INSTALL.md", "README.md", "USER_GUIDE.md", "FUTURES_DEMOS.md", "MIGRATION.md",
+             "INSTALL.md", "UPGRADE.md", "CHANGELOG.md", "README.md", "USER_GUIDE.md", "FUTURES_DEMOS.md", "MIGRATION.md",
              "LICENSE", "THIRD_PARTY_NOTICES.md", ".gitignore",
              "requirements.in", "requirements.lock.txt", "build_community_fields.py",
              "inspect_edb_export.py", "import_official_help.py", "import_bundle_metadata.py",

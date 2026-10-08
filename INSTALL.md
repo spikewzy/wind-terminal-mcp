@@ -1,6 +1,6 @@
 # Wind 终端 MCP 安装与接入
 
-安装后的操作流程见 [使用说明](USER_GUIDE.md)，复杂研究案例见 [期货进阶演示](FUTURES_DEMOS.md)。
+安装后的操作流程见 [使用说明](USER_GUIDE.md)，复杂研究案例见 [期货进阶演示](FUTURES_DEMOS.md)。已有安装更新到 0.24.2 请先看 [升级说明](UPGRADE.md)，保留原安装路径、数据目录和 SDK 设置。
 
 本包把已登录的本机 Wind 终端通过标准 MCP 提供给支持本地 stdio 的客户端。来源名为 **Wind 终端 API**，服务器名为 `wind_terminal_api`；与 Alice MCP 独立。
 
@@ -10,7 +10,7 @@
 
 首次使用推荐先看 [README 的一段安装 prompt 和三条命令](README.md#快速安装)。本页供需要指定 SDK、离线依赖或排错时查阅。
 
-0.24.1 为桌面系统源码包，支持范围如下。Python 至少 3.10，推荐 3.12；必须安装与操作系统、CPU 架构和 Python 位数匹配的官方 WindPy 与本地库，并使用对应 Wind 桌面终端的登录和授权。安装包不包含或下载 Wind SDK。
+0.24.2 为桌面系统源码包，支持范围如下。Python 至少 3.10，推荐 3.12；必须安装与操作系统、CPU 架构和 Python 位数匹配的官方 WindPy 与本地库，并使用对应 Wind 桌面终端的登录和授权。安装包不包含或下载 Wind SDK。
 
 | 系统 | 安装与运行策略 | 验证状态 |
 | --- | --- | --- |
@@ -72,6 +72,8 @@ Windows 将下文 `.venv/bin/python` 换成 `.venv\Scripts\python.exe`。本 MCP
 ### WorkBuddy 接入
 
 已提供专用 JSON 和通用 MCP 协议验证。WorkBuddy 应用内的安装、登录和调用仍需在使用者环境验证。
+
+已有服务器不要重复添加；按 [WorkBuddy 升级步骤](UPGRADE.md#workbuddy-升级后验收) 更新原安装并让客户端停止旧服务、重新加载一次。更新文件或新建聊天不会自动替换已经运行的旧进程。慢调用调度修正不能保证解决所有 `Connection closed`，还需保留客户端和服务端的原始错误及时间。
 
 打开 WorkBuddy 的「插件 → MCP 服务器 → 配置 MCP」，将 `client-configs/workbuddy.json` 中的 `wind_terminal_api` 条目合并到已有 `mcpServers`。跨项目使用时选择用户级；只在当前项目使用时选择项目级。保存后查看服务器连接状态。此配置使用本机 Wind 登录，不填写 Alice MCP 的 Key。路径与操作入口依据 [WorkBuddy 官方 MCP 文档](https://www.codebuddy.cn/docs/workbuddy/From-Beginner-to-Expert-Guide/Function-Description/MCP-Guide)。
 
@@ -143,6 +145,7 @@ EDB批量返回共享日期轴，不能把每个日期都算成各指标的一�
 - 不能写入缓存：给当前安装目录写入权限，或通过 `WIND_TERMINAL_MCP_DATA_DIR` 指定可写数据目录。
 - 客户端发现工具失败：确认配置引用的是本机 `.venv/bin/python`（Windows 为 `.venv\Scripts\python.exe`）及 `server.py` 的绝对路径，保留生成的 `env`，然后重新加载该服务器。
 - 终端 SDK 返回空值或不支持方法：查看原始错误和回执，不替换成其他来源。本机特定版本新闻接口限制会明确报告。
+- `Connection closed` / `Not connected`：先确认加载的是新版本，再按 [升级后的排查说明](UPGRADE.md#如果仍然断开) 收集原始错误。不要反复重试真实取数或绕过现有服务另启 WindPy；进程还在不代表原 stdio 连接仍可用。
 
 本版完成 Windows 和指定信创桌面系统的代码适配；跨系统模拟测试不等于目标机实测。真实 Windows/信创取数还须在对应机器安装官方 SDK 后验证。远程 HTTP、其他 Linux 和 Linux 服务器系统均不在支持范围。软件目录及官方帮助的完整快照不随开源包分发，需按 [本机参考资料导入](docs/LOCAL_REFERENCES.md) 在自己的机器生成；这不限制通用 WindPy 查询，其他平台也不能将 Mac 目录当作当地客户端最新字段字典。
 

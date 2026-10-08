@@ -7,7 +7,7 @@ description: 使用本机 WindPy MCP 查询 Wind 终端数据，检索 EDB、软
 
 数据服务为本机官方 Wind 桌面应用 / WindPy，MCP 服务器名 `wind_terminal_api`。Alice MCP 是另一来源。沿用用户指定来源，不因 Alice 的配额或权限错误切到本服务，也不把本服务失败静默转向 Alice。
 
-0.24.1的平台范围为macOS、Windows、中科方德5.0桌面版、UOS20桌面版、银河麒麟V10 SP1桌面版。其他Linux和任何Linux服务器版不支持，未知桌面版本也不放行。先看`wind_capabilities.platform_policy`和`wind_status(connect=false).platform_support`；这些只核对平台策略，不能证明SDK、账号或所有CPU组合已实测。Windows/信创适配已加入，真实目标机验证仍待进行。每台机器使用对应平台的官方WindPy/动态库，不复制Mac SDK；具体安装与`--wind-module-dir`参数见项目`INSTALL.md`。Mac本地目录快照在其他平台上可能缺少原文件，只作带来源的候选，不冒充当地最新字段字典。
+0.24.2的平台范围为macOS、Windows、中科方德5.0桌面版、UOS20桌面版、银河麒麟V10 SP1桌面版。其他Linux和任何Linux服务器版不支持，未知桌面版本也不放行。先看`wind_capabilities.platform_policy`和`wind_status(connect=false).platform_support`；这些只核对平台策略，不能证明SDK、账号或所有CPU组合已实测。Windows/信创适配已加入，真实目标机验证仍待进行。每台机器使用对应平台的官方WindPy/动态库，不复制Mac SDK；具体安装与`--wind-module-dir`参数见项目`INSTALL.md`，已有安装升级见项目`UPGRADE.md`。Mac本地目录快照在其他平台上可能缺少原文件，只作带来源的候选，不冒充当地最新字段字典。
 
 开源包不附完整官方帮助或终端目录快照。未导入时，文档/目录搜索返回 `LOCAL_REFERENCE_NOT_INSTALLED`；按项目 `docs/LOCAL_REFERENCES.md` 在本机导入后再使用。下文的大目录与文档段落数量描述开发环境的历史验证，不代表新安装自带这些内容。
 

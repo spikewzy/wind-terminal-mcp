@@ -4,9 +4,11 @@
 
 支持股票、债券、基金、指数、期货、期权、外汇、宏观与产业数据。通过标准本地 MCP 接入 Codex、Claude Code、Cursor、Gemini CLI、WorkBuddy 等 harness，提供参数发现、分批查询、原始回执、数据检查与本地分析。
 
-[快速安装](#快速安装) · [三个研究示例](#三个研究示例) · [使用说明](USER_GUIDE.md) · [进阶期货演示](FUTURES_DEMOS.md) · [详细安装](INSTALL.md)
+[快速安装](#快速安装) · [已有安装升级](UPGRADE.md) · [三个研究示例](#三个研究示例) · [使用说明](USER_GUIDE.md) · [进阶期货演示](FUTURES_DEMOS.md) · [详细安装](INSTALL.md)
 
 > 需要你自己的 Wind 桌面终端、官方 WindPy 和数据权限。开源的是 MCP 代码；Wind 数据与 SDK 的使用仍受你的 Wind 授权约束。服务来源标识固定为 `wind_terminal_api`，与 Alice MCP 独立。本项目为社区实现。
+
+已有安装请按 [升级说明](UPGRADE.md) 更新原目录并重载一次连接。0.24.2 修正慢调用阻塞 MCP 消息处理及原生调用的排队、取消边界；无需因此重装 Wind 或另建一个 MCP 实例。离线测试不代替 WorkBuddy 或信创机器的实际接入验收。
 
 ## 快速安装
 
@@ -144,6 +146,7 @@ HTML 报告需下载到本机并用浏览器打开；GitHub 文件页不会执�
 - [USER_GUIDE.md](USER_GUIDE.md)：首次查询、结果读取、缓存与预算、研究流程。
 - [FUTURES_DEMOS.md](FUTURES_DEMOS.md)：代码映射、会员排名、仓单、EDB 和风险计算等进阶案例。
 - [INSTALL.md](INSTALL.md)：SDK 路径、不同平台、客户端配置、离线安装与排错。
+- [UPGRADE.md](UPGRADE.md)：保留已有环境、数据和 SDK 配置的升级步骤，以及 WorkBuddy 断连排查。
 - [技能说明](skills/wind-terminal-api/SKILL.md)：给 agent 的可选工作指南；调用 MCP 无需安装 skill。
 - [本机参考资料导入](docs/LOCAL_REFERENCES.md)：可选导入官方帮助与终端目录，增强文档/目录检索；公开仓库不附完整 Wind 文档或软件目录快照。
 
@@ -151,7 +154,7 @@ HTML 报告需下载到本机并用浏览器打开；GitHub 文件页不会执�
 
 ## 开发与许可证
 
-版本 **0.24.1**。源码采用 [MIT License](LICENSE)。第三方字段候选及报告内组件的许可说明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)；MIT 不授予 Wind SDK、账号或数据的使用权。
+版本 **0.24.2**。源码采用 [MIT License](LICENSE)。第三方字段候选及报告内组件的许可说明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)；MIT 不授予 Wind SDK、账号或数据的使用权。
 
 离线单元测试（不连接 Wind）：
 
@@ -168,4 +171,3 @@ python3 -m unittest discover -s tests -v
 Windows 使用 `.venv\Scripts\python.exe`。加 `--live` 会执行一次有限的真实查询；不加则不取 Wind 数据。目标平台与 harness 的实际接入须在对应环境验证。构建包含示例成果的源码 ZIP：`python3 build_release.py`。
 
 欢迎通过 [Issues](https://github.com/spikewzy/wind-terminal-mcp/issues) 提供可复现的错误与脱敏参数，或提交 PR。请勿上传账号凭据、SDK 二进制或未授权的数据批量导出。
-
