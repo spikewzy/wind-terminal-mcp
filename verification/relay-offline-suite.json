@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "tests": 310,
+  "failures": 0,
+  "errors": 0,
+  "seconds": 5.007,
+  "WindPy_imported": false,
+  "real_wind_queries": 0,
+  "cloud_or_uos_deployed": false,
+  "timestamp_utc": "2026-10-12T05:51:14.264533+00:00"
+}

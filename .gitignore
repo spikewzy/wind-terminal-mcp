@@ -7,6 +7,8 @@ client-configs/
 *.pyc
 .env
 .env.*
+.relay/
 verification/delivery-*.json
+verification/relay-offline-suite.txt
 references/wind-bundle-metadata.json
 references/official-help/

@@ -10,6 +10,8 @@
 
 已有安装请按 [升级说明](UPGRADE.md) 更新原目录并重载一次连接。0.24.2 修正慢调用阻塞 MCP 消息处理及原生调用的排队、取消边界；无需因此重装 Wind 或另建一个 MCP 实例。离线测试不代替 WorkBuddy 或信创机器的实际接入验收。
 
+云端转发试验见 [部署说明](docs/RELAY_TRIAL.md) 和 [信创 WorkBuddy 指令](docs/RELAY_WORKBUDDY_PROMPT.md)：本地代理 → 云端队列 ← 实体 WindPy 电脑。本机模拟链路已验通，云端与 UOS 真实取数仍待验收，执行端默认使用 mock。
+
 ## 快速安装
 
 ### 最简单：给 agent 一段 prompt

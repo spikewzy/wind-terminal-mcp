@@ -1,0 +1,1095 @@
+{
+  "protocol_version": 1,
+  "mcp_version": "0.24.2",
+  "server_sha256": "8a6212b485fc44471305e77a4a1cd2435eda560d2de0d32edff651487ab2415a",
+  "tools": [
+    {
+      "name": "wind_status",
+      "description": "Inspect local WindPy, local request budget, historical quota errors and any later identical successful request. No live quota balance is available. connect=true tests login (counts as a budget attempt), not all dataset permissions. The configurable local budget is shared only by updated servers using the same data directory; cache and local reads spend no attempts. Never contacts Alice.",
+      "inputSchema": {
+        "properties": {
+          "connect": {
+            "default": false,
+            "title": "Connect",
+            "type": "boolean"
+          }
+        },
+        "title": "wind_statusArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "wind_statusDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "wind_capabilities",
+      "description": "List native WindPy read signatures and local SDK limitations. Also includes optional Alice compatibility mappings; full_parity=false does not prevent generic Wind queries.",
+      "inputSchema": {
+        "properties": {},
+        "title": "wind_capabilitiesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "wind_capabilitiesDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "search_economic_indicator",
+      "description": "Discover EDB candidates across industries. scope='terminal' calls official Wind WAI fer, independent of the local catalog; it returns all raw alternatives and unknown unit/frequency/source values without selecting, registering or fetching any indicator. Check edb_text_coverage and candidate.occurrences: partial matches leave qualifiers unresolved, repeated codes retain every paragraph, and full-text matches do not certify meaning. This is entity recognition, not exhaustive full-catalog search; zero matches does not mean Wind lacks data. scope='local' searches only previously registered metadata, with exact unit/freq/source filters; fresh installations start empty. Filters require local scope. Review definition, geography, units and history before choosing an EDB code; explicit code queries are never restricted to this catalog.",
+      "inputSchema": {
+        "properties": {
+          "question": {
+            "title": "Question",
+            "type": "string"
+          },
+          "limit": {
+            "default": 20,
+            "title": "Limit",
+            "type": "integer"
+          },
+          "offset": {
+            "default": 0,
+            "title": "Offset",
+            "type": "integer"
+          },
+          "filters": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Filters"
+          },
+          "scope": {
+            "default": "local",
+            "title": "Scope",
+            "type": "string"
+          },
+          "max_age_seconds": {
+            "default": 0,
+            "title": "Max Age Seconds",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "title": "search_economic_indicatorArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "search_economic_indicatorDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "parse_wind_edb_export",
+      "description": "Inspect decoded Wind EDB Simplified Chinese CSV in column layout, at most 4 MB and 500 indicators. Retain code/name and original display headers including unit, frequency, publisher and time range. Display metadata is not automatically promoted to native EDB units or frequency: transformations are not recorded in CSV headers. No file access, formula execution, value/catalog import or Wind call. Review original definitions and compare untransformed native values before using register_economic_indicators. UTF-8/GB18030 file decoding is also available in the bundled inspect_edb_export.py CLI.",
+      "inputSchema": {
+        "properties": {
+          "csv_text": {
+            "title": "Csv Text",
+            "type": "string"
+          },
+          "evidence": {
+            "title": "Evidence",
+            "type": "string"
+          }
+        },
+        "required": [
+          "csv_text",
+          "evidence"
+        ],
+        "title": "parse_wind_edb_exportArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "parse_wind_edb_exportDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "inspect_economic_catalog",
+      "description": "Show local indicator counts grouped by frequency, unit, original source and metadata provider. This is not global Wind coverage or proof of dataset entitlement.",
+      "inputSchema": {
+        "properties": {},
+        "title": "inspect_economic_catalogArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "inspect_economic_catalogDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "recognize_wind_entities",
+      "description": "Use verified WindPy WAI fer to recognize financial entities in 1..5000 characters. Returns EDB candidates, same-name conflicts and unchanged raw alternatives. edb_text_coverage and each candidate's occurrences retain repeated-code paragraph context, matched text and unresolved qualifiers. Missing/invalid offsets or changed paragraph counts stay unverified; full-text coverage does not certify indicator meaning. Financial alternatives get local category/label context only when node ID AND name match a current fingerprinted bundle. This is not full-catalog search or a unit/frequency/field dictionary. Numeric stockBondIndex IDs are NOT WSS fields. Does not automatically choose, register, or fetch any recognized code.",
+      "inputSchema": {
+        "properties": {
+          "text": {
+            "title": "Text",
+            "type": "string"
+          },
+          "max_age_seconds": {
+            "default": 0,
+            "title": "Max Age Seconds",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "text"
+        ],
+        "title": "recognize_wind_entitiesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "recognize_wind_entitiesDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "search_wind_fields",
+      "description": "Search WindPy fields by Chinese label or explicit field. scope='observed' (default) uses local UI definitions, saved query examples and reviewed issuer-statement samples. successful_query_available requires a validated saved request; successful_sample_available also requires a nonblank value. scope='candidates' searches a much larger, versioned third-party windget 0.0.7 mapping catalog (2022): these are unverified field candidates, not official definitions, options schemas or current entitlement evidence. Neither scope is the full Wind dictionary or executes queries; no automatic cross-scope fallback, field substitution or WAI-ID translation. Examples are not defaults; sample financial evidence does not certify other issuers, dates, options or units.",
+      "inputSchema": {
+        "properties": {
+          "question": {
+            "title": "Question",
+            "type": "string"
+          },
+          "method": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Method"
+          },
+          "limit": {
+            "default": 20,
+            "title": "Limit",
+            "type": "integer"
+          },
+          "offset": {
+            "default": 0,
+            "title": "Offset",
+            "type": "integer"
+          },
+          "scope": {
+            "default": "observed",
+            "title": "Scope",
+            "type": "string"
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "title": "search_wind_fieldsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "search_wind_fieldsDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "search_wind_query_recipes",
+      "description": "Find locally saved explicit Wind requests by Chinese labels, table names, fields or option names. Includes futures warehouses, member ranks, continuous mappings, contract calendars and deliverable bonds. Returns original method/arguments, evidence and limitations; never executes examples or assumes their dates/options are defaults. Checks local saved receipts when available; fresh installations retain examples but do not claim those receipts or current account entitlements. This is not a complete Wind parameter dictionary.",
+      "inputSchema": {
+        "properties": {
+          "question": {
+            "title": "Question",
+            "type": "string"
+          },
+          "method": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Method"
+          },
+          "limit": {
+            "default": 10,
+            "title": "Limit",
+            "type": "integer"
+          },
+          "offset": {
+            "default": 0,
+            "title": "Offset",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "title": "search_wind_query_recipesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "search_wind_query_recipesDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "search_wind_bundle_metadata",
+      "description": "Search clear Wind API.app metadata: kind=indicator for bilingual indicator labels, parameter for lookup options, or sector for system-sector IDs, category paths and related index codes. Sector names do not prove current members, market coverage or historical availability; verify a WSET query separately. This is NOT a native field dictionary: indicator expressions, node IDs and lookup values are not automatically executable fields/options. Returns all contributing file fingerprints; no Wind request or automatic selection.",
+      "inputSchema": {
+        "properties": {
+          "question": {
+            "title": "Question",
+            "type": "string"
+          },
+          "kind": {
+            "default": "indicator",
+            "title": "Kind",
+            "type": "string"
+          },
+          "limit": {
+            "default": 20,
+            "title": "Limit",
+            "type": "integer"
+          },
+          "offset": {
+            "default": 0,
+            "title": "Offset",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "title": "search_wind_bundle_metadataArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "search_wind_bundle_metadataDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "search_wind_documentation",
+      "description": "Search saved official Wind manuals/examples and clearly marked terminal PDF summaries. Keep headings, local text lines, source entry URLs and PDF page references when available. Optional document selector is listed in the response (e.g. python, api_faq, python_basic, python_sector, futures_rules). A terminal summary is not the original PDF or proof of current rules. Paginated sections keep all saved text. This is offline documentation discovery, NOT field or account validation. Never executes example code, contacts documentation endpoints or uses credentials.",
+      "inputSchema": {
+        "properties": {
+          "question": {
+            "title": "Question",
+            "type": "string"
+          },
+          "document": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Document"
+          },
+          "limit": {
+            "default": 5,
+            "title": "Limit",
+            "type": "integer"
+          },
+          "offset": {
+            "default": 0,
+            "title": "Offset",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "title": "search_wind_documentationArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "search_wind_documentationDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "describe_economic_indicators",
+      "description": "Return saved metadata and its original provenance. Unknown entries remain unknown, not fabricated.",
+      "inputSchema": {
+        "properties": {
+          "codes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Codes",
+            "type": "array"
+          }
+        },
+        "required": [
+          "codes"
+        ],
+        "title": "describe_economic_indicatorsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "describe_economic_indicatorsDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "query_economic_indicator_data",
+      "description": "Query confirmed EDB code(s) or an exact unambiguous catalog name. Provide YYYY-MM-DD beginDate+endDate OR observation='10'. Validate returned dates and preserve raw receipts. Values are not certified point-in-time data.",
+      "inputSchema": {
+        "properties": {
+          "question": {
+            "title": "Question",
+            "type": "string"
+          },
+          "beginDate": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Begindate"
+          },
+          "endDate": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Enddate"
+          },
+          "observation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Observation"
+          },
+          "max_age_seconds": {
+            "default": 0,
+            "title": "Max Age Seconds",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "title": "query_economic_indicator_dataArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "query_economic_indicator_dataDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "query_wind_data",
+      "description": "Call an allowlisted official WindPy read method with documented SDK argument names. Use wind_capabilities for signatures. Fields are not restricted to the small local field catalog or optional Chinese question mappings. WSS may include statement_reference_checks for narrowly reviewed issuer-filing cells; differences are annotated without replacing raw values, and uncovered parameters are not certified. EDB responses and validation errors include per-code edb_series_observations for the full shared date axis: inspect populated in/out-of-range counts, nulls and zeros before treating a date as an observation for every indicator. An out-of-range batch remains failed; diagnostics do not trim, fill, retry or certify definitions. No usedf, subscriptions, trades, eval, or Alice fallback. max_age_seconds=0 fetches live. If error_category='quota_exceeded', preserve completed receipts and stop automatic retries/new bulk reads; remaining quota, limit scope and reset time may be unknown. Inspect wind_status(connect=false) for the last local quota observation.",
+      "inputSchema": {
+        "properties": {
+          "method": {
+            "title": "Method",
+            "type": "string"
+          },
+          "arguments": {
+            "additionalProperties": true,
+            "title": "Arguments",
+            "type": "object"
+          },
+          "max_age_seconds": {
+            "default": 0,
+            "title": "Max Age Seconds",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "method",
+          "arguments"
+        ],
+        "title": "query_wind_dataArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "query_wind_dataDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "plan_wind_data_queries",
+      "description": "Plan WSD/WSS batches without calling Wind. Supply explicit native arguments, including confirmed codes/fields, dates and options; accept up to 10000 codes and 500 fields. Compare code/field loops and mixed tails under this MCP's existing 50-code/100-field request limits. Return paginated executable requests, stable plan_id and zero-based stop-exclusive axis slices; fetch every page. data_volume_estimate covers the full request and each emitted batch; calendar-day estimates include nontrading days and are not Wind billing units. Preserve the full date range and exact options, with no cross-method substitution or automatic financial calendar, rptType, Fill, showblank or zero filling. Fewer network calls do not reduce requested data cells or bypass quota. Local quota observation is historical, not a live balance. No execution, retry, current-entitlement or full parameter-semantic certification.",
+      "inputSchema": {
+        "properties": {
+          "method": {
+            "title": "Method",
+            "type": "string"
+          },
+          "arguments": {
+            "additionalProperties": true,
+            "title": "Arguments",
+            "type": "object"
+          },
+          "limit": {
+            "default": 20,
+            "title": "Limit",
+            "type": "integer"
+          },
+          "offset": {
+            "default": 0,
+            "title": "Offset",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "method",
+          "arguments"
+        ],
+        "title": "plan_wind_data_queriesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "plan_wind_data_queriesDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "parse_windpy_query",
+      "description": "Convert one literal w.method(...) line from Wind's code generator into method/arguments, without executing Python. No imports, callbacks, variables or trade methods. Parsing does not certify field semantics or data permissions.",
+      "inputSchema": {
+        "properties": {
+          "code": {
+            "title": "Code",
+            "type": "string"
+          }
+        },
+        "required": [
+          "code"
+        ],
+        "title": "parse_windpy_queryArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "parse_windpy_queryDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "plan_wind_fundamentals",
+      "description": "Plan a bounded mainland-stock financial statement question using one WAI fer recognition and current verified WSS sample evidence, without fetching financial values. Supports explicit report dates or annual-report years, yuan unit, and nine sample-backed financial statement fields listed by wind_capabilities. Statement scope is explicit, or inferred with a recorded explanation when required by attributable-profit meaning; conflicting parent-only scope is rejected. Total equity includes minority interests, and signed financial expenses are preserved. Checks ALL stock candidates; an explicit code or A-share qualifier can disambiguate. WAI financial IDs never become field names. Every meaningful text span must be accounted for; interleaved per-company dates/fields, other fields, as-of/publication queries, growth/TTM, other units and overseas reports require a separate verified plan. Saves a ready or unresolved plan with recognition/source hashes. get_stock_fundamentals can execute the same bounded questions automatically; this tool is for inspecting the proposed queries.",
+      "inputSchema": {
+        "properties": {
+          "question": {
+            "title": "Question",
+            "type": "string"
+          }
+        },
+        "required": [
+          "question"
+        ],
+        "title": "plan_wind_fundamentalsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "plan_wind_fundamentalsDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "call_alice_tool_on_windpy",
+      "description": "Migrate an Alice contract to local WindPy. EDB and mapped market fields/periods translate directly. Stock/fund/index price, Kline and quote windcode accepts names or explicit codes: WAI fer must match the entire name and yield one unique code across all candidates of the requested domain. Ambiguity stops the whole batch before market queries; never ranks candidates or invents suffixes. security_resolution retains native and derived evidence; explicit codes skip recognition. Daily Kline issusp='0' filters verified trade_status values BEFORE count; unknown/null statuses fail explicitly. Filtered or count-limited series retain native receipt_id and selected-view derived_receipt_id. get_stock_fundamentals also accepts bounded mainland-stock statement questions without resolved_request: explicit report dates or annual-report years, yuan unit, and the nine sample-backed fields in wind_capabilities. Attributable net profit requires consolidated scope; omitted scope is inferred with an explanation and conflicting parent-only scope is rejected. It uses typed WAI securities plus independently checked field/option mappings, retains missing values, and saves the complete plan and raw evidence. Ambiguous securities, unknown terms, interleaved dimensions and unsupported accounting semantics stop before value queries; plan_wind_fundamentals previews this flow. Other question tools require resolved_request={method,arguments,evidence}; optional analysis={kind:'series',periods_per_year,field?,window?,annual_risk_free_rate?}, {kind:'screen',conditions,sort_by?,descending?,limit?}, or {kind:'aggregate',field,operation,weight_field?}. Risk analysis uses {kind:'risk',periods_per_year,field?,annual_risk_free_rate?,confidence?,alignment?,benchmark_receipt_id?,benchmark_field?,benchmark_request?}; benchmark_request={method,arguments,evidence} queries one benchmark price series after the asset, mutually exclusive with a saved benchmark_receipt_id. Risk requires documented price inputs and matches both return interval endpoints. For search_stocks/search_funds, add universe_receipt_id from WSET/WEQS, method=wss, arguments={fields,options}, and screen analysis; continue pending results with screen_wind_universe. No complete Alice semantic parity is claimed.",
+      "inputSchema": {
+        "properties": {
+          "server_type": {
+            "title": "Server Type",
+            "type": "string"
+          },
+          "tool_name": {
+            "title": "Tool Name",
+            "type": "string"
+          },
+          "params": {
+            "additionalProperties": true,
+            "title": "Params",
+            "type": "object"
+          },
+          "resolved_request": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Resolved Request"
+          }
+        },
+        "required": [
+          "server_type",
+          "tool_name",
+          "params"
+        ],
+        "title": "call_alice_tool_on_windpyArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "call_alice_tool_on_windpyDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "read_wind_receipt",
+      "description": "Read a saved native or derived Wind-only receipt. Native Data and corresponding time/security axes are paginated; table query metadata axes stay intact and total dimensions are preserved. EDB per-code in/out-of-range value counts and stored query validation, table-date observations and scoped WSS statement-reference comparisons inspect the entire raw snapshot before pagination. EDB shared dates are not populated observations for every code; diagnostics neither filter data nor approve a failed query. Derived receipts are returned intact, including a series selection's source ID, rule and selected view. Never reads arbitrary filesystem paths.",
+      "inputSchema": {
+        "properties": {
+          "receipt_id": {
+            "title": "Receipt Id",
+            "type": "string"
+          },
+          "offset": {
+            "default": 0,
+            "title": "Offset",
+            "type": "integer"
+          },
+          "limit": {
+            "default": 200,
+            "title": "Limit",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "receipt_id"
+        ],
+        "title": "read_wind_receiptArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "read_wind_receiptDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "register_economic_indicators",
+      "description": "Add confirmed indicator metadata to this local catalog. Supply code/name/unit/freq/source plus provenance. Does not grant permissions or certify publication times; does not query or modify Wind/Alice.",
+      "inputSchema": {
+        "properties": {
+          "indicators": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Indicators",
+            "type": "array"
+          },
+          "metadata_source_id": {
+            "title": "Metadata Source Id",
+            "type": "string"
+          },
+          "evidence": {
+            "title": "Evidence",
+            "type": "string"
+          }
+        },
+        "required": [
+          "indicators",
+          "metadata_source_id",
+          "evidence"
+        ],
+        "title": "register_economic_indicatorsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "register_economic_indicatorsDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "compare_saved_edb_versions",
+      "description": "Compare locally saved WindPy retrieval vintages. Only detects revisions observed since this MCP began saving data; not original historical release vintages.",
+      "inputSchema": {
+        "properties": {
+          "code": {
+            "title": "Code",
+            "type": "string"
+          },
+          "beginDate": {
+            "title": "Begindate",
+            "type": "string"
+          },
+          "endDate": {
+            "title": "Enddate",
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "beginDate",
+          "endDate"
+        ],
+        "title": "compare_saved_edb_versionsArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "compare_saved_edb_versionsDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "analyze_wind_series",
+      "description": "Compute SMA, momentum, total return, drawdown, volatility and Sharpe from a validated one-security WSD/WSES/WSI receipt or a saved series-row selection derived from one. To analyze filtered/count-limited bars, pass derived_receipt_id; its source fingerprint and selected rows are checked again. Set annualization explicitly for the sampling frequency. Missing/nonpositive prices are rejected. Results describe the observed price series, not a strategy backtest.",
+      "inputSchema": {
+        "properties": {
+          "receipt_id": {
+            "title": "Receipt Id",
+            "type": "string"
+          },
+          "periods_per_year": {
+            "title": "Periods Per Year",
+            "type": "number"
+          },
+          "field": {
+            "default": "close",
+            "title": "Field",
+            "type": "string"
+          },
+          "window": {
+            "default": 20,
+            "title": "Window",
+            "type": "integer"
+          },
+          "annual_risk_free_rate": {
+            "default": 0.0,
+            "title": "Annual Risk Free Rate",
+            "type": "number"
+          }
+        },
+        "required": [
+          "receipt_id",
+          "periods_per_year"
+        ],
+        "title": "analyze_wind_seriesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "analyze_wind_seriesDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "analyze_wind_risk",
+      "description": "Analyze validated Wind price receipts or rebuilt series selections: sample volatility, Sharpe, drawdown dates, down-interval count, empirical VaR and ES. An explicit benchmark receipt adds OLS beta/Jensen alpha, correlation, tracking error and information ratio. Requires >=4 positive finite prices; no missing-value filling. Annualization must be chosen for the input sampling. strict requires identical consecutive return intervals; common_intervals explicitly intersects START+END timestamps after returns are calculated independently, never bridging calendar gaps by joining prices. Standalone metrics still use the full asset sample. VaR/ES describe one input interval and can be negative; ES includes fractional boundary mass. Retains source hashes/options and saves a separate derived receipt. Does not query Wind, certify currency/adjustment equivalence, reproduce proprietary provider metrics or report strategy backtest performance.",
+      "inputSchema": {
+        "properties": {
+          "receipt_id": {
+            "title": "Receipt Id",
+            "type": "string"
+          },
+          "periods_per_year": {
+            "title": "Periods Per Year",
+            "type": "number"
+          },
+          "field": {
+            "default": "close",
+            "title": "Field",
+            "type": "string"
+          },
+          "benchmark_receipt_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Benchmark Receipt Id"
+          },
+          "benchmark_field": {
+            "default": "close",
+            "title": "Benchmark Field",
+            "type": "string"
+          },
+          "annual_risk_free_rate": {
+            "default": 0.0,
+            "title": "Annual Risk Free Rate",
+            "type": "number"
+          },
+          "confidence": {
+            "default": 0.95,
+            "title": "Confidence",
+            "type": "number"
+          },
+          "alignment": {
+            "default": "strict",
+            "title": "Alignment",
+            "type": "string"
+          }
+        },
+        "required": [
+          "receipt_id",
+          "periods_per_year"
+        ],
+        "title": "analyze_wind_riskArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "analyze_wind_riskDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "screen_wind_snapshot",
+      "description": "Screen an explicit WSS/WSEE/WSQ receipt universe with AND conditions {field,op,value}. op=gt/gte/lt/lte/eq/ne. Missing inputs are reported; this is not full-market security discovery.",
+      "inputSchema": {
+        "properties": {
+          "receipt_id": {
+            "title": "Receipt Id",
+            "type": "string"
+          },
+          "conditions": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "title": "Conditions",
+            "type": "array"
+          },
+          "sort_by": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Sort By"
+          },
+          "descending": {
+            "default": true,
+            "title": "Descending",
+            "type": "boolean"
+          },
+          "limit": {
+            "default": 100,
+            "title": "Limit",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "receipt_id",
+          "conditions"
+        ],
+        "title": "screen_wind_snapshotArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "screen_wind_snapshotDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "screen_wind_universe",
+      "description": "Screen all members of a fixed validated WSET/WEQS receipt, querying WSS in batches of 50. Start with plan={universe_receipt_id,fields,options,conditions,evidence,code_field?,sort_by?,descending?,limit?}; fields and options need documented meanings. Conditions use {field,op,value}. Or resume using only continuation_receipt_id. Processes 1..3 batches per call; status=pending requires continuation, batch_failed requires error review, complete returns globally sorted rows. Never truncates the universe, substitutes missing securities or returns premature rankings. Results do not certify full-market coverage or point-in-time safety.",
+      "inputSchema": {
+        "properties": {
+          "plan": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Plan"
+          },
+          "continuation_receipt_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Continuation Receipt Id"
+          },
+          "batches_per_call": {
+            "default": 2,
+            "title": "Batches Per Call",
+            "type": "integer"
+          }
+        },
+        "title": "screen_wind_universeArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "screen_wind_universeDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "aggregate_wind_snapshot",
+      "description": "Aggregate a validated snapshot using sum/mean/median/min/max/weighted_mean. Missing values are rejected. Caller must establish currency and unit consistency across securities; there is no automatic conversion.",
+      "inputSchema": {
+        "properties": {
+          "receipt_id": {
+            "title": "Receipt Id",
+            "type": "string"
+          },
+          "field": {
+            "title": "Field",
+            "type": "string"
+          },
+          "operation": {
+            "title": "Operation",
+            "type": "string"
+          },
+          "weight_field": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Weight Field"
+          }
+        },
+        "required": [
+          "receipt_id",
+          "field",
+          "operation"
+        ],
+        "title": "aggregate_wind_snapshotArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "aggregate_wind_snapshotDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "combine_economic_series",
+      "description": "Derive a fundamental series from alias-to-EDB-receipt inputs and arithmetic + - * /. Uses exact common dates, no fill or automatic unit conversion. Retains input metadata and provenance; observation dates do not certify historical availability.",
+      "inputSchema": {
+        "properties": {
+          "inputs": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "title": "Inputs",
+            "type": "object"
+          },
+          "expression": {
+            "title": "Expression",
+            "type": "string"
+          }
+        },
+        "required": [
+          "inputs",
+          "expression"
+        ],
+        "title": "combine_economic_seriesArguments",
+        "type": "object"
+      },
+      "outputSchema": {
+        "additionalProperties": true,
+        "title": "combine_economic_seriesDictOutput",
+        "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "openWorldHint": false
+      }
+    }
+  ]
+}

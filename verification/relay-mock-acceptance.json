@@ -1,0 +1,21 @@
+{
+  "ok": true,
+  "mode": "mock",
+  "loopback_http": false,
+  "stdio_mcp": false,
+  "timestamp_utc": "2026-10-12T05:40:47.611706+00:00",
+  "checks": [
+    "29_tools_discovered_over_mcp",
+    "synthetic_source_explicit",
+    "original_arguments_preserved",
+    "null_zero_empty_preserved",
+    "receipt_isolated_between_clients",
+    "two_clients_use_one_serial_execution_worker",
+    "real_windpy_not_imported"
+  ],
+  "tool_body_executions": 4,
+  "first_mcp_return_seconds": 0.0034,
+  "WindPy_imported": false,
+  "real_wind_queries": 0,
+  "cloud_or_uos_deployed": false
+}
