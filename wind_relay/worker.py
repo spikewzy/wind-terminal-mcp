@@ -69,7 +69,9 @@ class Worker:
                 if isinstance(value, list):
                     return any(quota_exceeded(v) for v in value)
                 return False
-            if quota_exceeded(result):
+            # Successful capability/status/receipt reads can contain historical
+            # quota evidence. Only a failed current execution may halt the worker.
+            if result.get("ok") is False and quota_exceeded(result):
                 write_private(self.halt, {"code": "WIND_QUOTA_EXCEEDED", "job_id": job["job_id"],
                                          "automatic_retry": False})
             write_private(self.outbox / (job["job_id"] + ".json"),

@@ -1,0 +1,18 @@
+{
+  "kind": "relay_quota_hotfix",
+  "base_mcp_version": "0.24.2",
+  "base_server_sha256": "8a6212b485fc44471305e77a4a1cd2435eda560d2de0d32edff651487ab2415a",
+  "files": {
+    "wind_relay/worker.py": {
+      "before_sha256": "c21d5c355a40f0f4468bf525fa43d35468fc31e4af2f4005025b68783e0fbb5a",
+      "after_sha256": "30153ae7009f8b5fad4b4612db3a9aaf831f0b1a2e9fe404ef7795f5c0a852fc"
+    }
+  },
+  "changes_core": false,
+  "credentials_included": false,
+  "live_wind_verified": false,
+  "regression": {
+    "original_worker_failed_historical_metadata_test": true,
+    "fixed_offline_tests_passed": 312
+  }
+}

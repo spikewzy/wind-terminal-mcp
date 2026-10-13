@@ -239,6 +239,51 @@ class HTTPTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(calls, ["1" * 32])
         self.assertEqual(self.app.state.queue.get("b", "2" * 32)["state"], "queued")
 
+    async def test_successful_metadata_and_saved_errors_do_not_halt_worker(self):
+        # This is the historical evidence shipped in wind_capabilities, not a
+        # quota error from the current user's request.
+        historical = json.loads((ROOT / "references/data-coverage.json").read_text())["quota_observation"]
+        self.assertEqual(historical["error_category"], "quota_exceeded")
+        fixtures = [
+            ("wind_capabilities", {}, {"data_coverage": {"quota_observation": historical}}),
+            ("wind_status", {"connect": False}, {"ok": True, "connection_checked": False,
+             "quota_observation": {"last_observed_error": historical}}),
+            ("read_wind_receipt", {"receipt_id": "9" * 32}, {"ok": True,
+             "receipt": {"response": {"ok": False, "error_category": "quota_exceeded"}}}),
+        ]
+        for index, (tool, arguments, result) in enumerate(fixtures):
+            with self.subTest(tool=tool):
+                first, second = f"{index * 2 + 10:032x}", f"{index * 2 + 11:032x}"
+                await self.a.request("POST", "/v1/jobs", {
+                    "job_id": first, "tool": tool, "arguments": arguments})
+                await self.submit(self.b, second)
+                calls = []
+                def execute(job):
+                    calls.append(job["job_id"])
+                    return result if job["job_id"] == first else {"ok": True, "data_source_id": "relay_mock"}
+                worker = Worker({"data_directory": str(self.directory / tool)}, execute, connection=self.w)
+                self.assertTrue(await worker.step())
+                self.assertFalse(worker.halt.exists())
+                self.assertTrue(await worker.step())
+                self.assertEqual(calls, [first, second])
+                self.assertEqual(self.app.state.queue.get("b", second)["state"], "completed")
+
+    async def test_current_nested_batch_quota_failure_still_halts(self):
+        await self.submit()
+        await self.submit(self.b, "2" * 32)
+        calls = []
+        def execute(job):
+            calls.append(job["job_id"])
+            return {"ok": False, "derived": {"status": "batch_failed", "error": {
+                "code": "WIND_UPSTREAM_ERROR", "error_category": "quota_exceeded"}}}
+        worker = Worker({"data_directory": str(self.directory)}, execute, connection=self.w)
+        with self.assertRaises(RelayError) as caught:
+            await worker.step()
+        self.assertEqual(caught.exception.code, "WORKER_HALTED")
+        self.assertTrue(worker.halt.exists())
+        self.assertEqual(calls, ["1" * 32])
+        self.assertEqual(self.app.state.queue.get("b", "2" * 32)["state"], "queued")
+
 
 class ContractTests(unittest.TestCase):
     def test_existing_profile_lock_and_budget_cover_all_relay_clients(self):
