@@ -1,0 +1,54 @@
+{
+  "ok": true,
+  "scope": "one deployed client, one noncached WindPy WSD request, and matching raw receipt",
+  "verified_at_utc": "2026-10-13T06:49:28.990742+00:00",
+  "mcp_version": "0.24.2",
+  "base_server_sha256": "8a6212b485fc44471305e77a4a1cd2435eda560d2de0d32edff651487ab2415a",
+  "worker_platform": {
+    "system": "Linux",
+    "profile": "uos20",
+    "architecture": "x86_64",
+    "python_bits": 64
+  },
+  "local_stdio_mcp": true,
+  "tool_count": 29,
+  "public_https_gateway": true,
+  "worker_mode": "native",
+  "data_source_id": "wind_terminal_api",
+  "request": {
+    "method": "wsd",
+    "arguments": {
+      "codes": "510300.SH",
+      "fields": "close",
+      "beginTime": "2026-01-05",
+      "endTime": "2026-01-09",
+      "options": ""
+    },
+    "max_age_seconds": 0
+  },
+  "returned_observations": 5,
+  "returned_date_range": [
+    "2026-01-05",
+    "2026-01-09"
+  ],
+  "upstream_error_code": 0,
+  "from_cache": false,
+  "probe_wind_data_queries": 1,
+  "raw_receipt_matches": true,
+  "owner_pending_jobs_after": 0,
+  "worker_online_after": true,
+  "local_WindPy_imported": false,
+  "historical_quota_hotfix_applied_on_execution_host": true,
+  "cross_client_isolation_verified_on_deployed_service": true,
+  "disconnect_recovery_verified_on_deployed_service": false,
+  "current_codex_tool_registration_loaded": false,
+  "redacted": [
+    "gateway URL and IP",
+    "credentials",
+    "raw market-data values",
+    "job and receipt IDs",
+    "private file paths"
+  ],
+  "worker_module_sha256": "30153ae7009f8b5fad4b4612db3a9aaf831f0b1a2e9fe404ef7795f5c0a852fc",
+  "cross_client_evidence": "verification/relay-deployed-isolation-acceptance.json"
+}

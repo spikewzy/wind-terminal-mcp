@@ -1,0 +1,37 @@
+{
+  "ok": true,
+  "timestamp_utc": "2026-10-13T07:03:37.000177+00:00",
+  "clients": 2,
+  "independent_stdio_processes": 2,
+  "tools_per_client": 29,
+  "additional_wind_data_queries": 0,
+  "original_receipt_unchanged": true,
+  "owner_can_read_receipt": true,
+  "colleague_cannot_read_owner_receipt": true,
+  "foreign_job_read_and_cancel_denied_both_directions": true,
+  "deployed_historical_quota_regression_passed": true,
+  "queued_reads_observed": true,
+  "current_workbuddy_harness_tested": false,
+  "disconnect_recovery_tested": false,
+  "local_WindPy_imported": false,
+  "elapsed_seconds": 23.127,
+  "scope": "two independent Mac stdio clients with distinct credentials; parallel metadata/receipt jobs on the deployed native service",
+  "worker_module_sha256": "30153ae7009f8b5fad4b4612db3a9aaf831f0b1a2e9fe404ef7795f5c0a852fc",
+  "foreign_job_checks_count": 4,
+  "foreign_job_http_statuses": [
+    404,
+    404,
+    404,
+    404
+  ],
+  "both_clients_pending_jobs_after": 0,
+  "worker_online_after": true,
+  "multiple_native_queries_under_load_tested": false,
+  "redacted": [
+    "credentials",
+    "gateway URL and IP",
+    "job and receipt IDs",
+    "private paths",
+    "raw data"
+  ]
+}

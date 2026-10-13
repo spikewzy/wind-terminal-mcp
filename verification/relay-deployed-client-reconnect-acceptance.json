@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "timestamp_utc": "2026-10-13T07:10:55.874021+00:00",
+  "additional_wind_data_queries": 0,
+  "state_before_disconnect": "queued",
+  "same_job_after_reconnect": true,
+  "result_and_receipt_unchanged": true,
+  "first_client_disconnected_before_completion": true,
+  "result_state_after_reconnect": "completed",
+  "worker_online_after": true,
+  "worker_mode": "native",
+  "execution_host_disconnect_tested": false,
+  "elapsed_seconds": 7.98,
+  "scope": "Mac stdio proxy closed after a queued receipt read; a new proxy retrieved the same job without resubmission",
+  "worker_module_sha256": "30153ae7009f8b5fad4b4612db3a9aaf831f0b1a2e9fe404ef7795f5c0a852fc",
+  "redacted": [
+    "credentials",
+    "gateway URL and IP",
+    "job and receipt IDs",
+    "private paths",
+    "raw data"
+  ]
+}

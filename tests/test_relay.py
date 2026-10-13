@@ -325,7 +325,7 @@ class ContractTests(unittest.TestCase):
 
     def test_remote_http_requires_explicit_private_tunnel(self):
         with self.assertRaises(RelayError):
-            validate_base_url("http://47.111.101.66:8765")
+            validate_base_url("http://203.0.113.10:8765")
         self.assertEqual(validate_base_url("http://10.1.1.1:8765", True), "http://10.1.1.1:8765")
         for url in ["https://user:password@example.com", "https://example.com?token=x"]:
             with self.assertRaises(RelayError):

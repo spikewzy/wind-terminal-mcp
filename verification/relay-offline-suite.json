@@ -3,9 +3,9 @@
   "tests": 312,
   "failures": 0,
   "errors": 0,
-  "seconds": 4.842,
+  "seconds": 3.222,
   "WindPy_imported": false,
   "real_wind_queries": 0,
   "cloud_or_uos_deployed": false,
-  "timestamp_utc": "2026-10-13T06:22:40.694163+00:00"
+  "timestamp_utc": "2026-10-13T07:19:53.001885+00:00"
 }

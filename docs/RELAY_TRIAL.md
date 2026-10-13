@@ -2,7 +2,7 @@
 
 这是独立的试验模块，基于原有 0.24.2 工具接口。原来的 `server.py` 和 `wind_bridge/` 不需要改动，原有本地 MCP 可继续使用。
 
-**当前验收：本机模拟通过；云服务器、UOS 实机和真实 WindPy 尚未验收。** `relay_demo.py` 禁止导入 WindPy，模拟结果标为 `relay_mock`。不要把模拟验收报告当成真实取数结果。
+**当前验收：312 项离线测试、跨机器模拟、一次真实 WindPy 查询及回执核对、两个客户端排队与隔离、客户端断开后按原任务编号取回结果均通过。** 实测路径为 Mac stdio MCP 代理 → 已部署的 HTTPS 网关 → UOS 20 x86_64 执行端；真实取数使用 `510300.SH` 的五日 `close` 小样本，未使用缓存。两客户端测试使用不同凭据和独立进程，并以能力检查与已有回执读取验证排队、回执隔离、双向跨用户任务查看/取消拒绝；未追加行情请求。脱敏记录见 `verification/relay-deployed-*-acceptance.json`。执行端断线补传、实际 Codex/WorkBuddy 工具注册与长期稳定性尚待验收，新安装仍须验证自己的环境。`relay_demo.py` 禁止导入 WindPy，模拟结果标为 `relay_mock`。
 
 ## 三台机器分别做什么
 
@@ -44,7 +44,7 @@ py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.lock.txt
 ```
 
-云端需要一个三端都能访问的 HTTPS 地址，例如 `https://relay.example.com`，指向云端网关。**`47.111.101.66:3389` 是远程桌面地址，不能作为本接口的地址。** 只有 RDP 凭据还不能确定 API 端口是否可用，需要核实已有 HTTPS 入口或云端网络权限。
+云端需要一个三端都能访问的 HTTPS 地址，例如 `https://relay.example.com`，指向云端网关。**`服务器地址:3389` 是远程桌面地址，不能作为本接口的地址。** 只有 RDP 凭据还不能确定 API 端口是否可用，需要核实已有 HTTPS 入口或云端网络权限。
 
 网关默认只监听 `127.0.0.1:8765`，可接在已有 HTTPS 反向代理之后。如果三端已有加密的私有组网，可使用私有地址加 `--allow-private-http`；不能在公网明文 HTTP 上传递凭据。无需改变远程桌面端口、重启服务器或替换服务器上已有程序。
 
@@ -126,7 +126,7 @@ Codex 本地 stdio 配置与超时参数依据 [官方 MCP 文档](https://devel
 
 ## 6. mock 验通后再决定真实验收
 
-当前默认停留在 mock 阶段，遵守“不启动真实 Wind MCP”的要求。切换 native 会允许代理请求触发官方 WindPy，应在确认需要实测后单独进行：
+执行端默认仍为 mock。切换 native 会允许代理请求触发执行端已有的官方 WindPy，应在确认需要实测后单独进行；它复用工具函数，不另启原有 MCP stdio 服务：
 
 ```sh
 .venv/bin/python relay_worker.py --config .relay/worker.json --mode native
@@ -138,7 +138,7 @@ native 复用已有 SDK 路径、环境变量和登录会话。若原有 MCP 设
 
 native 与原有本机 MCP 同时取数时，共享锁可能让其中一方返回 `WIND_BUSY`，需等待当前查询结束；mock 阶段不占用生产原生锁。共享预算只统计本项目预算感知版本的调用，不能替代 Wind 账户真实配额。
 
-尚需在目标机器完成：一个小范围已知代码查询、原始回执读取、两个客户端排队与隔离、执行端断线后的结果补传。完成这些之前，不能声称多人真实 WindPy 访问已验收。
+已完成一个小范围已知代码查询、原始回执读取、两个 stdio 客户端并行提交读取任务及权限隔离、客户端断开重连后取回原任务结果。尚需在已部署服务上完成执行端断线后的结果补传、实际 Codex/WorkBuddy 工具加载与调用，并验证多客户端真实行情负载；不能据此声称生产稳定性或全部数据覆盖已验收。
 
 ## 恢复与停止
 
@@ -163,4 +163,4 @@ native 与原有本机 MCP 同时取数时，共享锁可能让其中一方返�
 
 最后一条会在本机临时启动回环 HTTP 网关和两个 stdio MCP 代理，并在结束后关闭它们。上述命令都不导入真实 WindPy，不连接已安装的真实 Wind MCP。全套离线测试的明细与摘要保存到 `verification/relay-offline-suite.txt/json`，模拟验收记录在 `verification/relay-*-acceptance.json`。
 
-`build_relay_trial.py` 单独生成 `dist/wind-terminal-mcp-relay-trial-v1.zip`，其中不包含已有核心代码、SDK、生产数据或凭据；不会替换原来的正式发布包。
+`build_relay_trial.py` 单独生成 `dist/wind-terminal-mcp-relay-trial-v2.zip`，其中包含历史额度误停修复、新增回归测试和脱敏实机验收记录，不包含已有核心代码、SDK、生产数据或凭据；不会替换原来的正式发布包。它只有在验收记录与当前核心契约、执行模块哈希一致时才标记相应样本验收通过，标记不代表新安装已验收。
