@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "scope": "Codex registered relay tools: gateway status and retrieval of an existing completed native job",
+  "timestamp_utc": "2026-10-14T05:45:22+00:00",
+  "registered_relay_tools": 29,
+  "gateway_status_retrieved": true,
+  "stored_native_result_retrieved": true,
+  "returned_observations": 5,
+  "data_source_id": "wind_terminal_api",
+  "original_data_fetched_at": "2026-10-13T06:49:28.990742+00:00",
+  "current_worker_online": false,
+  "current_worker_mode": "native",
+  "new_wind_data_queries": 0,
+  "full_current_live_query_verified": false,
+  "current_workbuddy_harness_tested": false,
+  "redacted": [
+    "credentials",
+    "gateway URL and IP",
+    "job and receipt IDs",
+    "raw values",
+    "private paths"
+  ]
+}
